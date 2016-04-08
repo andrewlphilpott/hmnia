@@ -1,0 +1,17 @@
+/*-------------------------------------------
+  Main Content
+-------------------------------------------*/
+.main {
+	padding: em(20) 0 em(40);
+
+	h1, h2, h3, h4, h5, h6 {
+		color: lighten($black, 20%);
+		font-weight: 700;
+	}
+	img {
+		display: block;
+		height: auto;
+		margin: 0 auto;
+		max-width: 100%;
+	}
+}

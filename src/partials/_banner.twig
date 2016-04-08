@@ -1,0 +1,13 @@
+<div class="banner">
+	<div class="banner_content wrap">
+		<h1 class="page_title" data-text="{{ headline }}"><span>{{ headline }}</span></h1>
+
+		{% if subheadline is defined %}
+			<p class="page_subtitle">{{ subheadline }}</p>
+		{% endif %}
+
+		{% if date is defined %}
+			<time class="page_date">{{ date | date('F j, Y') }}</time>
+		{% endif %}
+	</div><!-- /.banner_content -->
+</div><!-- /.banner -->

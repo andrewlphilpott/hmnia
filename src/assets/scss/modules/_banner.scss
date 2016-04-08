@@ -1,0 +1,29 @@
+/*-------------------------------------------
+  Banner
+-------------------------------------------*/
+.banner {
+	background: radial-gradient(lighten($gray, 30%), lighten($gray, 30%) 1px, transparent 1px) repeat;
+	background-size: 10px 10px;
+	padding: em(40) 0;
+	position: relative;
+	overflow: hidden;
+
+	@include min-up($tablet) {
+		padding: em(60) 0;
+	}
+
+	// &:before {
+	// 	background: radial-gradient(lighten($gray, 25%), lighten($gray, 25%) 1px, transparent 1px, transparent 100%) repeat;
+	// 	background-size: 10px 10px;
+	// 	bottom: -200px;
+	// 	content: '';	
+	// 	left: -10px;
+	// 	position: absolute;
+	// 	top: -200px;
+	// 	transform: rotate(10deg);
+	// 	right: -10px;
+	// }
+}
+.banner_content {
+	position: relative;
+}

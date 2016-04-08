@@ -1,0 +1,82 @@
+/*-------------------------------------------
+  General
+-------------------------------------------*/
+html {
+	height: 100%;
+}
+body {
+	background: $white;
+	color: $text;
+	font-family: $sans-serif;
+	min-height: 100%;
+	padding-bottom: rem(50); // Footer is ~ 50px tall
+	position: relative;
+}
+
+// Wrapper
+.wrap {
+	margin: 0 auto;
+	max-width: em(640);
+	padding: 0 20px;
+}
+
+// Text Selection
+::selection {
+	background: $green;
+	color: $black;
+}
+::-moz-selection {
+	background: $green;
+	color: $black;
+}
+
+/*-------------------------------------------
+  Flexbox
+-------------------------------------------*/
+%flexbox {
+	display: flex;
+}
+%justify {
+	justify-content: space-between;
+}
+%align-center {
+	align-self: center;
+}
+
+/*-------------------------------------------
+  Positioning
+-------------------------------------------*/
+%center-vert {
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+/*-------------------------------------------
+  Lists
+-------------------------------------------*/
+%list-reset {
+	list-style: none;
+	margin: 0;
+}
+%inline-list {
+	@extend %list-reset;
+
+	> li {
+		display: inline-block;
+	}
+}
+
+/*-------------------------------------------
+  Links
+-------------------------------------------*/
+a {
+	color: $blue;
+	border-bottom: 2px solid $green;
+}
+
+/*-------------------------------------------
+  Animations
+-------------------------------------------*/
+%transition {
+	transition: all .25s ease;
+}
