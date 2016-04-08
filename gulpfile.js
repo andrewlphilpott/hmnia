@@ -106,7 +106,7 @@ gulp.task('blog', function(){
     return gulp.src(paths.src.blog)
         .pipe(twig({
             data: {
-                assets: '/assets'
+                assets: '../../assets'
             },
             extend: markdown
         }))
@@ -159,7 +159,7 @@ gulp.task('twig', function(){
     return gulp.src(paths.src.twig)
         .pipe(twig({
             data: {
-                assets: '/assets',
+                assets: 'assets',
                 posts: getPosts(paths.src.blogDir)
             }
         }))
