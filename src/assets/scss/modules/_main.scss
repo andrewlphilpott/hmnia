@@ -2,7 +2,7 @@
   Main Content
 -------------------------------------------*/
 .main {
-	padding: em(60) 0;
+	padding: em(30) 0 em(10);
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 700;
@@ -12,6 +12,10 @@
 		height: auto;
 		margin: 0 auto;
 		max-width: 100%;
+	}
+
+	@include min-up($tablet) {
+		padding: em(60) 0;
 	}
 }
 

@@ -12,7 +12,11 @@
 
 // Post Previews
 .preview {
-	margin: em(60) 0;
+	margin: em(30) 0;
+
+	@include min-up($tablet) {
+		margin: em(60) 0;
+	}
 }
 .preview_head {
 	margin-bottom: em(20);
