@@ -130,12 +130,15 @@ var getPosts = function(dir) {
             var postData = filesystem.readFileSync(file, 'utf8');
             postTitle = postData.match("title = '(.*)'");
             postDate = postData.match("date = '(.*)'");
+            postTimeStamp = postDate[1].split('/');
+            postTimeStamp = postTimeStamp.reverse().join().replace(/,/g , '');
             postExcerpt = postData.match("excerpt = '(.*)'");
 
             results.push({
                 url: file,
                 title: postTitle[1],
                 date: postDate[1],
+                timestamp: postTimeStamp,
                 excerpt: postExcerpt[1]
             });
         }
@@ -149,7 +152,7 @@ var getPosts = function(dir) {
   TO DO:
 
   [√] Figure out how to pull post data into index
-  [ ] Figure out ordering of posts
+  [√] Figure out ordering of posts
   [ ] Figure out pagination
 
 ======================================================*/
@@ -161,7 +164,8 @@ gulp.task('twig', function(){
             data: {
                 assets: '/assets',
                 posts: getPosts(paths.src.blogDir)
-            }
+            },
+            extend: markdown
         }))
         .pipe(gulp.dest(paths.dest.templates))
         .pipe(notify({message: 'Twig compiled'}));
@@ -181,7 +185,7 @@ gulp.task('twig', function(){
 
 // Watch Files For Changes
 gulp.task('watch', function() {
-    gulp.watch(paths.src.blog, ['blog']);
+    gulp.watch(paths.src.blog, ['blog', 'twig']);
     gulp.watch(paths.src.imgAll, ['imagemin']);
     gulp.watch(paths.src.plugins, ['plugins']);
     gulp.watch(paths.src.jsAll, ['scripts']);

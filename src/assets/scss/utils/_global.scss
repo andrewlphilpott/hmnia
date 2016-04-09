@@ -70,8 +70,17 @@ body {
   Links
 -------------------------------------------*/
 a {
-	color: $blue;
 	border-bottom: 2px solid $green;
+	color: $blue;
+	@extend %transition;
+
+	&:hover {
+		color: darken($green, 10%);
+	}
+}
+.link-inline {
+	border: none;
+	color: inherit;
 }
 
 /*-------------------------------------------

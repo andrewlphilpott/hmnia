@@ -7,16 +7,16 @@
 		<meta charset="utf-8" />
 		<title>Welcome</title>
 
-		<link rel="stylesheet" type="text/css" href="assets/css/screen.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="/assets/css/screen.css" media="screen" />
 
-		<link href="assets/img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+		<link href="/assets/img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 
 	<body id="home" data-page="home">
 
 		<header id="head" class="head">
-	<a class="brand" href="/"><img src="assets/img/logo.svg" width="50" alt="My neat logo" /></a>
+	<a class="brand" href="/"><img src="/assets/img/logo.svg" width="50" alt="My neat logo" /></a>
 
 	<nav id="nav" class="nav">
 		<h2 class="meta">Main Navigation</h2>
@@ -38,23 +38,49 @@
 </div><!-- /.banner -->
 	<main id="main" class="main">
 		<div class="wrap">
-			<h2>Here’s some stuff I wrote.</h2>
+			<h2 class="section-title">Here’s some stuff I wrote.</h2>
 
 			<ol class="posts">
 									<li>
 						<article class="preview">
-							<h3 class="preview_title">A Month (or so) With Amazon Echo</h3>
-							<time class="preview_date" datetime="2016-02-05">February 5, 2016</time>
-							<p>I asked for an Amazon Echo for Christmas, mainly because I wanted a reliable way to control my Wink-connected lights with my voice. I had pretty high expectations, but I’ve found that the Echo is even better than I expected; and it keeps on getting better.</p>
-							<a class="preview_more" href="/blog/a-month-or-so-with-amazon-echo/">Read More</a>
+							<header class="preview_head">
+								<h3 class="preview_title"><a class="link-inline" href="/blog/a-month-or-so-with-amazon-echo/">A Month (or so) With Amazon Echo</a></h3>
+								<time class="preview_date date" datetime="2016-02-05">February 5, 2016</time>
+							</header>
+
+<p>I asked for an Amazon Echo for Christmas, mainly because I wanted a reliable way to control my Wink-connected lights with my voice. I had pretty high expectations, but I’ve found that the Echo is even better than I expected; and it keeps on getting better.</p>
+
+							<footer class="preview_foot">
+								<a class="preview_more" href="/blog/a-month-or-so-with-amazon-echo/">Read More</a>
+							</footer>
 						</article>
 					</li>
 									<li>
 						<article class="preview">
-							<h3 class="preview_title">Unfixify</h3>
-							<time class="preview_date" datetime="2014-12-24">December 24, 2014</time>
-							<p>Unfixify is a neat little bookmarklet that looks for elements with `position: fixed;` and converts that to `position: absolute;`. It will almost certainly break some styles somewhere and make a page look silly, but at least there won’t be any fixed elements anymore.</p>
-							<a class="preview_more" href="/blog/unfixify/">Read More</a>
+							<header class="preview_head">
+								<h3 class="preview_title"><a class="link-inline" href="/blog/decide-for-me/">Decide For Me</a></h3>
+								<time class="preview_date date" datetime="2015-06-12">June 12, 2015</time>
+							</header>
+
+<p>It’s been a good six or seven months and I totally forgot to write about this, but I made a super simple little web app called Decide For Me. Basically, it’s a pro/con list which allows you to give each item on the list a weight.</p>
+
+							<footer class="preview_foot">
+								<a class="preview_more" href="/blog/decide-for-me/">Read More</a>
+							</footer>
+						</article>
+					</li>
+									<li>
+						<article class="preview">
+							<header class="preview_head">
+								<h3 class="preview_title"><a class="link-inline" href="/blog/unfixify/">Unfixify</a></h3>
+								<time class="preview_date date" datetime="2014-12-24">December 24, 2014</time>
+							</header>
+
+<p>Unfixify is a neat little bookmarklet that looks for elements with <code>position: fixed;</code> and converts that to <code>position: absolute;</code>. It will almost certainly break some styles somewhere and make a page look silly, but at least there won’t be any fixed elements anymore.</p>
+
+							<footer class="preview_foot">
+								<a class="preview_more" href="/blog/unfixify/">Read More</a>
+							</footer>
 						</article>
 					</li>
 							</ol>
@@ -66,9 +92,9 @@
 	<small class="foot_note">©2016 Andrew Philpott</small>
 </footer><!-- /#foot -->
 		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="assets/js/lib/jquery.js"><\/script>')</script>
-<script type="text/javascript" src="assets/js/plugins.min.js"></script>
-<script type="text/javascript" src="assets/js/main.min.js"></script>
+<script>window.jQuery || document.write('<script src="/assets/js/lib/jquery.js"><\/script>')</script>
+<script type="text/javascript" src="/assets/js/plugins.min.js"></script>
+<script type="text/javascript" src="/assets/js/main.min.js"></script>
 
 	</body>
 </html>

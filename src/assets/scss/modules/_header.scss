@@ -31,7 +31,7 @@
 	overflow: hidden;
 	padding: .25em .5em;
 	position: relative;
-	@extend %transition;
+	transition: all .25s linear;
 
 	&:after {
 		border-bottom: 2px solid $green;
@@ -41,7 +41,7 @@
 		max-width: 0;
 		position: absolute;
 		overflow: hidden;
-		@extend %transition;
+		transition: all .25s linear;
 	}
 
 	&:hover {

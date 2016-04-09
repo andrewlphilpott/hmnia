@@ -11,6 +11,7 @@ $mobile: em(480);
 // Grayscale
 $black: #000;
 $gray: #999;
+$gray-lt: lighten($gray, 30%);
 $white: #fff;
 
 // Accent Colors

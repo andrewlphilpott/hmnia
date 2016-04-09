@@ -119,11 +119,27 @@ p, ol, ul {
 	margin-bottom: 0;
 	position: relative;
 }
-.page_date {
+
+// Section Titles
+.section-title {
+	border-bottom: 1px solid $gray-lt;
+	color: $gray-lt;
+	padding-bottom: rem(20);
+}
+
+// Dates
+.date {
 	color: $gray;
 	display: block;
 	margin-top: 1em;
 	@extend %bold-caps;
+}
+
+// Code
+code {
+	color: $gray;
+	display: inline-block;
+	font-family: Monaco, 'Lucida Console', monospace;
 }
 
 // Bold Caps

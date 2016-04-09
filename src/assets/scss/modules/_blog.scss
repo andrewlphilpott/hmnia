@@ -1,0 +1,22 @@
+/*-------------------------------------------
+  Blog Posts
+-------------------------------------------*/
+// Listing
+.posts {
+	@extend %list-reset;
+
+	> li {
+		border-bottom: 1px solid $gray-lt;
+	}
+}
+
+// Post Previews
+.preview {
+	margin: em(60) 0;
+}
+.preview_head {
+	margin-bottom: em(20);
+}
+.preview_date {
+	margin-top: 0;
+}

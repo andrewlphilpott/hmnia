@@ -2,7 +2,7 @@
   Banner
 -------------------------------------------*/
 .banner {
-	background: radial-gradient(lighten($gray, 30%), lighten($gray, 30%) 1px, transparent 1px) repeat;
+	background: radial-gradient($gray-lt, $gray-lt 1px, transparent 1px) repeat;
 	background-size: 10px 10px;
 	padding: em(40) 0;
 	position: relative;
