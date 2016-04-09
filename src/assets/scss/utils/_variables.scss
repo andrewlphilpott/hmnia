@@ -21,7 +21,7 @@ $orange: #ff8400;
 $purple: #8200bf;
 
 // Text Colors
-$text: $black;
+$text: lighten($black, 20%);
 
 /*-------------------------------------------
   Stack Order

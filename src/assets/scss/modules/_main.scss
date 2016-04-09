@@ -6,10 +6,6 @@
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 700;
-		
-		&:not(.section-title) {
-			color: lighten($black, 20%);
-		}
 	}
 	img {
 		display: block;

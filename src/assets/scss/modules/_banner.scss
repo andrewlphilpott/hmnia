@@ -2,11 +2,10 @@
   Banner
 -------------------------------------------*/
 .banner {
-	background: radial-gradient($gray-lt, $gray-lt 1px, transparent 1px) repeat;
-	background-size: 10px 10px;
 	padding: em(40) 0;
 	position: relative;
 	overflow: hidden;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, .1);
 
 	@include min-up($tablet) {
 		padding: em(60) 0;
@@ -23,6 +22,15 @@
 	// 	transform: rotate(10deg);
 	// 	right: -10px;
 	// }
+}
+.banner_bg {
+	background: radial-gradient($gray-lt, $gray-lt 1px, transparent 1px) repeat;
+	background-size: 10px 10px;
+	bottom: -100%;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: -100%;
 }
 .banner_content {
 	position: relative;

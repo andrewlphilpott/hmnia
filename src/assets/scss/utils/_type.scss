@@ -131,8 +131,8 @@ p, ol, ul {
 .date {
 	color: $gray;
 	display: block;
+	font-weight: 700;
 	margin-top: 1em;
-	@extend %bold-caps;
 }
 
 // Code
