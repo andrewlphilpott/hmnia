@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class=""> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<title>Using CSS to Animate SVG Line Art 💫 Andrew Philpott</title>
+
+		<link rel="stylesheet" type="text/css" href="/assets/css/screen.css" media="screen" />
+
+		<link href="/assets/img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body class="blog">
+
+		<header id="head" class="head">
+	<a class="brand" href="/">
+		<h1 class="meta">The personal website of Andrew Philpott</h1>
+		<img src="/assets/img/logo.svg" width="50" alt="My neat logo" />
+	</a>
+
+	<nav id="nav" class="nav">
+		<h2 class="meta">Main Navigation</h2>
+
+		<ul class="nav_list">
+			<li><a data-text="Blog" class="nav_link" href="/">Blog</a></li>
+			<li><a data-text="About" class="nav_link" href="/about">About</a></li>
+			<li><a data-text="Portfolio" class="nav_link" href="/portfolio">Portfolio</a></li>
+		</ul><!-- /.nav_list -->
+	</nav><!-- /#nav -->
+</header><!-- /#head -->
+		<div class="page">
+			<div class="banner">
+	<div class="banner_bg"></div>
+	<div class="banner_content wrap">
+		<h1 class="page_title" data-text="Using CSS to Animate SVG Line Art"><span>Using CSS to Animate SVG Line Art</span></h1>
+
+		
+					<time class="page_date date">April 14, 2014</time>
+			</div><!-- /.banner_content -->
+</div><!-- /.banner -->
+			<main id="main" class="main">
+				<div class="wrap">
+					
+<style type="text/css">
+	#bottom-line,#top-line{stroke-dasharray:250;stroke-dashoffset:0}#bottom-line,#inside-border,#outside-border,#speaker,#top-line{stroke-dashoffset:0}svg{display:block;height:300px;margin:0 auto 1.625em;width:auto}#outside-border{stroke-dasharray:1300;-moz-animation:outside-border 3.5s linear;-webkit-animation:outside-border 3.5s linear;animation:outside-border 3.5s linear}@-moz-keyframes outside-border{from{stroke-dashoffset:1300}to{stroke-dashoffset:0}}@-webkit-keyframes outside-border{from{stroke-dashoffset:1300}to{stroke-dashoffset:0}}@keyframes outside-border{from{stroke-dashoffset:1300}to{stroke-dashoffset:0}}#inside-border{stroke-dasharray:1240;-moz-animation:inside-border 3s linear;-webkit-animation:inside-border 3s linear;animation:inside-border 3s linear}@-moz-keyframes inside-border{from{stroke-dashoffset:1240}to{stroke-dashoffset:0}}@-webkit-keyframes inside-border{from{stroke-dashoffset:1240}to{stroke-dashoffset:0}}@keyframes inside-border{from{stroke-dashoffset:1240}to{stroke-dashoffset:0}}#top-line{-moz-animation:border-lines 1s linear;-webkit-animation:border-lines 1s linear;animation:border-lines 1s linear}#bottom-line{-moz-animation:border-lines 1.5s linear;-webkit-animation:border-lines 1.5s linear;animation:border-lines 1.5s linear}@-moz-keyframes border-lines{from{stroke-dashoffset:250}to{stroke-dashoffset:0}}@-webkit-keyframes border-lines{from{stroke-dashoffset:250}to{stroke-dashoffset:0}}@keyframes border-lines{from{stroke-dashoffset:250}to{stroke-dashoffset:0}}#speaker{stroke-dasharray:100;-moz-animation:speaker 2s linear;-webkit-animation:speaker 2s linear;animation:speaker 2s linear}@-moz-keyframes speaker{from{stroke-dashoffset:100}to{stroke-dashoffset:0}}@-webkit-keyframes speaker{from{stroke-dashoffset:100}to{stroke-dashoffset:0}}@keyframes speaker{from{stroke-dashoffset:100}to{stroke-dashoffset:0}}#button-inside,#button-outside{stroke-dasharray:80;stroke-dashoffset:0}#button-outside{-moz-animation:button-outside 2s linear;-webkit-animation:button-outside 2s linear;animation:button-outside 2s linear}#button-inside{-moz-animation:button-outside 1.25s linear;-webkit-animation:button-outside 1.25s linear;animation:button-outside 1.25s linear}@-moz-keyframes button-outside{from{stroke-dashoffset:80}to{stroke-dashoffset:0}}@-webkit-keyframes button-outside{from{stroke-dashoffset:80}to{stroke-dashoffset:0}}@keyframes button-outside{from{stroke-dashoffset:80}to{stroke-dashoffset:0}}
+</style>
+
+<svg width="239px" height="426px" viewBox="0 0 239 426" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="not-iphone" sketch:type="MSLayerGroup" transform="translate(1.000000, 1.000000)">
+            <rect id="outside-border" stroke="#192934" x="4" y="4" width="233" height="420" rx="20"></rect>
+            <rect id="inside-border" stroke="#192934" x="9" y="9" width="223" height="410" rx="16"></rect>
+            <path id="top-line" stroke="#192934" d="M9.5625,50.0625 L231.841103,50.0625"></path>
+            <path id="bottom-line" stroke="#192934" d="M9.5625,377.0625 L231.841103,377.0625"></path>
+            <rect id="speaker" stroke="#192934" x="101" y="24" width="40" height="10" rx="5"></rect>
+            <circle id="button-outside" stroke="#192934" cx="121" cy="398" r="12"></circle>
+            <circle id="button-inside" stroke="#192934" cx="121" cy="398" r="10"></circle>
+        </g>
+    </g>
+</svg>
+
+<p>Turns out, animating inline SVG Line Art with CSS is super easy. Chris Coyier has a <a href="http://css-tricks.com/svg-line-animation-works/">great explanation of how it works</a> over on CSS Tricks. It&#39;s such a simple way to add a bit of visual flare to a page, so I think it could come in pretty handy.</p>
+<p>Basically, all you need to do is apply <code>stroke-dasharray</code> to an SVG element which gives it a dashed stroke and then use <code>stroke-dashoffset</code> to offset the stroke dashes. Offsetting the dashes essentially moves them, and if you use a large enough <code>stroke-dashoffset</code> you can completely remove the dashes from view. Then it’s just a matter of animating the <code>stroke-dashoffset</code> back to 0.</p>
+<p>I had some fun playing around with the technique this morning and made an animation of a very ambiguous smartphone illustration. In my example, I used a keyframe animation, but you could just as easily use a CSS transition if you wanted to apply the animation to a button hover or something like that.</p>
+<p>SVG support is <a href="http://caniuse.com/#feat=svg">pretty good</a>, but keyframe animations aren’t supported by older versions of IE (9 and down). If you’re going to use this technique, I would only recommend using it to add a bit of non-essential life to a page and make sure you have an un-animated fallback or something for older browsers.</p>
+
+				</div><!-- /.wrap -->
+			</main><!-- /#main -->
+		</div><!-- /.page -->
+
+		<footer id="foot" class="foot">
+	<small class="foot_note">©2016 Andrew Philpott</small>
+</footer><!-- /#foot -->
+		<script type="text/javascript" src="/assets/js/main.min.js"></script>
+
+	</body>
+</html>

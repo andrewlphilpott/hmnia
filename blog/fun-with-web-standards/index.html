@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class=""> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<title>Fun With Web Standards 🎉 Andrew Philpott</title>
+
+		<link rel="stylesheet" type="text/css" href="/assets/css/screen.css" media="screen" />
+
+		<link href="/assets/img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body class="blog">
+
+		<header id="head" class="head">
+	<a class="brand" href="/">
+		<h1 class="meta">The personal website of Andrew Philpott</h1>
+		<img src="/assets/img/logo.svg" width="50" alt="My neat logo" />
+	</a>
+
+	<nav id="nav" class="nav">
+		<h2 class="meta">Main Navigation</h2>
+
+		<ul class="nav_list">
+			<li><a data-text="Blog" class="nav_link" href="/">Blog</a></li>
+			<li><a data-text="About" class="nav_link" href="/about">About</a></li>
+			<li><a data-text="Portfolio" class="nav_link" href="/portfolio">Portfolio</a></li>
+		</ul><!-- /.nav_list -->
+	</nav><!-- /#nav -->
+</header><!-- /#head -->
+		<div class="page">
+			<div class="banner">
+	<div class="banner_bg"></div>
+	<div class="banner_content wrap">
+		<h1 class="page_title" data-text="Fun With Web Standards"><span>Fun With Web Standards</span></h1>
+
+		
+					<time class="page_date date">November 10, 2010</time>
+			</div><!-- /.banner_content -->
+</div><!-- /.banner -->
+			<main id="main" class="main">
+				<div class="wrap">
+					
+<aside class="note">
+    <strong class="note_hdg">Note</strong>
+
+    <p>This post is from a previous version of my website, and may not be completely accurate to the design anymore.</p>
+</aside>
+
+<p>I recently finished a major redesign of my site. I had a lot of fun designing and building this new version and got a chance to experiment a ton with new things.</p>
+<h2 id="goodbye-images">Goodbye, Images</h2>
+<p>One thing that I&#39;m thrilled about is the very small number of images that are used in the design. Instead, almost everything (aside from a couple of backgrounds and some icons) is made using CSS3. This has a couple of benefits, one being that there are less images to load. Secondly, I don&#39;t have to worry about how my images look on hi-res devices like my iPhone 4.</p>
+<h2 id="-media">@media</h2>
+<p>Speaking of iPhones, my site is now using <code>@media</code> queries to change the layout based on the size of your browser window. I first heard <a href="http://unstoppablerobotninja.com">Ethan Marcotte</a> talk about using media queries to create a &quot;responsive&quot; website that adjusts its design to suit any sized screen.</p>
+<p>They&#39;re actually <em>really</em> easy to use. Say, for example, I wanted my site to have a black background if the viewport was less than 500 pixels. All I would have to do is enter this code into the CSS:</p>
+<pre><code>@media screen and (max-width: 499px) {
+    body {
+        background-color: #000;
+    }
+}</code></pre>
+
+<p>It&#39;s that easy. Before, I had considered creating a completely different stylesheet for mobile browsers. I have to say, though, using <code>@media</code> is <em>a lot</em> easier. It also works for desktop-based browsers, which is awesome.</p>
+<h2 id="refocused">Refocused</h2>
+<p>On top of some of the new visual changes to the site, I&#39;ve also shifted the design so that the focus is more on my blog. I stripped away a lot of the more social-related things (like links in the footer) and gave the site a more consistent feel throughout to make it feel more like a blog.</p>
+<p>Also, on top of traditional commenting, I&#39;ve added another way for visitors to provide feedback more quickly. I added little heart buttons to each post which you can click to let me know you like a post. I have to admit, these were inspired by Facebook&#39;s like buttons.</p>
+<h2 id="check-it-out">Check it out</h2>
+<p>Go ahead and check out the rest of the site. I&#39;m very happy with the way it turned out. Any feedback is always welcome.</p>
+
+				</div><!-- /.wrap -->
+			</main><!-- /#main -->
+		</div><!-- /.page -->
+
+		<footer id="foot" class="foot">
+	<small class="foot_note">©2016 Andrew Philpott</small>
+</footer><!-- /#foot -->
+		<script type="text/javascript" src="/assets/js/main.min.js"></script>
+
+	</body>
+</html>

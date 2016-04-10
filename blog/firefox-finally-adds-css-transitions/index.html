@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class=""> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<title>Firefox Finally Adds CSS Transitions 🐺 Andrew Philpott</title>
+
+		<link rel="stylesheet" type="text/css" href="/assets/css/screen.css" media="screen" />
+
+		<link href="/assets/img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body class="blog">
+
+		<header id="head" class="head">
+	<a class="brand" href="/">
+		<h1 class="meta">The personal website of Andrew Philpott</h1>
+		<img src="/assets/img/logo.svg" width="50" alt="My neat logo" />
+	</a>
+
+	<nav id="nav" class="nav">
+		<h2 class="meta">Main Navigation</h2>
+
+		<ul class="nav_list">
+			<li><a data-text="Blog" class="nav_link" href="/">Blog</a></li>
+			<li><a data-text="About" class="nav_link" href="/about">About</a></li>
+			<li><a data-text="Portfolio" class="nav_link" href="/portfolio">Portfolio</a></li>
+		</ul><!-- /.nav_list -->
+	</nav><!-- /#nav -->
+</header><!-- /#head -->
+		<div class="page">
+			<div class="banner">
+	<div class="banner_bg"></div>
+	<div class="banner_content wrap">
+		<h1 class="page_title" data-text="Firefox Finally Adds CSS Transitions"><span>Firefox Finally Adds CSS Transitions</span></h1>
+
+		
+					<time class="page_date date">November 8, 2010</time>
+			</div><!-- /.banner_content -->
+</div><!-- /.banner -->
+			<main id="main" class="main">
+				<div class="wrap">
+					
+<p>This is just a short note to say that it looks like Firefox will finally be supporting CSS transitions in their next release. I downloaded the beta release of Firefox 4 the other day and was very happy to see that my <code>-moz-transition</code> styles were working. The implementation leaves something to be desired, though. I&#39;ve noticed that a lot of the transitions that are super smooth in Webkit are pretty sketchy in Firefox. Hopefully this is something that will be worked out before the official release.</p>
+<h2 id="my-only-complaint">My only complaint</h2>
+<p>One other thing I was disappointed with was Firefox&#39;s rendering of <code>border-radius</code> which <em>still</em> can&#39;t be applied directly to images. (Well, it can, but it won&#39;t do anything). Mozilla has been supporting border radius for a long, long time and they still haven&#39;t fixed this issue which I find extremely irritating. Maybe they think that&#39;s not the way that <code>border-radius</code> should work; if they do, they are <em>completely</em> wrong.</p>
+<p>Border-radius should definitely be a style that can be applied to images, especially when you consider content management systems built for clients who don&#39;t have the knowledge or ability to apply rounded corners to an image on their own. So get with the program, Firefox! I&#39;m tired of using jQuery to create workarounds for rounded corners on images. I wouldn&#39;t even bother if it were only IE that didn&#39;t behave, but since Firefox still doesn&#39;t have its act together, that causes issues.</p>
+
+				</div><!-- /.wrap -->
+			</main><!-- /#main -->
+		</div><!-- /.page -->
+
+		<footer id="foot" class="foot">
+	<small class="foot_note">©2016 Andrew Philpott</small>
+</footer><!-- /#foot -->
+		<script type="text/javascript" src="/assets/js/main.min.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class=""> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<title>Getting Symbolset to Work on Android 🍫 Andrew Philpott</title>
+
+		<link rel="stylesheet" type="text/css" href="/assets/css/screen.css" media="screen" />
+
+		<link href="/assets/img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body class="blog">
+
+		<header id="head" class="head">
+	<a class="brand" href="/">
+		<h1 class="meta">The personal website of Andrew Philpott</h1>
+		<img src="/assets/img/logo.svg" width="50" alt="My neat logo" />
+	</a>
+
+	<nav id="nav" class="nav">
+		<h2 class="meta">Main Navigation</h2>
+
+		<ul class="nav_list">
+			<li><a data-text="Blog" class="nav_link" href="/">Blog</a></li>
+			<li><a data-text="About" class="nav_link" href="/about">About</a></li>
+			<li><a data-text="Portfolio" class="nav_link" href="/portfolio">Portfolio</a></li>
+		</ul><!-- /.nav_list -->
+	</nav><!-- /#nav -->
+</header><!-- /#head -->
+		<div class="page">
+			<div class="banner">
+	<div class="banner_bg"></div>
+	<div class="banner_content wrap">
+		<h1 class="page_title" data-text="Getting Symbolset to Work on Android"><span>Getting Symbolset to Work on Android</span></h1>
+
+		
+					<time class="page_date date">January 7, 2014</time>
+			</div><!-- /.banner_content -->
+</div><!-- /.banner -->
+			<main id="main" class="main">
+				<div class="wrap">
+					
+<aside class="note">
+    <strong class="note_hdg">Note</strong>
+    <p>I’m sure this isn’t the only fix for this issue. If you have another fix that you think is better, let me know. Hopefully newer versions of Symbolset and Android will work better together.</p>
+</aside>
+
+<p>I have noticed on a couple of recent projects that I’ve built, that Symbolset’s keyword replacement doesn’t work as expected on Android devices (specifically, Android version 4.3, but it may affect other versions as well). I don’t think I ever came across any documented fixes for this issue, which I assume is because Symbolset’s website says that keyword replacement works on Android.</p>
+<p>Hopefully this post will be helpful to others in my situation, but in all honesty, I’m writing this mainly for myself because I always forget how I’ve worked around the problem in the past. So here is the fix that I’ve found:</p>
+<h2 id="text-rendering">Text Rendering</h2>
+<p>Symbolset has <code>text-rendering: optimizeLegibility;</code> in the default CSS files, which seems to be part of the issue. The first step is to override this style for Android. You can do it however you want, but I typically just add a UA sniffing line in my JavaScript and add the class “android” to the html element of the page. Then, I simply add the following code (change out the classes to match whichever Symbolset fonts you’re using):</p>
+<pre><code>.android .ss-standard,
+.android .ss-social,
+.android [class*="ss-"]:before,
+.android [class*="ss-"].right:after {
+    text-rendering: auto;
+}</code></pre>
+
+<h2 id="modify-the-symbolset-javascript">Modify the Symbolset JavaScript</h2>
+<p>The next (and final) step is to modify each individual Symbolset font’s corresponding JavaScript file. This is a pretty simple process, because all you need to do is change one character. The first line of the file is a conditional that checks the browser’s user agent. Simply change <code>Android [1-2]</code> to <code>Android [1-4]</code> to include Android version 4. You’ll obviously have to include the JavaScript file on your page, but I assume you’re already doing that for legacy browser support.</p>
+
+				</div><!-- /.wrap -->
+			</main><!-- /#main -->
+		</div><!-- /.page -->
+
+		<footer id="foot" class="foot">
+	<small class="foot_note">©2016 Andrew Philpott</small>
+</footer><!-- /#foot -->
+		<script type="text/javascript" src="/assets/js/main.min.js"></script>
+
+	</body>
+</html>

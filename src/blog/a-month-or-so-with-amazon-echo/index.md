@@ -1,6 +1,7 @@
 {% extends '../../layouts/_post.twig' %}
 
 {% set title = 'A Month (or so) With Amazon Echo' %}
+{% set metaTitle = 'A Month (or so) With Amazon Echo 👍 Andrew Philpott' %}
 {% set date = '02/05/16' %}
 {% set excerpt = 'I asked for an Amazon Echo for Christmas, mainly because I wanted a reliable way to control my Wink-connected lights with my voice. I had pretty high expectations, but I’ve found that the Echo is even better than I expected; and it keeps on getting better.' %}
 
@@ -9,6 +10,11 @@
 {% block body %}
 
 {% markdown %}
+<aside class="note">
+	<strong class="note_hdg">Note</strong>
+	<p>In the time since I wrote this post, Amazon has announced even more new features like thermostat control through Wink and new hardware like the Echo Dot and Echo Tap (both things I want to check out).</p>
+</aside>
+
 I asked for an Amazon Echo for Christmas, mainly because I wanted a reliable way to control my Wink-connected lights with my voice. I had pretty high expectations, but I’ve found that the Echo is even better than I expected; and it keeps on getting better.
 
 ## Smart Home Made Smarter

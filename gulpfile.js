@@ -131,20 +131,39 @@ var getPosts = function(dir) {
             postTitle = postData.match("title = '(.*)'");
             postDate = postData.match("date = '(.*)'");
             postTimeStamp = postDate[1].split('/');
-            postTimeStamp = postTimeStamp.reverse().join().replace(/,/g , '');
+            postTimeStamp = postTimeStamp.move(2, 0).join().replace(/,/g , '');
+            // postTimeStamp = postTimeStamp.reverse().join().replace(/,/g , '');
             postExcerpt = postData.match("excerpt = '(.*)'");
 
             results.push({
                 url: file,
                 title: postTitle[1],
                 date: postDate[1],
-                timestamp: postTimeStamp,
+                timestamp: Number(postTimeStamp),
                 excerpt: postExcerpt[1]
             });
         }
     });
 
+    results.sort(function(a, b) {
+        return a.timestamp - b.timestamp;
+    });
+
+    results.reverse();
+
     return results;
+};
+
+// Function to reorder timestamp
+Array.prototype.move = function (old_index, new_index) {
+    if (new_index >= this.length) {
+        var k = new_index - this.length;
+        while ((k--) + 1) {
+            this.push(undefined);
+        }
+    }
+    this.splice(new_index, 0, this.splice(old_index, 1)[0]);
+    return this; // for testing purposes
 };
 
 /*======================================================
@@ -159,7 +178,7 @@ var getPosts = function(dir) {
 
 // Compile Twig
 gulp.task('twig', function(){
-    return gulp.src(paths.src.twig)
+    return gulp.src(paths.src.twigAll)
         .pipe(twig({
             data: {
                 assets: '/assets',

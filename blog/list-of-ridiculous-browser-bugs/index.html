@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class=""> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<title>List of Ridiculous Browser Bugs 🐜 Andrew Philpott</title>
+
+		<link rel="stylesheet" type="text/css" href="/assets/css/screen.css" media="screen" />
+
+		<link href="/assets/img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body class="blog">
+
+		<header id="head" class="head">
+	<a class="brand" href="/">
+		<h1 class="meta">The personal website of Andrew Philpott</h1>
+		<img src="/assets/img/logo.svg" width="50" alt="My neat logo" />
+	</a>
+
+	<nav id="nav" class="nav">
+		<h2 class="meta">Main Navigation</h2>
+
+		<ul class="nav_list">
+			<li><a data-text="Blog" class="nav_link" href="/">Blog</a></li>
+			<li><a data-text="About" class="nav_link" href="/about">About</a></li>
+			<li><a data-text="Portfolio" class="nav_link" href="/portfolio">Portfolio</a></li>
+		</ul><!-- /.nav_list -->
+	</nav><!-- /#nav -->
+</header><!-- /#head -->
+		<div class="page">
+			<div class="banner">
+	<div class="banner_bg"></div>
+	<div class="banner_content wrap">
+		<h1 class="page_title" data-text="List of Ridiculous Browser Bugs"><span>List of Ridiculous Browser Bugs</span></h1>
+
+		
+					<time class="page_date date">July 11, 2014</time>
+			</div><!-- /.banner_content -->
+</div><!-- /.banner -->
+			<main id="main" class="main">
+				<div class="wrap">
+					
+<p>I am starting a list of common and ridiculous bugs that I’ve found in different browsers along with quick fixes if I know of them. It will most likely grow over time as I find and remember more idiotic bugs.</p>
+<h2 id="ie-8">IE 8</h2>
+<ul>
+<li><code>console.log()</code> causes JS errors</li>
+</ul>
+<h2 id="ie-10-11-and-maybe-9-">IE 10 &amp; 11 (and maybe 9)</h2>
+<ul>
+<li>I think CSS <code>calc()</code> works, but it doesn&#39;t seem to work if you do something like <code>transform: translateY(calc(100% - 50px));</code> which works in other browsers</li>
+</ul>
+<h2 id="android-2-stock-browser">Android 2 Stock Browser</h2>
+<p><em>(2.3.4 anyway, but really who even uses Android 2 anymore?)</em></p>
+<ul>
+<li>Can’t use CSS transforms on pseudo elements (<code>::before</code> and <code>::after</code>)</li>
+<li>Fixed positioning works like crap</li>
+<li><code>overflow: scroll</code> doesn’t work</li>
+</ul>
+<h2 id="mobile-safari">Mobile Safari</h2>
+<ul>
+<li>Don’t even think about transitioning <code>visibility</code> on something that you&#39;re hiding and showing with <code>opacity: 0; visibility: hidden;</code> because if you do, it will always remain hidden…</li>
+</ul>
+<h2 id="desktop-safari">Desktop Safari</h2>
+<ul>
+<li>Maybe it’s just me, but I feel like Safari 8 is just a huge pile of junk. Seriously, like 50 times a day it refuses to load a page and says the server cannot be found only to load it correctly if I refresh.</li>
+</ul>
+<h2 id="chrome">Chrome</h2>
+<ul>
+<li>Tables apparently ignore <code>max-width</code>. I’m not sure if this is actually a bug, though, because it sounds like maybe Chrome does what the CSS spec says it should. Either way, it’s annoying and dumb.</li>
+<li>I’ve also noticed a lot of jankiness if you try to use fixed backgrounds in Chrome, especially if you’re on a retina Mac.</li>
+</ul>
+
+				</div><!-- /.wrap -->
+			</main><!-- /#main -->
+		</div><!-- /.page -->
+
+		<footer id="foot" class="foot">
+	<small class="foot_note">©2016 Andrew Philpott</small>
+</footer><!-- /#foot -->
+		<script type="text/javascript" src="/assets/js/main.min.js"></script>
+
+	</body>
+</html>

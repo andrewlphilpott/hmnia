@@ -31,7 +31,7 @@ h3 {
 	@extend %h3; //font-size: rem(21)
 	line-height: 1.62; // ~ 34
 }
-h4, p, ol, ul {
+h4, p, ol, ul, pre {
 	@extend %h4; //font-size: rem(16)
 	line-height: 1.625; // 26
 }
@@ -45,7 +45,7 @@ strong {
 }
 
 // Margins
-p, ol, ul {
+p, ol, ul, pre {
 	margin-bottom: 1.625em; // 26px
 }
 
@@ -125,6 +125,21 @@ p, ol, ul {
 	border-bottom: 1px solid $gray-lt;
 	color: $gray-lt;
 	padding-bottom: rem(20);
+}
+
+// Notes
+.note {
+	background: $yellow;
+	margin-bottom: 1.625em;
+	padding: 20px;
+
+	p:last-child {
+		margin-bottom: 0;
+	}
+}
+.note_hdg {
+	display: block;
+	margin-bottom: em(10);
 }
 
 // Dates

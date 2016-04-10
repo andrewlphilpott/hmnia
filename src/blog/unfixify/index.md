@@ -1,6 +1,7 @@
 {% extends '../../layouts/_post.twig' %}
 
 {% set title = 'Unfixify' %}
+{% set metaTitle = 'Unfixify 💥 Andrew Philpott' %}
 {% set date = '12/24/14' %}
 {% set excerpt = 'Unfixify is a neat little bookmarklet that looks for elements with `position: fixed;` and converts that to `position: absolute;`. It will almost certainly break some styles somewhere and make a page look silly, but at least there won’t be any fixed elements anymore.' %}
 

@@ -82,6 +82,31 @@ a {
 	border: none;
 	color: inherit;
 }
+.dribbble,
+.facebook,
+.spotify,
+.twitter {
+	border: none;
+	text-decoration: underline;
+}
+
+$networks: (
+	dribbble: $dribbble,
+	facebook: $facebook,
+	spotify: $spotify,
+	twitter: $twitter
+);
+
+@each $network, $color in $networks {
+	.#{$network} {
+		color: $color;
+
+		&:hover {
+			color: darken($color, 20%);
+			text-decoration: underline;
+		}
+	}
+}
 
 /*-------------------------------------------
   Animations

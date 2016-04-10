@@ -1,6 +1,7 @@
 {% extends '../../layouts/_post.twig' %}
 
 {% set title = 'Decide For Me' %}
+{% set metaTitle = 'Decide For Me 🔮 Andrew Philpott' %}
 {% set date = '06/12/15' %}
 {% set excerpt = 'It’s been a good six or seven months and I totally forgot to write about this, but I made a super simple little web app called Decide For Me. Basically, it’s a pro/con list which allows you to give each item on the list a weight.' %}
 
