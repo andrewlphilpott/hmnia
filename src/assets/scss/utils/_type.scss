@@ -75,10 +75,9 @@ p, ol, ul, pre {
 .page_title {
 	@extend %h0; // font-size: rem(72)
 	color: $green;
-	display: inline-block;
+	display: inline;
 	line-height: .9;
 	margin-bottom: .25em;
-	padding-bottom: .125em;
 	position: relative;
 
 	&:before {
@@ -97,6 +96,7 @@ p, ol, ul, pre {
 
 	.blog & {
 		@extend %h1;
+		display: block;
 		line-height: 1.1;
 
 		&:before {
@@ -111,8 +111,14 @@ p, ol, ul, pre {
 
 	span {
 		mask-image: linear-gradient(10deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+		max-width: calc(100vw - 40px);
 		position: absolute;
+		width: rem(600);
 		z-index: 1;
+	}
+
+	+ .page_subtitle {
+		padding-top: rem(20);
 	}
 }
 .page_subtitle {
