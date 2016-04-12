@@ -2,13 +2,32 @@
   Banner
 -------------------------------------------*/
 .banner {
+	height: calc(100vh - 4.6875em);
 	padding: em(40) 0;
 	position: relative;
 	overflow: hidden;
+	text-align: center;
 	text-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+
+	&:before {
+		content: '';
+		display: inline-block;
+		height: 100%;
+		margin-right: -14px;
+		vertical-align: middle;
+		width: 10px;
+	}
 
 	@include min-up($tablet) {
 		padding: em(60) 0;
+	}
+
+	.blog & {
+		height: auto;
+
+		&:before {
+			display: none;
+		}
 	}
 }
 .banner_bg {
@@ -23,5 +42,9 @@
 	will-change: transform;
 }
 .banner_content {
+	display: inline-block;
+	text-align: left;
 	position: relative;
+	vertical-align: middle;
+	width: 100%;
 }
