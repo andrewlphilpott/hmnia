@@ -26,7 +26,7 @@
 				var scrollTop = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
 
 				var banner = document.querySelector('.banner_bg');
-				banner.style.transform = 'rotate(translateY(' + Math.round(scrollTop / 3) + 'px)';
+				banner.style.transform = 'translateY(' + Math.round(scrollTop / 3) + 'px)';
 
 				var bannerContent = document.querySelector('.banner_content');
 				bannerContent.style.transform = 'translateY(-' + Math.round(scrollTop / 3) + 'px)'
