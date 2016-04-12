@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class=""> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<title>Create A Retro Animation With CSS 👾 Andrew Philpott</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:700|Sorts+Mill+Goudy:400,400italic" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="/assets/css/screen.css" media="screen" />
+
+		<link href="/assets/img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body id="blog" class="blog">
+
+		<header id="head" class="head">
+	<a class="brand" href="/">
+		<h1 class="meta">The personal website of Andrew Philpott</h1>
+		<svg width="50px" height="30px" viewBox="0 0 84 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		        <g id="logo">
+		            <path d="M77.7879989,4.5 C81.3160166,7.500015 83.0799989,12.1079689 83.0799989,18.324 C83.0799989,24.5400311 81.2680171,29.0879856 77.6439989,31.968 C74.0199808,34.8480144 68.4880361,36.288 61.0479989,36.288 L54.3519989,36.288 L54.3519989,50.328 L43.1199989,50.328 L43.1199989,0 L60.9039989,0 C68.6320376,0 74.2599813,1.499985 77.7879989,4.5 L77.7879989,4.5 Z M69.5439989,24.3 C70.8880057,22.7879924 71.5599989,20.5800145 71.5599989,17.676 C71.5599989,14.7719855 70.6840077,12.7080061 68.9319989,11.484 C67.1799902,10.2599939 64.4560174,9.648 60.7599989,9.648 L54.3519989,9.648 L54.3519989,26.568 L61.9119989,26.568 C65.6560177,26.568 68.1999922,25.8120076 69.5439989,24.3 L69.5439989,24.3 Z" id="P" fill="#00A5BF"></path>
+		            <path d="M42.408,50.328 L37.728,39.456 L16.632,39.456 L11.952,50.328 L0,50.328 L21.744,0 L32.616,0 L54.36,50.328 L42.408,50.328 Z M27.216,14.976 L20.88,29.592 L33.48,29.592 L27.216,14.976 Z" id="A" fill="#8200BF"></path>
+		        </g>
+		    </g>
+		</svg>
+	</a>
+
+	<nav id="nav" class="nav">
+		<h2 class="meta">Main Navigation</h2>
+
+		<ul class="nav_list">
+			<li><a id="nav_blog" data-text="Blog" class="nav_link" href="/">Blog</a></li>
+			<li><a id="nav_about" data-text="About" class="nav_link" href="/about">About</a></li>
+			<li><a id="nav_work" data-text="Portfolio" class="nav_link" href="/portfolio">Portfolio</a></li>
+		</ul><!-- /.nav_list -->
+	</nav><!-- /#nav -->
+</header><!-- /#head -->
+		<div class="page">
+			<div class="banner">
+	<div class="banner_bg"></div>
+	<div class="banner_content wrap">
+		<h1 class="page_title" data-text="Create A Retro Animation With CSS"><span>Create A Retro Animation With CSS</span></h1>
+
+		
+					<time class="page_date date">February 1, 2010</time>
+			</div><!-- /.banner_content -->
+</div><!-- /.banner -->
+			<main id="main" class="main">
+				<div class="wrap">
+					
+<p>There has been a lot of excitement about CSS animation lately, and I&#39;ve been playing around with it. In this tutorial, I&#39;ll show you how to use CSS Animation to make an old video game style website.</p>
+<p>First things first: some of the CSS we&#39;ll be using in this tutorial <em>will not</em> work in all browsers. Right now, only webkit supports CSS animation properties, so Chrome and Safari will render the page correctly. Firefox will work aside from the animations, and IE will probably find ways to screw everything up.</p>
+<h2 id="1-creating-the-cloud-animation">1. Creating the cloud animation</h2>
+<p>One of the core pieces of CSS that we&#39;ll be using throughout this tutorial is keyframes. Basically, keyframes allow you to create an animation by giving it a name and then defining different CSS properties for different parts of the animation. To make the clouds move, we&#39;ll use this code:</p>
+<pre><code>@-webkit-keyframes cloudsMove {
+    from {
+        background-position: 0 bottom;
+    }
+    50% {
+        background-position: -2000px bottom;
+    }
+    to {
+        background-position: 0 bottom;
+    }
+}</code></pre>
+
+<p>Taking a closer look at this, we can see that the animation (called &quot;cloudsMove&quot;) starts with a background-position of 0 bottom which then moves to -2000px bottom at 50% and then goes back to 0 bottom.</p>
+<p>Next, we need to assign cloudsMove to an element. On the demo site, I&#39;ve given the content div a cloud background, so I&#39;ll apply the animation to that div:</p>
+<pre><code>#content {
+    -webkit-animation-name: cloudsMove;
+    -webkit-animation-duration: 60s;
+    -webkit-animation-iteration-count: infinite;
+}</code></pre>
+
+<p>We&#39;re doing a few things here. First, we&#39;re telling the browser to assign the cloudsMove animation to our content div. Next we tell the browser that the animation should last 60 seconds. And finally, we state that the animation should iterate infinitely.</p>
+<h2 id="2-creating-the-sunset-animation">2. Creating the sunset animation</h2>
+<p>The sunset animation is very similar to the cloud animation, only this time you can see that I added a rule at 40% and 90% so that there is no actual change in the CSS until later in each iteration:</p>
+<pre><code>@-webkit-keyframes skyChange {
+    from {
+        background-position: center bottom;
+    }
+    40% {
+        background-position: center bottom;
+    }
+    50% {
+        background-position: center top;
+    }
+    90% {
+        background-position: center top;
+    }
+    to {
+        background-position: center bottom;
+    }
+}</code></pre>
+
+<p>The skyChange animation is applied to the wrapper div:</p>
+<pre><code>#wrapper {
+    -webkit-animation-name: skyChange;
+    -webkit-animation-duration: 50s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}</code></pre>
+
+<p>I&#39;ve used an additional rule here -- &quot;-webkit-animation-timing-function: linear&quot; -- which makes it so that the animation doesn&#39;t ease in or out. Instead, the speed of the animation is consistent throughout each iteration.</p>
+<h2 id="3-creating-the-walking-animations">3. Creating the walking animations</h2>
+<p>The two people that walk around at the bottom of the window are both created with animated gifs which each have their own animations applied to them.</p>
+<p>For the girl, I used:</p>
+<pre><code>@-webkit-keyframes womanWalk {
+    from {
+        right: 0;
+        -webkit-transform: scaleX(-1);
+    }
+    49.9% {
+        right: 1000px;
+        -webkit-transform: scaleX(-1);
+    }
+    50% {
+        right: 1000px;
+        -webkit-transform: scaleX(1);
+    }
+    99.9% {
+        right: 0;
+        -webkit-transform: scaleX(1);
+    }
+    to {
+        right: 0;
+        -webkit-transform: scaleX(-1);
+    }
+}
+
+#emily {
+    -webkit-animation-name: womanWalk;
+    -webkit-animation-duration: 20s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;    
+}</code></pre>
+
+<p>And for the guy I used:</p>
+<pre><code>@-webkit-keyframes manWalk {
+    from {
+        left: 100px;
+        -webkit-transform: scaleX(1);
+    }
+    49.9% {
+        left: 1100px;
+        -webkit-transform: scaleX(1);
+    }
+    50% {
+        left: 1100px;
+        -webkit-transform: scaleX(-1);
+    }
+    99.9% {
+        left: 100px;
+        -webkit-transform: scaleX(-1);
+    }
+    to {
+        left: 100px;
+        -webkit-transform: scaleX(1);
+    }
+}
+
+#me {
+    -webkit-animation-name: manWalk;
+    -webkit-animation-duration: 20s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}</code></pre>
+
+<p>Each of the keyframe animations for these two elements uses another new CSS property – <code>-webkit-transform: scaleX()</code> – which, in this case, is used to flip the people horizontally depending on which way they are walking.</p>
+<h2 id="4-using-jquery-to-add-functionality">4. Using jQuery to add functionality</h2>
+<p>To give this site more of a video game feel, I decided to use jQuery to add some functionality. First, I made it so the users can stop and restart the cloud and sky animations using links at the bottom of the page. This works by using a simple jQuery toggle function to remove the animation name from the element&#39;s css or add the animation name back into it depending on whether you are starting or stopping the animation. Second, I added sound effects to various parts of the page -- when the navigation links are clicked, when the animations are started or stopped, and when the people are hovered over. I won&#39;t go over the start/stop buttons, but I&#39;ll show how the sound effects work, because I found quite a few people asking around the internet about how to use jQuery for sound effects.</p>
+<h3 id="sound-effects">Sound effects</h3>
+<p>When the navigation links on the demo site are clicked, a sound effect is played. In order to accomplish this, I came up with a pretty simple jQuery solution:</p>
+<pre><code>$('#nav a').click(function(){
+    $('embed').remove();
+    $('body').append('<embed src="sound.wav" autostart="true" hidden="true" loop="false">');
+});</code></pre>
+
+<p>All this does is removes any embed elements, and then creates a new one with the file we want to play and autostart set to true. The next time a nav link is clicked (or any other sound effect is triggered) the embed that was just created will be removed and a new one will be created.</p>
+
+				</div><!-- /.wrap -->
+			</main><!-- /#main -->
+		</div><!-- /.page -->
+
+		<footer id="foot" class="foot">
+	<small class="foot_note">©2016 Andrew Philpott</small>
+</footer><!-- /#foot -->
+		<script type="text/javascript" src="/assets/js/main.min.js"></script>
+
+	</body>
+</html>

@@ -28,4 +28,6 @@ If you want to use Unfixify (which you obviously do), all you have to do is drag
 <cite>**Dick Jibbler** – President and CEO of that one company that everybody really loves</cite>
 {% endmarkdown %}
 
+x<code>x</code>
+
 {% endblock %}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class=""> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<title>CSS Animated Tooltips 💬 Andrew Philpott</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:700|Sorts+Mill+Goudy:400,400italic" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="/assets/css/screen.css" media="screen" />
+
+		<link href="/assets/img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body id="blog" class="blog">
+
+		<header id="head" class="head">
+	<a class="brand" href="/">
+		<h1 class="meta">The personal website of Andrew Philpott</h1>
+		<svg width="50px" height="30px" viewBox="0 0 84 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		        <g id="logo">
+		            <path d="M77.7879989,4.5 C81.3160166,7.500015 83.0799989,12.1079689 83.0799989,18.324 C83.0799989,24.5400311 81.2680171,29.0879856 77.6439989,31.968 C74.0199808,34.8480144 68.4880361,36.288 61.0479989,36.288 L54.3519989,36.288 L54.3519989,50.328 L43.1199989,50.328 L43.1199989,0 L60.9039989,0 C68.6320376,0 74.2599813,1.499985 77.7879989,4.5 L77.7879989,4.5 Z M69.5439989,24.3 C70.8880057,22.7879924 71.5599989,20.5800145 71.5599989,17.676 C71.5599989,14.7719855 70.6840077,12.7080061 68.9319989,11.484 C67.1799902,10.2599939 64.4560174,9.648 60.7599989,9.648 L54.3519989,9.648 L54.3519989,26.568 L61.9119989,26.568 C65.6560177,26.568 68.1999922,25.8120076 69.5439989,24.3 L69.5439989,24.3 Z" id="P" fill="#00A5BF"></path>
+		            <path d="M42.408,50.328 L37.728,39.456 L16.632,39.456 L11.952,50.328 L0,50.328 L21.744,0 L32.616,0 L54.36,50.328 L42.408,50.328 Z M27.216,14.976 L20.88,29.592 L33.48,29.592 L27.216,14.976 Z" id="A" fill="#8200BF"></path>
+		        </g>
+		    </g>
+		</svg>
+	</a>
+
+	<nav id="nav" class="nav">
+		<h2 class="meta">Main Navigation</h2>
+
+		<ul class="nav_list">
+			<li><a id="nav_blog" data-text="Blog" class="nav_link" href="/">Blog</a></li>
+			<li><a id="nav_about" data-text="About" class="nav_link" href="/about">About</a></li>
+			<li><a id="nav_work" data-text="Portfolio" class="nav_link" href="/portfolio">Portfolio</a></li>
+		</ul><!-- /.nav_list -->
+	</nav><!-- /#nav -->
+</header><!-- /#head -->
+		<div class="page">
+			<div class="banner">
+	<div class="banner_bg"></div>
+	<div class="banner_content wrap">
+		<h1 class="page_title" data-text="CSS Animated Tooltips"><span>CSS Animated Tooltips</span></h1>
+
+		
+					<time class="page_date date">February 16, 2010</time>
+			</div><!-- /.banner_content -->
+</div><!-- /.banner -->
+			<main id="main" class="main">
+				<div class="wrap">
+					
+<aside class="note">
+    <strong class="note_hdg">Note</strong>
+
+    <p>This post is from a previous version of my website, and may not be completely accurate to the design anymore.</p>
+</aside>
+
+<p>I have worked on a few sites before where I had to develop tooltips. You know what I mean, those little boxes of text that come up when you hover over a link or an image. I used jQuery plugins in the past, but for my site I wanted to try something different. I wanted a solution that used no JavaScript, but still looked good and had some cool effects. Luckily, some pretty standard CSS along with some CSS3 animations were all I needed.</p>
+<p>Before we get started, go hover over one of the pink squares in the calendar to the right of this article. That&#39;s what we&#39;ll be making. Webkit users, you&#39;ll notice the fading in effect (accomplished with a CSS transition). Firefox users probably won&#39;t, but I&#39;ve seen rumors that Firefox is going to add CSS transitions in 3.7, so hopefully that&#39;s true.</p>
+<p>The code I used for this is actually pretty straightforward: the calendar itself is a table with each day being a table cell, days that have entries associated with them have links in them (the pink boxes) these pink boxes then have a span containing the title inside of them -- this span is the tooltip. The span is then hidden until the link is hovered over.</p>
+
+				</div><!-- /.wrap -->
+			</main><!-- /#main -->
+		</div><!-- /.page -->
+
+		<footer id="foot" class="foot">
+	<small class="foot_note">©2016 Andrew Philpott</small>
+</footer><!-- /#foot -->
+		<script type="text/javascript" src="/assets/js/main.min.js"></script>
+
+	</body>
+</html>

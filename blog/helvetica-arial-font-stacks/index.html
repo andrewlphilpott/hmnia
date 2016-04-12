@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class=""> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<title>Helvetica, Arial, & Font Stacks 🔠 Andrew Philpott</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:700|Sorts+Mill+Goudy:400,400italic" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="/assets/css/screen.css" media="screen" />
+
+		<link href="/assets/img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body id="blog" class="blog">
+
+		<header id="head" class="head">
+	<a class="brand" href="/">
+		<h1 class="meta">The personal website of Andrew Philpott</h1>
+		<svg width="50px" height="30px" viewBox="0 0 84 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		        <g id="logo">
+		            <path d="M77.7879989,4.5 C81.3160166,7.500015 83.0799989,12.1079689 83.0799989,18.324 C83.0799989,24.5400311 81.2680171,29.0879856 77.6439989,31.968 C74.0199808,34.8480144 68.4880361,36.288 61.0479989,36.288 L54.3519989,36.288 L54.3519989,50.328 L43.1199989,50.328 L43.1199989,0 L60.9039989,0 C68.6320376,0 74.2599813,1.499985 77.7879989,4.5 L77.7879989,4.5 Z M69.5439989,24.3 C70.8880057,22.7879924 71.5599989,20.5800145 71.5599989,17.676 C71.5599989,14.7719855 70.6840077,12.7080061 68.9319989,11.484 C67.1799902,10.2599939 64.4560174,9.648 60.7599989,9.648 L54.3519989,9.648 L54.3519989,26.568 L61.9119989,26.568 C65.6560177,26.568 68.1999922,25.8120076 69.5439989,24.3 L69.5439989,24.3 Z" id="P" fill="#00A5BF"></path>
+		            <path d="M42.408,50.328 L37.728,39.456 L16.632,39.456 L11.952,50.328 L0,50.328 L21.744,0 L32.616,0 L54.36,50.328 L42.408,50.328 Z M27.216,14.976 L20.88,29.592 L33.48,29.592 L27.216,14.976 Z" id="A" fill="#8200BF"></path>
+		        </g>
+		    </g>
+		</svg>
+	</a>
+
+	<nav id="nav" class="nav">
+		<h2 class="meta">Main Navigation</h2>
+
+		<ul class="nav_list">
+			<li><a id="nav_blog" data-text="Blog" class="nav_link" href="/">Blog</a></li>
+			<li><a id="nav_about" data-text="About" class="nav_link" href="/about">About</a></li>
+			<li><a id="nav_work" data-text="Portfolio" class="nav_link" href="/portfolio">Portfolio</a></li>
+		</ul><!-- /.nav_list -->
+	</nav><!-- /#nav -->
+</header><!-- /#head -->
+		<div class="page">
+			<div class="banner">
+	<div class="banner_bg"></div>
+	<div class="banner_content wrap">
+		<h1 class="page_title" data-text="Helvetica, Arial, & Font Stacks"><span>Helvetica, Arial, & Font Stacks</span></h1>
+
+		
+					<time class="page_date date">January 22, 2010</time>
+			</div><!-- /.banner_content -->
+</div><!-- /.banner -->
+			<main id="main" class="main">
+				<div class="wrap">
+					
+<p>About a year ago I watched <em>Helvetica</em>. It had a really big impact on the way that I look at the world. I became obsessed with identifying the type face in the wild. One thing that I started to notice, though, was that a lot of websites used Arial as their primary font. I started to look into it more and found that many of these sites put Arial before Helvetica in their font stacks. I was (and still am) really confused by this.</p>
+<h2 id="about-font-stacks">About Font Stacks</h2>
+<p>For those of you who don&#39;t know, a font stack is a common practice in web design. Basically, it&#39;s a line in a CSS file that lists what font the designer wants the user to see, followed by an ordered list of alternatives in case the user doesn&#39;t have that font on their system.  For example, here&#39;s a font stack that lists Helvetica as the primary font, Arial as a substitute font and a generic sans-serif font as a last resort:</p>
+<pre><code>font-family: 'Helvetica', 'Arial', sans-serif;</code></pre>
+
+<h2 id="the-problem">The Problem</h2>
+<p>As you can see, font stacks give designers a great way to choose a preferred font and then give users who don&#39;t have that font some alternative version. The thing is, <em>everybody</em> has Arial. Okay maybe not everybody, people might have it disabled or something, but it&#39;s safe to say that the majority of internet users have Arial on their computers. Not everybody has Helvetica, though, and that&#39;s the whole point of font stacks. Not all users have the font that the designer wants them to see, so backups are put in place.</p>
+<p>So what&#39;s the point in even using a font stack if you&#39;re going to start it out with a font that nearly everybody has? I can&#39;t really see any benefit, unless the people who design these sites come from the school of thought that says that websites need to look exactly the same in every browser for every user. It&#39;s time to let go of that belief, though. Certain browsers (mostly ones that start with an &quot;I&quot; and end in an &quot;nternet Explorer&quot;) are not capable of the kinds of things that modern browsers are. Trying to make websites look the same for everybody does nothing but hold back the possibilities of web design, and doing something like putting Arial before Helvetica is one of the first steps down that road.</p>
+
+				</div><!-- /.wrap -->
+			</main><!-- /#main -->
+		</div><!-- /.page -->
+
+		<footer id="foot" class="foot">
+	<small class="foot_note">©2016 Andrew Philpott</small>
+</footer><!-- /#foot -->
+		<script type="text/javascript" src="/assets/js/main.min.js"></script>
+
+	</body>
+</html>

@@ -7,7 +7,7 @@ html {
 body {
 	background: $white;
 	color: $text;
-	font-family: $sans-serif;
+	font-family: $serif;
 	min-height: 100%;
 	padding-bottom: rem(50); // Footer is ~ 50px tall
 	position: relative;
@@ -22,12 +22,12 @@ body {
 
 // Text Selection
 ::selection {
-	background: $green;
-	color: $black;
+	background: $accent1;
+	color: $white;
 }
 ::-moz-selection {
-	background: $green;
-	color: $black;
+	background: $accent1;
+	color: $white;
 }
 
 /*-------------------------------------------
@@ -70,17 +70,22 @@ body {
   Links
 -------------------------------------------*/
 a {
-	border-bottom: 1px solid $green;
-	color: $blue;
+	// border-bottom: 1px solid $accent1;
+	color: $accent2;
+	text-decoration: underline;
 	@extend %transition;
 
 	&:hover {
-		color: darken($green, 10%);
+		color: $accent1;
 	}
+}
+%no-underline {
+	text-decoration: none;
 }
 .link-inline {
 	border: none;
 	color: inherit;
+	@extend %no-underline; // text-decoration: underline
 }
 .dribbble,
 .facebook,

@@ -14,12 +14,23 @@ $gray: #999;
 $gray-lt: lighten($gray, 30%);
 $white: #fff;
 
-// Accent Colors
+// Color Palette
 $blue: #00a5bf;
 $green: #5edd8b;
-$orange: #ff8400;
 $purple: #8200bf;
+$red: #ff2823;
+// $red: #eb2540;
 $yellow: #fff7c4;
+
+// Accent Colors
+// $accent1: $green;
+// $accent2: $blue;
+
+$accent1: $purple;
+$accent2: $blue;
+
+// $accent1: $purple;
+// $accent2: $red;
 
 // Text Colors
 $text: lighten($black, 20%);
@@ -40,4 +51,5 @@ $bottom: 1000;
 /*-------------------------------------------
   Typefaces
 -------------------------------------------*/
-$sans-serif: 'Helvetica Neue', Helvetica, sans-serif;
+$sans-serif: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$serif: 'Sorts Mill Goudy', Georgia, serif;
