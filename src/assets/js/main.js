@@ -21,16 +21,21 @@
 		init: function() {
 			var _this = this;;
 
+			var bannerBg = document.querySelector('.banner_bg');
+			var bannerContent = document.querySelector('.banner_content');
+
 			scrollInt = setInterval(function(){
 				var doc = document.documentElement;
 				var scrollTop = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
 
-				var banner = document.querySelector('.banner_bg');
-				banner.style.transform = 'translateY(' + Math.round(scrollTop / 3) + 'px)';
-
-				var bannerContent = document.querySelector('.banner_content');
-				bannerContent.style.transform = 'translateY(-' + Math.round(scrollTop / 3) + 'px)'
+				bannerBg.style.transform = 'translateY(' + Math.round(scrollTop / 3) + 'px)';
+				bannerContent.style.transform = 'translateY(' + Math.round(scrollTop / 6) + 'px)'
 			}, 10);
+
+			window.addEventListener("devicemotion", function(event) {
+				bannerBg.style.marginLeft = (event.accelerationIncludingGravity.x * 2) + 'px';
+				bannerContent.style.marginLeft = '-' + (event.accelerationIncludingGravity.x * 2) + 'px';
+			}, true);
 		}
 	};
 

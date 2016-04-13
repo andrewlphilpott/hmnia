@@ -21,6 +21,9 @@
 	@include min-up($tablet) {
 		padding: em(60) 0;
 	}
+	@media (orientation : portrait) {
+		height: 60vh;
+	}
 
 	.blog & {
 		height: auto;
@@ -35,9 +38,9 @@
 	background-size: 10px 10px;
 	background-position: center;
 	bottom: -100%;
-	left: 0;
+	left: -50px;
 	position: absolute;
-	right: 0;
+	right: -50px;
 	top: -100%;
 	will-change: transform;
 }
