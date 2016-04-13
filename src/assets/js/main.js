@@ -29,12 +29,12 @@
 				var scrollTop = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
 
 				bannerBg.style.transform = 'translateY(' + Math.round(scrollTop / 3) + 'px)';
-				bannerContent.style.transform = 'translateY(' + Math.round(scrollTop / 6) + 'px)'
+				// bannerContent.style.transform = 'translateY(' + Math.round(scrollTop / 6) + 'px)'
 			}, 10);
 
-			window.addEventListener("devicemotion", function(event) {
-				bannerBg.style.marginLeft = (event.accelerationIncludingGravity.x * 2) + 'px';
-				bannerContent.style.marginLeft = '-' + (event.accelerationIncludingGravity.x * 2) + 'px';
+			window.addEventListener('devicemotion', function(event) {
+				// bannerBg.style.marginLeft = (event.accelerationIncludingGravity.x * 4) + 'px';
+				bannerContent.style.transform = 'translateX(' + (event.accelerationIncludingGravity.x * -2) + 'px)';
 			}, true);
 		}
 	};
