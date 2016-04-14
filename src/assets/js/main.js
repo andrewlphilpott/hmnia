@@ -34,7 +34,8 @@
 
 			window.addEventListener('devicemotion', function(event) {
 				// bannerBg.style.marginLeft = (event.accelerationIncludingGravity.x * 4) + 'px';
-				bannerContent.style.transform = 'translateX(' + (event.accelerationIncludingGravity.x * -2) + 'px)';
+				bannerContent.style.transform = 'translateX(' + (event.accelerationIncludingGravity.x * -1) + 'px)';
+				bannerContent.style.textShadow = event.accelerationIncludingGravity.x+'px 1px 0 rgba(0, 0, 0, .1)';
 			}, true);
 		}
 	};
