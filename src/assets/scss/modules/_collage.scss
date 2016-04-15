@@ -1,0 +1,29 @@
+/*-------------------------------------------
+  Photo Collage
+-------------------------------------------*/
+.collage {
+  display: none;
+  position: absolute;
+  @extend %center-vert;
+}
+.collage_img {
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1);
+  display: block;
+  position: absolute;
+
+  &:hover {
+    z-index: $middle;
+  }
+}
+.collage_01 {
+  left: 0;
+  top: 0;
+}
+.collage_02 {
+  left: 180px;
+  top: 20px;
+}
+.collage_03 {
+  top: 120px;
+  left: 80px;
+}

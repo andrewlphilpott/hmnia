@@ -7,10 +7,11 @@ html {
 body {
 	background: $white;
 	color: $text;
-	font-family: $serif;
+	@extend %body; // serif font
 	min-height: 100%;
 	padding-bottom: rem(50); // Footer is ~ 50px tall
 	position: relative;
+	text-rendering: optimizeLegibility;
 }
 
 // Wrapper

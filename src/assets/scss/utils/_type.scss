@@ -1,16 +1,24 @@
 /*-------------------------------------------
   Global Typography
 -------------------------------------------*/
-body {
-	text-rendering: optimizeLegibility;
+// Antialiased font smoothing
+%antialias {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+%subpixel-antialias {
+	-webkit-font-smoothing: subpixel-antialiased;
+	-moz-osx-font-smoothing: auto;
 }
 
 // Font Families
-%display {
-	font-family: $sans-serif;
-}
 %body {
 	font-family: $serif;
+	@extend %antialias;
+}
+%display {
+	font-family: $sans-serif;
+	@extend %subpixel-antialias;
 }
 
 // Font Size Placeholders (to be extended for reusable font sizes)
@@ -44,7 +52,7 @@ h3 {
 }
 h4, p, ol, ul, pre {
 	@extend %h4; //font-size: rem(16)
-	line-height: 1.625; // 26
+	line-height: 1.875; // 30
 }
 
 // Font Styles
@@ -58,16 +66,6 @@ strong {
 // Margins
 p, ol, ul, pre {
 	margin-bottom: 1.625em; // 26px
-}
-
-// Antialiased font smoothing
-%antialias {
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-%subpixel-antialias {
-	-webkit-font-smoothing: subpixel-antialiased;
-	-moz-osx-font-smoothing: auto;
 }
 
 /*-------------------------------------------
@@ -145,7 +143,7 @@ p, ol, ul, pre {
 // Section Titles
 .section-title {
 	border-bottom: 1px solid $gray-lt;
-	color: $gray-lt;
+	color: darken($gray-lt, 5%);
 	padding-bottom: rem(20);
 }
 
@@ -155,8 +153,12 @@ p, ol, ul, pre {
 	margin-bottom: em(60);
 	padding: 20px;
 
-	p:last-child {
-		margin-bottom: 0;
+	p {
+		@extend %sm; // font-size: rem(14)
+
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 }
 .note_hdg {
@@ -169,8 +171,12 @@ p, ol, ul, pre {
 .date {
 	color: $gray;
 	display: block;
-	font-weight: 700;
+	@extend %display;
 	margin-top: 1em;
+
+	.banner & {
+		color: darken($gray, 10%);
+	}
 }
 
 // Code
@@ -178,7 +184,6 @@ code {
 	background: lighten($gray-lt, 5%);
 	display: inline-block;
 	font-family: 'Andale Mono', 'Lucida Console', monospace;
-	font-size: 90%;
 	padding: 0 .25em;
 }
 

@@ -4,7 +4,7 @@
 .foot {
 	bottom: 0;
 	color: $gray;
-	@extend %display;
+	@extend %body;
 	@extend %sm; // font-size: rem(14)
 	left: 0;
 	padding: em(20) 20px;
