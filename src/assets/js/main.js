@@ -23,6 +23,7 @@
 
 			var bannerBg = document.querySelector('.banner_bg');
 			var bannerContent = document.querySelector('.banner_content');
+			var test = document.querySelector('.test');
 
 			scrollInt = setInterval(function(){
 				var doc = document.documentElement;
@@ -33,10 +34,16 @@
 			}, 10);
 
 			window.addEventListener('devicemotion', function(event) {
-				bannerBg.style.marginLeft = (event.accelerationIncludingGravity.x * 3) + 'px';
-				bannerBg.style.marginTop = (event.accelerationIncludingGravity.y * -3) + 'px';
-				bannerContent.style.transform = 'translateX(' + (event.accelerationIncludingGravity.x * -1) + 'px) translateY(' + (event.accelerationIncludingGravity.y * 1) + 'px)';
+				var xShift = event.accelerationIncludingGravity.x;
+				var yShift = event.accelerationIncludingGravity.y;
+
+				bannerBg.style.marginLeft = (xShift * 3) + 'px';
+				bannerBg.style.marginTop = (yShift * -3) + 'px';
+				bannerContent.style.transform = 'translateX(' + (xShift * -1) + 'px) translateY(' + (yShift * 1) + 'px)';
 				// bannerContent.style.textShadow = event.accelerationIncludingGravity.x+'px 1px 0 rgba(0, 0, 0, .1)';
+
+				test.innerHTML = yShift;
+				console.log(event.rotationRate);
 			}, true);
 		}
 	};
