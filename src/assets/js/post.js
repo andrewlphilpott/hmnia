@@ -11,6 +11,16 @@ if(segments[segments.length - 1].length == 0) {
   var lastSegment = segments[segments.length - 1];
 }
 
+// If there’s a mouse, remove touch class
+var body = document.querySelector('body');
+body.className += ' touch';
+
+document.onmousemove = function(){
+  if(body.classList.contains('touch')) {
+    body.className = body.className.replace(' touch', '');
+  }
+}
+
 // Add a cool when the button is clicked
 var coolTimer;
 
@@ -18,7 +28,7 @@ if(getCookie('liked')) {
   setVoted();
 }
 
-coolForm.touchstart = checkTap;
+// coolForm.onclick = checkTap;
 coolForm.onmouseover = initCool;
 coolForm.onmouseout = cancelCool;
 
@@ -50,8 +60,6 @@ function initCool(e){
   if(!coolForm.classList.contains('voted') && !getCookie('liked')) {
     coolTimer = setTimeout(function(){
       pushCool();
-      setVoted();
-      document.cookie = 'liked=' + url;
     }, 1000);
   }
 }
@@ -61,6 +69,8 @@ function pushCool(){
   likes.push ({
     post: lastSegment
   });
+  setVoted();
+  document.cookie = 'liked=' + url;
 }
 
 // Cancel cool
