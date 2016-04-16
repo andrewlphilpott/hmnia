@@ -3,6 +3,7 @@
 -------------------------------------------*/
 // Listing
 .posts {
+	overflow: hidden;
 	@extend %list-reset;
 
 	> li {

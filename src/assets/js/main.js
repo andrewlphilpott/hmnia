@@ -48,11 +48,6 @@
 						posts[i].className += ' visible';
 					}
 				}
-
-				// Photo collage scroll effects
-				collage01.style.transform = 'translateY(-' + Math.round(scrollTop / 3.5) + 'px)';
-				collage02.style.transform = 'translateY(-' + Math.round(scrollTop / 3) + 'px)';
-				collage03.style.transform = 'translateY(-' + Math.round(scrollTop / 4) + 'px)';
 			}, 10);
 
 			window.addEventListener('devicemotion', function(event) {
@@ -63,9 +58,6 @@
 				bannerBg.style.marginTop = (yShift * -1) + 'px';
 				bannerContent.style.transform = 'translateX(' + (xShift * -1) + 'px) translateY(' + yShift + 'px)';
 				// bannerContent.style.textShadow = event.accelerationIncludingGravity.x+'px 1px 0 rgba(0, 0, 0, .1)';
-
-				test.innerHTML = yShift;
-				console.log(event.rotationRate);
 			}, true);
 
 			// Function to check if elements are in view
