@@ -60,6 +60,13 @@
 				// bannerContent.style.textShadow = event.accelerationIncludingGravity.x+'px 1px 0 rgba(0, 0, 0, .1)';
 			}, true);
 
+			// Lazy load images
+			var bLazy = new Blazy({
+				offset: -10,
+				selector: 'img',
+				successClass: 'loaded'
+			});
+
 			// Function to check if elements are in view
 			function inView(el) {
 				var rect = el.getBoundingClientRect();

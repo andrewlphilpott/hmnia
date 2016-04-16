@@ -5,23 +5,17 @@
 {% set data_page = 'about'    %}
 
 {% block body %}
-	{% include '../partials/_banner.twig' with {'headline': 'Here’s stuff about me.'} %}
+	{% include '../partials/_banner.twig' with {'headline': 'Here’s stuff about me.', 'subheadline': 'Read it or whatever.'} %}
 
 	<main id="main" class="main">
 		<div class="wrap">
 {% markdown %}
-My name is Andrew. I live in Grand Rapids, Michigan with my [awesome wife](http://twitter.com/emilykoffman) and a silly little pomeranian named [Chanel](https://dl.dropbox.com/u/575400/Gifs/chanel.gif). I love going to concerts and movies and quite often have to venture out of Grand Rapids for both.
+My name is Andrew. I live in Grand Rapids, Michigan with my [awesome wife](http://twitter.com/emilykoffman) and a silly little pomeranian named [Chanel](http://packdog.com/chanel-pom). I love going to concerts and movies and quite often have to venture out of Grand Rapids for both.
 
 I’m a front end web developer at [Elevator Up](http://elevatorup.com/), where I build cool stuff with some pretty awesome people.
 
 If you want to know anything else about me, I can be found on <a class="twitter" href="http://twitter.com/andrewlphilpott">Twitter</a>, <a class="spotify" href="https://open.spotify.com/user/andrewlphilpott">Spotify</a>, <a class="dribbble" href="http://dribbble.com/andrewlphilpott">Dribbble</a> and <a class="facebook" href="http://facebook.com/andrewlphilpott">Facebook</a>
 {% endmarkdown %}
 		</div><!-- /.wrap -->
-
-		<figure class="collage">
-			<img class="collage_img collage_01" src="{{ assets }}/img/uploads/about-01.jpg" width="200" height="200" alt="Andrew Philpott. Isn’t he so attractive?" />
-			<img class="collage_img collage_02" src="{{ assets }}/img/uploads/about-01.jpg" width="200" height="200" alt="Andrew Philpott. Isn’t he so attractive?" />
-			<img class="collage_img collage_03" src="{{ assets }}/img/uploads/about-01.jpg" width="200" height="200" alt="Andrew Philpott. Isn’t he so attractive?" />
-		</figure><!-- /.collage -->
 	</main><!-- /#main -->
 {% endblock %}

@@ -109,7 +109,7 @@ p, ol, ul, pre {
 		@extend %h1;
 		display: block;
 		letter-spacing: normal;
-		line-height: 1.1;
+		line-height: 1.2;
 
 		&:before {
 			display: none;
@@ -150,7 +150,7 @@ p, ol, ul, pre {
 // Notes
 .note {
 	background: $yellow;
-	margin-bottom: em(60);
+	margin-bottom: em(40);
 	padding: 20px;
 
 	p {
@@ -159,6 +159,10 @@ p, ol, ul, pre {
 		&:last-child {
 			margin-bottom: 0;
 		}
+	}
+
+	@include min-up($tablet) {
+		margin-bottom: em(60);
 	}
 }
 .note_hdg {

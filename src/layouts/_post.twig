@@ -31,12 +31,17 @@
 					{% block body %}
 					{% endblock %}
 				</div><!-- /.wrap -->
+
+				<div class="cool wrap">
+					<strong class="cool_count">0</strong>
+					<span class="cool_lbl">Cool post, man.</span>
+				</div><!-- /.cool -->
 			</main><!-- /#main -->
 		</div><!-- /.page -->
 
 		{% include '../partials/_footer.twig' %}
 
-		{% include '../partials/_scripts.twig' %}
+		{% include '../partials/_scripts.twig' with {'post': true} %}
 
 	</body>
 </html>

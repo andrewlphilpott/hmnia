@@ -1,0 +1,158 @@
+{% extends '../layouts/_default.twig' %}
+
+{% set title     = 'Stuff I’ve Made 🔨 Andrew Philpott' %}
+{% set id        = 'about'    %}
+{% set data_page = 'about'    %}
+
+{% block body %}
+	{% include '../partials/_banner.twig' with {'headline': 'Here’s stuff I’ve made.', 'subheadline': 'Check it out.'} %}
+
+	<main id="main" class="main portfolio">
+    <ol class="grid grid-work">
+      <li class="grid_item">
+        <article class="work">
+          <header class="work_head">
+            <h2 class="work_title">Hope College</h2>
+            <time class="work_date date">2014-2015</time>
+            <span class="work_role">Role: Design Extension & HTML, CSS, and JavaScript Development</span>
+          </header><!-- /.work_head -->
+					<figure class="work_img">
+							<img data-src="{{ assets }}/img/work/hope.jpg" alt="A preview of the Hope College project" />
+					</figure><!-- /.work_img -->
+          <div class="work_body">
+            <p>Hope College is a major educational institution in West Michigan. I have had the opportunity to work with a small team from Hope since the spring of 2014 helping to build and guide the creation of their new website.</p>
+						<a class="btn" href="http://hope.edu">View Site</a>
+          </div><!-- /.work_body -->
+        </article>
+      </li>
+			<li class="grid_item">
+        <article class="work">
+          <header class="work_head">
+            <h2 class="work_title">5x5 Night</h2>
+            <time class="work_date date">2015</time>
+            <span class="work_role">Role: HTML, CSS, JavaScript, and ExpressionEngine Development</span>
+          </header><!-- /.work_head -->
+					<figure class="work_img">
+							<img data-src="{{ assets }}/img/work/5x5.jpg" alt="A preview of the 5x5 Night project" />
+					</figure><!-- /.work_img -->
+          <div class="work_body">
+            <p>5x5 Night started a few years back as a simple project: allow users to submit and vote on ideas. At the end of the voting period, five ideas would be chosen to present their idea in hopes of receiving up to $5,000 in funding. 5x5 Night was eventually shut down to make way for Start Garden. In the beginning of 2015, though, 5x5 was resurrected and I had the opportunity to rebuild it from the ground up with a brand new design.</p>
+						<a class="btn" href="http://5x5night.com">View Site</a>
+          </div><!-- /.work_body -->
+        </article>
+      </li>
+			<li class="grid_item">
+        <article class="work">
+          <header class="work_head">
+            <h2 class="work_title">Seamless</h2>
+            <time class="work_date date">2015</time>
+            <span class="work_role">Role: HTML, CSS, JavaScript, and Craft Development</span>
+          </header><!-- /.work_head -->
+					<figure class="work_img">
+							<img data-src="{{ assets }}/img/work/seamless.jpg" alt="A preview of the Seamless project" />
+					</figure><!-- /.work_img -->
+          <div class="work_body">
+            <p>Seamless is a business accelerator that started in Grand Rapids at the beginning of 2015. I had the privilege of building a new website for their new initiative.</p>
+						<a class="btn" href="http://seamlessaccelerator.com">View Site</a>
+          </div><!-- /.work_body -->
+        </article>
+      </li>
+			<li class="grid_item">
+        <article class="work">
+          <header class="work_head">
+            <h2 class="work_title">Decide For Me</h2>
+            <time class="work_date date">2014</time>
+            <span class="work_role">Role: Design & HTML, CSS, and JavaScript Development</span>
+          </header><!-- /.work_head -->
+					<figure class="work_img">
+							<img data-src="{{ assets }}/img/work/decideforme.jpg" alt="A preview of the Decide For Me project" />
+					</figure><!-- /.work_img -->
+          <div class="work_body">
+            <p>Sometimes I have a hard time making decisions. To try to help, I made a little app called Decide For Me. It’s basically a pro/con list with weighted items that calculates the total weight and tells you what to do. I had a lot of fun making this side-project and used some technologies (like Local Storage) that I didn’t have a ton of previous experience with.</p>
+						<a class="btn" href="http://de.cidefor.me">View Site</a>
+          </div><!-- /.work_body -->
+        </article>
+      </li>
+			<li class="grid_item">
+        <article class="work">
+          <header class="work_head">
+            <h2 class="work_title">Nemschoff</h2>
+            <time class="work_date date">2013</time>
+            <span class="work_role">Role: HTML, CSS, JavaScript, & ExpressionEngine development</span>
+          </header><!-- /.work_head -->
+					<figure class="work_img">
+							<img data-src="{{ assets }}/img/work/nemschoff.jpg" alt="A preview of the Nemschoff project" />
+					</figure><!-- /.work_img -->
+          <div class="work_body">
+            <p>Herman Miller Healthcare’s child company, Nemschoff, came to Mighty seeking an entirely new website from design through CMS development. I had the chance to build both the static front end templates and the ExpressionEngine-powered CMS. A major emphasis of the project was to provide Nemschoff with an easy way for them to organize their massive amount of content. From product data and design resources to videos and case studies, we delivered a CMS that not only suits their needs but is easy to use.</p>
+						<a class="btn" href="http://nemschoff.com">View Site</a>
+          </div><!-- /.work_body -->
+        </article>
+      </li>
+			<li class="grid_item">
+        <article class="work">
+          <header class="work_head">
+            <h2 class="work_title">ArtPrize</h2>
+            <time class="work_date date">2011-2015</time>
+            <span class="work_role">Role: HTML, CSS, JavaScript, & ExpressionEngine development</span>
+          </header><!-- /.work_head -->
+					<figure class="work_img">
+							<img data-src="{{ assets }}/img/work/artprize.jpg" alt="A preview of the ArtPrize project" />
+					</figure><!-- /.work_img -->
+          <div class="work_body">
+            <p>ArtPrize has been a major part of Grand Rapids culture for a few years now, and I have had the chance to work with them every year since 2011 at Mighty. Together with ArtPrize’s technology team and designers and developers at Mighty, we were able to design and build the front end and CMS for a huge application that gets a massive amount of use each year. The ArtPrize website also holds the distinction of being the first large fully-responsive that I (and Mighty) built.</p>
+						<a class="btn" href="http://artprize.org">View Site</a>
+          </div><!-- /.work_body -->
+        </article>
+      </li>
+			<li class="grid_item">
+        <article class="work">
+          <header class="work_head">
+            <h2 class="work_title">Born Outdoors</h2>
+            <time class="work_date date">2013</time>
+            <span class="work_role">Role: Design & HTML, CSS, JavaScript, & ExpressionEngine development</span>
+          </header><!-- /.work_head -->
+					<figure class="work_img">
+							<img data-src="{{ assets }}/img/work/born-outdoors.jpg" alt="A preview of the Born Outdoors project" />
+					</figure><!-- /.work_img -->
+          <div class="work_body">
+            <p>Mighty and Born Outdoors have been working together for years on various projects. In 2013, Drew Born approached us looking for a rebranding of his popular live deer webcam website. Riding on the success of ReindeerCam.com, he wanted to create something that appealed to the audience that had formed around that project. I was able to provide design, front end, and CMS development for this interactive, responsive website.</p>
+						<a class="btn" href="http://bornoutdoors.com">View Site</a>
+          </div><!-- /.work_body -->
+        </article>
+      </li>
+			<li class="grid_item">
+        <article class="work">
+          <header class="work_head">
+            <h2 class="work_title">Start Garden</h2>
+            <time class="work_date date">2012-2015</time>
+            <span class="work_role">Role: HTML, CSS, & JavaScript development</span>
+          </header><!-- /.work_head -->
+					<figure class="work_img">
+							<img data-src="{{ assets }}/img/work/start-garden.jpg" alt="A preview of the Start Garden project" />
+					</figure><!-- /.work_img -->
+          <div class="work_body">
+            <p>Start Garden allowed anybody to create a business idea and then lets the public choose which ideas receive funding. As part of the Mighty team, I had the opportunity to build the front end for the Start Garden website and application. This was one of the earliest responsive websites that I built.</p>
+						<a class="btn" href="http://startgarden.com">View Site</a>
+          </div><!-- /.work_body -->
+        </article>
+      </li>
+			<li class="grid_item">
+        <article class="work">
+          <header class="work_head">
+            <h2 class="work_title">United Plastics</h2>
+            <time class="work_date date">2012</time>
+            <span class="work_role">Role:  Design & HTML, CSS, JavaScript, & ExpressionEngine development</span>
+          </header><!-- /.work_head -->
+					<figure class="work_img">
+							<img data-src="{{ assets }}/img/work/upi.jpg" alt="A preview of the United Plastics project" />
+					</figure><!-- /.work_img -->
+          <div class="work_body">
+            <p>United Plastics wanted a website that stands out from the rest in their industry. I was able to take this project on as a freelancer and provided design and front and back end development for United – one of my first fully-responsive websites.</p>
+						<a class="btn" href="http://unitedplasticsinc.com">View Site</a>
+          </div><!-- /.work_body -->
+        </article>
+      </li>
+    </ol><!-- /.work -->
+	</main><!-- /#main -->
+{% endblock %}

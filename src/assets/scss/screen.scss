@@ -1,5 +1,6 @@
 @import 'utils/reset';
 @import 'utils/mixins';
+@import 'utils/grid';
 @import 'utils/variables';
 @import 'utils/global';
 @import 'utils/type';
@@ -10,8 +11,10 @@
 @import 'modules/banner';
 @import 'modules/main';
 @import 'modules/footer';
+@import 'modules/buttons';
 @import 'modules/blog';
-@import 'modules/collage';
+@import 'modules/work';
+// @import 'modules/collage';
 
 /* pages */
 @import 'pages/homepage';

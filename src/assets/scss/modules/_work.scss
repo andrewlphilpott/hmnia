@@ -1,0 +1,63 @@
+/*-------------------------------------------
+  Portfolio
+-------------------------------------------*/
+.portfolio {
+  padding: 0;
+}
+// Grid
+.grid {
+  @extend %flexbox;
+  @extend %justify;
+  @extend %list-reset;
+}
+.grid-work {
+  background: linear-gradient(45deg, $accent1, $accent2);
+  flex-wrap: wrap;
+  padding: 5px;
+
+  .grid_item {
+      flex-grow: 1;
+      padding: 5px;
+
+      @include min-up($tablet) {
+        width: 33.333333333%;
+
+        &:first-child,
+        &:nth-child(7),
+        &:nth-child(11) {
+          width: 66.666666667%;
+        }
+      }
+  }
+}
+
+// Grid Items
+.work_img {
+  overflow: hidden;
+  width: 100%;
+
+  img {
+    opacity: 0;
+    @extend %transition;
+    width: 100%;
+
+    &.loaded {
+      opacity: 1;
+    }
+  }
+  @include min-up($tablet) {
+    height: 200px;
+
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  @include min-up($desktop) {
+    height: 400px;
+  }
+}
+.work_head,
+.work_body {
+  display: none;
+}
