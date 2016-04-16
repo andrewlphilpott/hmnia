@@ -19,7 +19,11 @@
 	 */
 	HMNIA.common = {
 		init: function() {
-			var _this = this;;
+			var _this = this;
+
+			// Enable JS styles
+			var body = document.querySelector('body');
+			body.className += ' js';
 
 			// Get banner elements
 			var bannerBg = document.querySelector('.banner_bg');

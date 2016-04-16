@@ -8,10 +8,13 @@
 
 	> li {
 		border-bottom: 1px solid $gray-lt;
-		opacity: 0;
-		transform: perspective(350px) rotateX(-25deg) translateY(25%);
 		transition: all .25s ease;
-		visibility: hidden;
+
+		.js & {
+			opacity: 0;
+			transform: perspective(350px) rotateX(-25deg) translateY(25%);
+			visibility: hidden;
+		}
 
 		&.visible {
 			opacity: 1;
