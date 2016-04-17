@@ -1,4 +1,6 @@
 .DS_Store
 
-# Gulp
+design/
+layouts/
 node_modules/
+partials/

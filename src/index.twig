@@ -1,9 +1,7 @@
 {% extends './layouts/_default.twig' %}
 
-{% set title     = 'Hi, my name is Andrew.' %}
-{% set home      = 'true'    %}
-{% set id        = 'home'    %}
-{% set data_page = 'home'    %}
+{% set title = 'Hi, my name is Andrew.' %}
+{% set id = 'home' %}
 
 {% block body %}
 	{% include './partials/_banner.twig' with {'headline': 'Hi, my name is Andrew', 'subheadline': 'I make websites and stuff.'} %}

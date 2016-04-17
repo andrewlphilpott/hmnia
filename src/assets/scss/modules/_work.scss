@@ -31,9 +31,36 @@
   }
 }
 
-// Grid Items
+// Work Items
+.work {
+  overflow: hidden;
+  position: relative;
+
+  &:hover {
+    .work_head {
+      opacity: 1;
+      transform: translateX(-50%) translateY(-50%);
+    }
+    .work_img {
+      opacity: .75;
+    }
+  }
+}
+.work_head {
+  background: $white;
+  left: 50%;
+  opacity: 0;
+  padding: 9px 20px 7px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: scale(1.1) translateX(-50%) translateY(-50%);
+  @extend %transition;
+  z-index: $middle;
+}
 .work_img {
   overflow: hidden;
+  @extend %transition;
   width: 100%;
 
   img {
@@ -56,8 +83,4 @@
   @include min-up($desktop) {
     height: 400px;
   }
-}
-.work_head,
-.work_body {
-  display: none;
 }
