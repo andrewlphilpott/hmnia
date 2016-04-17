@@ -28,9 +28,20 @@ if(getCookie('liked')) {
   setVoted();
 }
 
-// coolForm.onclick = checkTap;
-coolForm.onmouseover = initCool;
-coolForm.onmouseout = cancelCool;
+coolForm.onmouseenter = initCool;
+coolForm.onmouseleave = cancelCool;
+coolForm.ontouchstart = function(e){
+  e.preventDefault();
+  coolForm.className = coolForm.className.replace('unhover', '');
+  initCool();
+}
+coolForm.ontouchend = function(e){
+  e.preventDefault();
+  coolForm.className += ' unhover';
+  setTimeout(function(){
+    cancelCool();
+  }, 10);
+}
 
 // Show number of cools
 coolForm.className += ' enabled';
@@ -42,22 +53,23 @@ likes.orderByChild('post').equalTo(lastSegment).on('value', function(snapshot){
 });
 
 // Detect double tap
-var tapTimer = null;
-function checkTap(e){
-  if(tapTimer == null) {
-    tapTimer = setTimeout(function(){
-      tapTimer = null;
-    }, 500);
-  } else {
-    clearTimeout(tapTimer);
-    tapTimer = null;
-    pushCool();
-  }
-}
+// var tapTimer = null;
+// function checkTap(e){
+//   if(tapTimer == null) {
+//     tapTimer = setTimeout(function(){
+//       tapTimer = null;
+//     }, 500);
+//   } else {
+//     clearTimeout(tapTimer);
+//     tapTimer = null;
+//     pushCool();
+//   }
+// }
 
 // Cool timer
 function initCool(e){
   if(!coolForm.classList.contains('voted') && !getCookie('liked')) {
+    console.log('init');
     coolTimer = setTimeout(function(){
       pushCool();
     }, 1000);
@@ -75,6 +87,7 @@ function pushCool(){
 
 // Cancel cool
 function cancelCool(e){
+  console.log('cancel');
   if(coolTimer) {
     clearInterval(coolTimer);
   }

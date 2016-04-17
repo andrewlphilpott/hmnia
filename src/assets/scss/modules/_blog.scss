@@ -50,6 +50,7 @@
 	@extend %display;
 	padding: 20px;
 	position: relative;
+	text-align: center;
 	transition: all .25s ease;
 	user-select: none;
 
@@ -72,13 +73,14 @@
 		width: 0;
 	}
 
-	// .touch &:after {
-	// 	display: none;
-	// }
-
 	&:hover {
 		&:after {
 			width: 100%;
+		}
+	}
+	&.unhover {
+		&:after {
+			width: 0;
 		}
 	}
 	&.voted {
@@ -92,7 +94,6 @@
 		left: 0;
 		padding: 20px 0;
 		position: fixed;
-		text-align: center;
 		transform: translateX(-100%);
 		width: 150px;
 		z-index: $middle;
