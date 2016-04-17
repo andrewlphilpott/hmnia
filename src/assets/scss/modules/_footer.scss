@@ -2,6 +2,7 @@
   Footer
 -------------------------------------------*/
 .foot {
+	border-top: 1px solid $gray-lt;
 	bottom: 0;
 	color: $gray;
 	@extend %body;
@@ -11,4 +12,8 @@
 	position: absolute;
 	right: 0;
 	text-align: right;
+
+	@include min-up($desktop) {
+		border-top: none;
+	}
 }

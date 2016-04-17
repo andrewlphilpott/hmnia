@@ -10,6 +10,10 @@
 		border-bottom: 1px solid $gray-lt;
 		transition: all .25s ease;
 
+		&:last-child {
+			border-bottom: none;
+		}
+
 		.js & {
 			opacity: 0;
 			transform: perspective(350px) rotateX(-25deg) translateY(25%);
@@ -26,6 +30,11 @@
 
 	@include min-up($tablet) {
 		overflow: visible;
+	}
+	@include min-up($desktop) {
+		> li:last-child {
+			border-bottom: 1px solid $gray-lt;
+		}
 	}
 }
 
@@ -49,6 +58,7 @@
 	cursor: pointer;
 	display: none;
 	@extend %display;
+	margin-bottom: 20px;
 	padding: 20px;
 	position: relative;
 	text-align: center;
@@ -93,6 +103,7 @@
 	@include min-up($desktop) {
 		bottom: 0;
 		left: 0;
+		margin-bottom: 0;
 		padding: 20px 0;
 		position: fixed;
 		transform: translateX(-100%);
