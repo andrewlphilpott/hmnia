@@ -14,6 +14,7 @@
 			opacity: 0;
 			transform: perspective(350px) rotateX(-25deg) translateY(25%);
 			visibility: hidden;
+			will-change: opacity, transform;
 		}
 
 		&.visible {

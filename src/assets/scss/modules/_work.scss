@@ -39,7 +39,7 @@
   &:hover {
     .work_head {
       opacity: 1;
-      transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%) translateZ(0);
     }
     .work_img {
       opacity: .75;
@@ -54,8 +54,9 @@
   position: absolute;
   text-align: center;
   top: 50%;
-  transform: scale(1.1) translateX(-50%) translateY(-50%);
+  transform: scale(1.1) translateX(-50%) translateY(-50%) translateZ(0);
   @extend %transition;
+  will-change: opacity, transform;
   z-index: $middle;
 }
 .work_img {
