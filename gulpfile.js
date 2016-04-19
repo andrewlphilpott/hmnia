@@ -11,7 +11,9 @@ var paths = {
         twig: 'src/*.twig',
         twigAll: 'src/**/*.twig',
         blog: 'src/blog/**/*.md',
-        blogDir: 'src/blog'
+        blogDir: 'src/blog',
+        rssAll: 'src/rss/**/*.xml',
+        rssDir: 'src/rss'
     },
     dest: {
         dir: '',
@@ -19,7 +21,8 @@ var paths = {
         js: 'assets/js',
         img: 'assets/img',
         templates: '',
-        blog: 'blog'
+        blog: 'blog',
+        rss: 'rss'
     }
 };
 
@@ -166,16 +169,6 @@ Array.prototype.move = function (old_index, new_index) {
     return this; // for testing purposes
 };
 
-/*======================================================
-
-  TO DO:
-
-  [√] Figure out how to pull post data into index
-  [√] Figure out ordering of posts
-  [ ] Figure out pagination
-
-======================================================*/
-
 // Compile Twig
 gulp.task('twig', function(){
     return gulp.src(paths.src.twigAll)
@@ -188,6 +181,20 @@ gulp.task('twig', function(){
         }))
         .pipe(gulp.dest(paths.dest.templates))
         .pipe(notify({message: 'Twig compiled'}));
+});
+
+// Compile RSS
+gulp.task('rss', function(){
+    return gulp.src(paths.src.rssAll)
+        .pipe(twig({
+            data: {
+                posts: getPosts(paths.src.blogDir)
+            },
+            extend: markdown
+        }))
+        .pipe(rename('index.xml'))
+        .pipe(gulp.dest(paths.dest.rss))
+        .pipe(notify({message: 'RSS compiled'}));
 });
 
 // Compile Homepage
@@ -208,9 +215,10 @@ gulp.task('watch', function() {
     gulp.watch(paths.src.imgAll, ['imagemin']);
     gulp.watch(paths.src.plugins, ['plugins']);
     gulp.watch(paths.src.jsAll, ['scripts']);
+    gulp.watch(paths.src.rssAll, ['rss']);
     gulp.watch(paths.src.scssAll, ['sass']);
     gulp.watch(paths.src.twigAll, ['twig']);
 });
 
 // Default Task
-gulp.task('default', ['blog', 'imagemin', 'plugins', 'sass', 'scripts', 'twig', 'watch']);
+gulp.task('default', ['blog', 'imagemin', 'plugins', 'rss', 'sass', 'scripts', 'twig', 'watch']);
