@@ -134,6 +134,13 @@ p, ol, ul, pre {
 		padding-top: rem(20);
 	}
 }
+@-moz-document url-prefix() {
+		.page_title {
+			&:before {
+				content: none;
+			}
+		}
+}
 .page_subtitle {
 	@extend %h1; // font-size: rem(38)
 	margin-bottom: 0;
