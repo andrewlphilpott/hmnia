@@ -10,8 +10,8 @@
 				<title>{{ post.title }}</title>
 				<description>{{ post.excerpt }}</description>
 				<pubDate>{{ post.date | date('F j, Y') }}</pubDate>
-				<link>http://himynameisandrew.com/blog/{{ post.url }}</link>
-				<guid isPermaLink="true">http://himynameisandrew.com/blog/{{ post.url }}</guid>
+				<link>http://himynameisandrew.com/{{ post.url | replace({'src': '', 'index.md': ''}) }}</link>
+				<guid isPermaLink="true">http://himynameisandrew.com/{{ post.url | replace({'src': '', 'index.md': ''}) }}</guid>
 			</item>
 		{% endfor %}
 	</channel>
