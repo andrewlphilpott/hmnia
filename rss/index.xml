@@ -9,29 +9,29 @@
 				<title>Make a Real Fast Site With GitHub Pages</title>
 				<description>A couple weeks ago, I remembered how awesome GitHub pages is. I also had been playing around with gulp for a few days, and I had the idea to redesign my website and host it on GitHub pages. In order to do that, I knew I would have to make the site static.</description>
 				<pubDate>April 18, 2016</pubDate>
-				<link>http://himynameisandrew.com//blog/make-a-really-fast-site-with-github-pages/</link>
-				<guid isPermaLink="true">http://himynameisandrew.com//blog/make-a-really-fast-site-with-github-pages/</guid>
+				<link>http://himynameisandrew.com/blog/make-a-really-fast-site-with-github-pages/</link>
+				<guid isPermaLink="true">http://himynameisandrew.com/blog/make-a-really-fast-site-with-github-pages/</guid>
 			</item>
 					<item>
 				<title>A Month (or so) With Amazon Echo</title>
 				<description>I asked for an Amazon Echo for Christmas, mainly because I wanted a reliable way to control my Wink-connected lights with my voice. I had pretty high expectations, but I’ve found that the Echo is even better than I expected; and it keeps on getting better.</description>
 				<pubDate>February 5, 2016</pubDate>
-				<link>http://himynameisandrew.com//blog/a-month-or-so-with-amazon-echo/</link>
-				<guid isPermaLink="true">http://himynameisandrew.com//blog/a-month-or-so-with-amazon-echo/</guid>
+				<link>http://himynameisandrew.com/blog/a-month-or-so-with-amazon-echo/</link>
+				<guid isPermaLink="true">http://himynameisandrew.com/blog/a-month-or-so-with-amazon-echo/</guid>
 			</item>
 					<item>
 				<title>Decide For Me</title>
 				<description>It’s been a good six or seven months and I totally forgot to write about this, but I made a super simple little web app called Decide For Me. Basically, it’s a pro/con list which allows you to give each item on the list a weight.</description>
 				<pubDate>June 12, 2015</pubDate>
-				<link>http://himynameisandrew.com//blog/decide-for-me/</link>
-				<guid isPermaLink="true">http://himynameisandrew.com//blog/decide-for-me/</guid>
+				<link>http://himynameisandrew.com/blog/decide-for-me/</link>
+				<guid isPermaLink="true">http://himynameisandrew.com/blog/decide-for-me/</guid>
 			</item>
 					<item>
 				<title>Unfixify</title>
 				<description>Unfixify is a neat little bookmarklet that looks for elements with `position: fixed;` and converts that to `position: absolute;`. It will almost certainly break some styles somewhere and make a page look silly, but at least there won’t be any fixed elements anymore.</description>
 				<pubDate>December 24, 2014</pubDate>
-				<link>http://himynameisandrew.com//blog/unfixify/</link>
-				<guid isPermaLink="true">http://himynameisandrew.com//blog/unfixify/</guid>
+				<link>http://himynameisandrew.com/blog/unfixify/</link>
+				<guid isPermaLink="true">http://himynameisandrew.com/blog/unfixify/</guid>
 			</item>
 			</channel>
 </rss>
