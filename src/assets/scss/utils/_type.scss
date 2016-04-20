@@ -10,6 +10,10 @@
 	-webkit-font-smoothing: subpixel-antialiased;
 	-moz-osx-font-smoothing: auto;
 }
+%auto-antialias {
+	-webkit-font-smoothing: auto;
+	-moz-osx-font-smoothing: auto;
+}
 
 // Font Families
 %body {
@@ -18,7 +22,7 @@
 }
 %display {
 	font-family: $sans-serif;
-	@extend %subpixel-antialias;
+	@extend %auto-antialias;
 }
 
 // Font Size Placeholders (to be extended for reusable font sizes)
