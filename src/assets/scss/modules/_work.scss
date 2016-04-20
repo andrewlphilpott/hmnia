@@ -39,7 +39,7 @@
   &:hover {
     .work_head {
       opacity: 1;
-      transform: translateX(-50%) translateY(-50%) translateZ(0);
+      transform: translateY(-50%) translateZ(0);
     }
     .work_img {
       opacity: .75;
@@ -48,16 +48,23 @@
 }
 .work_head {
   background: $white;
-  left: 50%;
+  @extend %display;
+  left: 20px;
   opacity: 0;
-  padding: 9px 20px 7px;
+  padding: 9px 20px 13px;
   position: absolute;
+  right: 20px;
   text-align: center;
   top: 50%;
-  transform: scale(1.1) translateX(-50%) translateY(-50%) translateZ(0);
+  transform: scale(1.1) translateY(-50%) translateZ(0);
   @extend %transition;
   will-change: opacity, transform;
   z-index: $middle;
+}
+.work_role,
+.work_company {
+  display: block;
+  @extend %sm; // font-size: rem(14)
 }
 .work_img {
   overflow: hidden;
