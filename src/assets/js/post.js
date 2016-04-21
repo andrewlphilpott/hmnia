@@ -1,6 +1,8 @@
 var likes = new Firebase('https://hmnia.firebaseIO.com/likes');
 var url = window.location.href;
 var segments = url.split('/');
+var lat = 'unknown';
+var lng = 'unknown';
 var coolForm = document.querySelector('.cool');
 var coolCount = document.querySelector('.cool_count');
 var coolLbl = document.querySelector('.cool_lbl');
@@ -11,17 +13,37 @@ if(segments[segments.length - 1].length == 0) {
   var lastSegment = segments[segments.length - 1];
 }
 
-// If there’s a mouse, remove touch class
-var body = document.querySelector('body');
-body.className += ' touch';
-
-document.onmousemove = function(){
-  if(body.classList.contains('touch')) {
-    body.className = body.className.replace(' touch', '');
+// Get the user’s location
+function getLocation() {
+  if(navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition)
   }
 }
 
-// Add a cool when the button is clicked
+function showPosition(position) {
+  lat = position.coords.latitude;
+  lng = position.coords.longitude;
+}
+
+// getLocation();
+
+// The the user’s time
+var time = new Date();
+var dd = time.getDate();
+var mm = time.getMonth()+1;
+var yyyy = time.getFullYear();
+var hour = time.getHours();
+var minute = time.getMinutes();
+if(dd<10){
+    dd = '0' + dd
+}
+if(mm<10){
+    mm= '0' + mm
+}
+var time = mm + '/' + dd + '/' + yyyy + ' ' + hour + ':' + minute;
+console.log(time);
+
+// Add a cool when the button is hovered
 var coolTimer;
 
 if(getCookie('liked')) {
@@ -79,7 +101,10 @@ function initCool(e){
 // Push cool
 function pushCool(){
   likes.push ({
-    post: lastSegment
+    post: lastSegment,
+    // lat: lat,
+    // lng: lng,
+    time: time
   });
   setVoted();
   document.cookie = 'liked=' + url;
