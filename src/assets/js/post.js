@@ -41,7 +41,6 @@ if(mm<10){
     mm= '0' + mm
 }
 var time = mm + '/' + dd + '/' + yyyy + ' ' + hour + ':' + minute;
-console.log(time);
 
 // Add a cool when the button is hovered
 var coolTimer;
