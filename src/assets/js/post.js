@@ -34,11 +34,18 @@ var mm = time.getMonth()+1;
 var yyyy = time.getFullYear();
 var hour = time.getHours();
 var minute = time.getMinutes();
-if(dd<10){
+
+if(dd < 10){
     dd = '0' + dd
 }
-if(mm<10){
-    mm= '0' + mm
+if(mm < 10){
+    mm = '0' + mm
+}
+if(hour < 10){
+    hour = '0' + hour
+}
+if(minute < 10){
+    minute = '0' + minute
 }
 var time = mm + '/' + dd + '/' + yyyy + ' ' + hour + ':' + minute;
 
