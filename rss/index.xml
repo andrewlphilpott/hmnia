@@ -6,6 +6,13 @@
 		<link>https://himynameisandrew.com</link>
 		<atom:link href="https://himynameisandrew.com/rss/" rel="self" type="application/rss+xml" />
 					<item>
+				<title>PlayStation Vue vs. Sling</title>
+				<description>I’ve been looking for a great way to stream live TV over the internet for a while now, and I’ve tried both Sling and PlayStation Vue. Here’s my take on how the two stack up.</description>
+				<pubDate>April 25, 2016</pubDate>
+				<link>http://himynameisandrew.com/blog/playstation-vue-vs-sling/</link>
+				<guid isPermaLink="true">http://himynameisandrew.com/blog/playstation-vue-vs-sling/</guid>
+			</item>
+					<item>
 				<title>Make a Real Fast Site With GitHub Pages</title>
 				<description>A couple weeks ago, I remembered how awesome GitHub pages is. I also had been playing around with gulp for a few days, and I had the idea to redesign my website and host it on GitHub pages. In order to do that, I knew I would have to make the site static.</description>
 				<pubDate>April 18, 2016</pubDate>
@@ -25,13 +32,6 @@
 				<pubDate>June 12, 2015</pubDate>
 				<link>http://himynameisandrew.com/blog/decide-for-me/</link>
 				<guid isPermaLink="true">http://himynameisandrew.com/blog/decide-for-me/</guid>
-			</item>
-					<item>
-				<title>Unfixify</title>
-				<description>Unfixify is a neat little bookmarklet that looks for elements with `position: fixed;` and converts that to `position: absolute;`. It will almost certainly break some styles somewhere and make a page look silly, but at least there won’t be any fixed elements anymore.</description>
-				<pubDate>December 24, 2014</pubDate>
-				<link>http://himynameisandrew.com/blog/unfixify/</link>
-				<guid isPermaLink="true">http://himynameisandrew.com/blog/unfixify/</guid>
 			</item>
 			</channel>
 </rss>

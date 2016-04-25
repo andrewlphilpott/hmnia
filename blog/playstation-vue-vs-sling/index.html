@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class=""> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<title>PlayStation Vue vs. Sling 📺 Andrew Philpott</title>
+
+		<!-- Google Fonts CSS -->
+		<style type="text/css">
+			@font-face{font-family:Montserrat;font-style:normal;font-weight:700;src:local('Montserrat-Bold'),url(https://fonts.gstatic.com/s/montserrat/v6/IQHow_FEYlDC4Gzy_m8fcnbFhgvWbfSbdVg11QabG8w.woff) format('woff')}@font-face{font-family:'Droid Serif';font-style:normal;font-weight:400;src:local('Droid Serif'),local('DroidSerif'),url(https://fonts.gstatic.com/s/droidserif/v6/0AKsP294HTD-nvJgucYTaLrIa-7acMAeDBVuclsi6Gc.woff) format('woff')}@font-face{font-family:'Droid Serif';font-style:normal;font-weight:700;src:local('Droid Serif Bold'),local('DroidSerif-Bold'),url(https://fonts.gstatic.com/s/droidserif/v6/QQt14e8dY39u-eYBZmppwRbnBKKEOwRKgsHDreGcocg.woff) format('woff')}@font-face{font-family:'Droid Serif';font-style:italic;font-weight:400;src:local('Droid Serif Italic'),local('DroidSerif-Italic'),url(https://fonts.gstatic.com/s/droidserif/v6/cj2hUnSRBhwmSPr9kS5894o3ZslTYfJv0R05CazkwN8.woff) format('woff')}
+		</style>
+
+		<!-- Main Styles -->
+		<link rel="stylesheet" type="text/css" href="/assets/css/screen.css" media="screen" />
+
+		<link href="/assets/img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Metadata -->
+		<meta property="og:title" content="PlayStation Vue vs. Sling 📺 Andrew Philpott" />
+		<meta property="og:type" content="article" />
+		<meta property="og:image" content="/assets/img/icn_og.png" />
+		<meta property="og:site_name" content="Hi, my name is Andrew." />
+		<meta property="og:description" content="I’ve been looking for a great way to stream live TV over the internet for a while now, and I’ve tried both Sling and PlayStation Vue. Here’s my take on how the two stack up." />
+		<link rel="alternate" type="application/rss+xml" title="Here’s my RSS feed" href="https://himynameisandrew.com/rss/index.xml" />
+
+		
+		<!-- Touch Icon -->
+		<link rel="apple-touch-icon" href="/assets/img/icn_touch.png" />
+	</head>
+
+	<body id="blog" class="blog">
+
+		<header id="head" class="head">
+	<a class="brand" href="/">
+		<h1 class="meta">The personal website of Andrew Philpott</h1>
+		<svg width="50px" height="30px" viewBox="0 0 84 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		        <g id="logo">
+		            <path d="M77.7879989,4.5 C81.3160166,7.500015 83.0799989,12.1079689 83.0799989,18.324 C83.0799989,24.5400311 81.2680171,29.0879856 77.6439989,31.968 C74.0199808,34.8480144 68.4880361,36.288 61.0479989,36.288 L54.3519989,36.288 L54.3519989,50.328 L43.1199989,50.328 L43.1199989,0 L60.9039989,0 C68.6320376,0 74.2599813,1.499985 77.7879989,4.5 L77.7879989,4.5 Z M69.5439989,24.3 C70.8880057,22.7879924 71.5599989,20.5800145 71.5599989,17.676 C71.5599989,14.7719855 70.6840077,12.7080061 68.9319989,11.484 C67.1799902,10.2599939 64.4560174,9.648 60.7599989,9.648 L54.3519989,9.648 L54.3519989,26.568 L61.9119989,26.568 C65.6560177,26.568 68.1999922,25.8120076 69.5439989,24.3 L69.5439989,24.3 Z" id="P" fill="#00A5BF"></path>
+		            <path d="M42.408,50.328 L37.728,39.456 L16.632,39.456 L11.952,50.328 L0,50.328 L21.744,0 L32.616,0 L54.36,50.328 L42.408,50.328 Z M27.216,14.976 L20.88,29.592 L33.48,29.592 L27.216,14.976 Z" id="A" fill="#8200BF"></path>
+		        </g>
+		    </g>
+		</svg>
+	</a>
+
+	<nav id="nav" class="nav">
+		<h2 class="meta">Main Navigation</h2>
+
+		<ul class="nav_list">
+			<li><a id="nav_blog" data-text="Blog" class="nav_link" href="/">Blog</a></li>
+			<li><a id="nav_about" data-text="About" class="nav_link" href="/about">About</a></li>
+			<li><a id="nav_work" data-text="Portfolio" class="nav_link" href="/portfolio">Portfolio</a></li>
+		</ul><!-- /.nav_list -->
+	</nav><!-- /#nav -->
+</header><!-- /#head -->
+		<div class="page">
+			<div class="banner">
+	<div class="banner_bg"></div>
+	<div class="banner_content wrap">
+		<h1 class="page_title" data-text="PlayStation Vue vs. Sling"><span>PlayStation Vue vs. Sling</span></h1>
+
+		
+					<time class="page_date date">April 25, 2016</time>
+			</div><!-- /.banner_content -->
+</div><!-- /.banner -->
+			<main id="main" class="main">
+				<div class="wrap">
+					
+<p>I’ve been looking for a great way to stream live TV over the internet for a while now, and I’ve tried both <a href="https://www.sling.com">Sling</a> and <a href="https://www.playstation.com/en-us/network/vue/">PlayStation Vue</a>. Here’s my take on how the two stack up.</p>
+<h2 id="pricing">Pricing</h2>
+<p>Both services offer multiple pricing levels. Levels determine which and how many channels you get to stream.</p>
+<p>At the time of this writing, Sling starts at $20 per month for 26 channels with the option to add “extras” (packs of more channels) for an additional $5–$15 per month.</p>
+<p>Vue is a bit pricier, starting at $29.99 per month for their Access Slim package which includes 55+ channels. Vue also offers a Core Slim package which has 70+ channels and costs $34.99 per month and an Elite Slim package for $44.99 per month. Additionally, Vue has several standalone channels which can be added for $3.99–$14.99 per month.</p>
+<h2 id="channels">Channels</h2>
+<p>When comparing channels, Vue has a lot more to offer. Some major channels like AMC, ESPN, and HGTV are available on both platforms, but Vue includes a lot of channels that you just can’t get on Sling. Channels like FXX, Comedy Central, and Nickelodeon can’t be added to Sling with any of the extra options.</p>
+<p>You do pay a little more for the extra channels that Vue provides. Vue comes in at about $1.83 per channel for the cheapest plan (55 ÷ 30). Sling, on the other hand, comes in at about $1.30 per channel (26 ÷ 20).</p>
+<h2 id="device-support">Device Support</h2>
+<p>In my opinion, Sling is the clear winner here. While Vue does allow you to stream on devices other than PlayStation, it’s more limited. Here’s a breakdown of the devices each service supports:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Vue</th>
+<th>Sling</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>iOS Devices</td>
+<td>●</td>
+<td>●</td>
+</tr>
+<tr>
+<td>Chromecast</td>
+<td>●</td>
+<td>●</td>
+</tr>
+<tr>
+<td>Amazon Fire TV</td>
+<td>●</td>
+<td>●</td>
+</tr>
+<tr>
+<td>PS4 &amp; PS3</td>
+<td>●</td>
+<td></td>
+</tr>
+<tr>
+<td>Mac &amp; PC</td>
+<td></td>
+<td>●</td>
+</tr>
+<tr>
+<td>Android Devices</td>
+<td></td>
+<td>●</td>
+</tr>
+<tr>
+<td>Roku</td>
+<td></td>
+<td>●</td>
+</tr>
+<tr>
+<td>Xbox One</td>
+<td></td>
+<td>●</td>
+</tr>
+</tbody>
+</table>
+<p>Additionally, Sling allows you to stream regardless of your location, while Vue uses your device’s location to determine whether or not you are at home. If you’re not at home, your streaming options are more limited.</p>
+<p>One nice perk that Sling offers is a free or discounted Roku or Fire TV device if you prepay for three months of service when you sign up. I actually used this offer twice (once for a free Roku Stick when I set up my initial account and again for a free Roku 2 when I reactivated my account after canceling it for a couple months).</p>
+<h2 id="reliability">Reliability</h2>
+<p>Here’s where I think Vue really got it right. I had streaming problems with Sling from day one and I know that I’m not alone. The first weekend that I had Sling, my wife and I tried to watch The Walking Dead. We found that we weren’t able to access AMC and a quick Twitter search showed me that there were a ton of people facing the same issue. This happened pretty regularly when we were trying to watch popular shows.</p>
+<p>I have had a couple similar issues with Vue, but most of them appear to be related to my terribly unreliable internet connection which is provided by a company that I won’t mention but that everybody hates.</p>
+<h2 id="interface-and-features">Interface and Features</h2>
+<p>Vue really excels here, too. Sling’s interface has always felt quite clunky to me and pretty slow. Vue offers things like a live TV guide and the entire app feels much more responsive than Sling.</p>
+<p>Vue also allows you to automatically have your favorite shows recorded and saved for later viewing. Sling doesn’t have any similar features — or they didn’t when I was using it.</p>
+<h2 id="my-pick">My Pick</h2>
+<p>I’ve only been using Vue for a month or so because it just became available everywhere. So far I’m really loving it. The interface and the channel selection alone are enough to set it apart as the winner in my mind. The biggest complaint that I had when I used Sling (aside from the connectivity issues) was the fact that I couldn&#39;t get FXX, which airs several shows that I watch.</p>
+<p>I will say that if I didn’t already own a PS4, I wouldn’t have even considered Vue due to its limited device support. If you happen to already own a PlayStation console and you’re looking for something more reliable than Sling and with more channels, then Vue is the way to go. Otherwise, I would say Sling is your best bet — at least until Vue becomes more widely available.</p>
+
+				</div><!-- /.wrap -->
+
+				<div class="cool wrap">
+					<strong class="cool_count">0</strong>
+					<span class="cool_lbl">Cool post, man.</span>
+				</div><!-- /.cool -->
+			</main><!-- /#main -->
+		</div><!-- /.page -->
+
+		<footer id="foot" class="foot">
+	<small class="foot_note">©2016 Andrew Philpott</small>
+</footer><!-- /#foot -->
+		<script type="text/javascript" src="/assets/js/plugins.min.js"></script>
+<script type="text/javascript" src="/assets/js/main.min.js"></script>
+
+<script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+<script type="text/javascript" src="/assets/js/post.min.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-12824336-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+	</body>
+</html>

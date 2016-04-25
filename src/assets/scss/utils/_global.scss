@@ -68,6 +68,38 @@ body {
 }
 
 /*-------------------------------------------
+  Tables
+-------------------------------------------*/
+table {
+	// border: 1px solid $gray-lt;
+	table-layout: fixed;
+	width: 100%;
+}
+td, th {
+	hyphens: auto;
+	vertical-align: middle;
+
+	+ td,
+	+ th {
+		text-align: center;
+	}
+}
+td {
+	border: 1px solid $gray-lt;
+	border-width: 1px 0 0;
+	padding: 12px 10px 10px;
+
+	+ td {
+		border-left-width: 1px;
+	}
+}
+th {
+	color: $gray;
+	@extend %display;
+	padding: 0 0 10px;
+}
+
+/*-------------------------------------------
   Links
 -------------------------------------------*/
 a {
