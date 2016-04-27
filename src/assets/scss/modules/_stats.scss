@@ -1,0 +1,11 @@
+/*-------------------------------------------
+  Stats
+-------------------------------------------*/
+.stat {
+  text-transform: capitalize;
+
+  &:after {
+    content: ' Likes: ' attr(data-count);
+    @extend %display;
+  }
+}

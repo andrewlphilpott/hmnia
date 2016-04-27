@@ -3,7 +3,10 @@
 
 {% if post %}
 <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
-<script type="text/javascript" src="{{ assets }}/js/post.min.js"></script>
+{% if not stats %}<script type="text/javascript" src="{{ assets }}/js/post.min.js"></script>{% endif %}
+{% endif %}
+{% if stats %}
+<script type="text/javascript" src="{{ assets }}/js/stats.min.js"></script>
 {% endif %}
 
 <script>

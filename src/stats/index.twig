@@ -1,0 +1,15 @@
+{% extends '../layouts/_stats.twig' %}
+
+{% set title = 'Post Like Stats 💵 Andrew Philpott' %}
+{% set id = 'about' %}
+
+{% block body %}
+	{% include '../partials/_banner.twig' with {'headline': 'Here are some stats.', 'subheadline': 'They are pretty neat.'} %}
+
+	<main id="main" class="main">
+		<div class="wrap">
+			<ol class="like-list">
+			</ol><!-- /.like-list -->
+		</div><!-- /.wrap -->
+	</main><!-- /#main -->
+{% endblock %}
