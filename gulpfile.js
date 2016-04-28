@@ -41,6 +41,7 @@ var sass = require('gulp-sass');
 var twig = require('gulp-twig');
 var uglify = require('gulp-uglify');
 var watch = require('gulp-watch');
+var keys = require('./keys.json');
 
 // Minify Images
 gulp.task('imagemin', function(){
@@ -104,12 +105,28 @@ gulp.task('plugins', function() {
         .pipe(notify({message: 'Plugins minified'}));;
 });
 
+// Function to get Bitly links
+var getShortLink = function(file) {
+  var url = 'https://himynameisandrew.com/blog/unfixify';
+  var key = keys.bitly;
+  var call = 'https://api-ssl.bitly.com/v3/shorten?uri=' + url + '&access_token=' + key;
+  var xhr = new XMLHttpRequest();
+  xhr.open('get', call, true);
+  xhr.responseType = 'json';
+  xhr.onload = function(){
+    var shortUrl = xhr.response.data.url;
+  }
+  xhr.send();
+  return shortUrl;
+}
+
 // Compile Blog Posts
 gulp.task('blog', function(){
     return gulp.src(paths.src.blog)
         .pipe(twig({
             data: {
                 assets: '/assets'
+                // shortUrl: getShortLink()
             },
             extend: markdown
         }))
