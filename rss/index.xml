@@ -6,32 +6,32 @@
 		<link>https://himynameisandrew.com</link>
 		<atom:link href="https://himynameisandrew.com/rss/" rel="self" type="application/rss+xml" />
 					<item>
-				<title>Test Post</title>
-				<description>Testing some stuff</description>
-				<pubDate>April 29, 2016</pubDate>
-				<link>http://himynameisandrew.com/blog/test/</link>
-				<guid isPermaLink="true">http://himynameisandrew.com/blog/test/</guid>
-			</item>
-					<item>
 				<title>PlayStation Vue vs. Sling</title>
 				<description>I’ve been looking for a great way to stream live TV over the internet for a while now, and I’ve tried both Sling and PlayStation Vue. Here’s my take on how the two stack up.</description>
-				<pubDate>April 25, 2016</pubDate>
+				<pubDate>Mon, 25 Apr 2016 12:00:00 EST</pubDate>
 				<link>http://himynameisandrew.com/blog/playstation-vue-vs-sling/</link>
 				<guid isPermaLink="true">http://himynameisandrew.com/blog/playstation-vue-vs-sling/</guid>
 			</item>
 					<item>
 				<title>Make a Real Fast Site With GitHub Pages</title>
 				<description>A couple weeks ago, I remembered how awesome GitHub pages is. I also had been playing around with gulp for a few days, and I had the idea to redesign my website and host it on GitHub pages. In order to do that, I knew I would have to make the site static.</description>
-				<pubDate>April 18, 2016</pubDate>
+				<pubDate>Mon, 18 Apr 2016 12:00:00 EST</pubDate>
 				<link>http://himynameisandrew.com/blog/make-a-really-fast-site-with-github-pages/</link>
 				<guid isPermaLink="true">http://himynameisandrew.com/blog/make-a-really-fast-site-with-github-pages/</guid>
 			</item>
 					<item>
 				<title>A Month (or so) With Amazon Echo</title>
 				<description>I asked for an Amazon Echo for Christmas, mainly because I wanted a reliable way to control my Wink-connected lights with my voice. I had pretty high expectations, but I’ve found that the Echo is even better than I expected; and it keeps on getting better.</description>
-				<pubDate>February 5, 2016</pubDate>
+				<pubDate>Fri, 05 Feb 2016 12:00:00 EST</pubDate>
 				<link>http://himynameisandrew.com/blog/a-month-or-so-with-amazon-echo/</link>
 				<guid isPermaLink="true">http://himynameisandrew.com/blog/a-month-or-so-with-amazon-echo/</guid>
+			</item>
+					<item>
+				<title>Decide For Me</title>
+				<description>It’s been a good six or seven months and I totally forgot to write about this, but I made a super simple little web app called Decide For Me. Basically, it’s a pro/con list which allows you to give each item on the list a weight.</description>
+				<pubDate>Fri, 12 Jun 2015 12:00:00 EST</pubDate>
+				<link>http://himynameisandrew.com/blog/decide-for-me/</link>
+				<guid isPermaLink="true">http://himynameisandrew.com/blog/decide-for-me/</guid>
 			</item>
 			</channel>
 </rss>

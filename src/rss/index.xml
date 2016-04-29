@@ -9,7 +9,7 @@
 			<item>
 				<title>{{ post.title }}</title>
 				<description>{{ post.excerpt }}</description>
-				<pubDate>{{ post.date | date('F j, Y') }}</pubDate>
+				<pubDate>{{ post.date | date('D, d M Y 12:00:00') }} EST</pubDate>
 				<link>http://himynameisandrew.com{{ post.url | replace({'src': '', 'index.md': ''}) }}</link>
 				<guid isPermaLink="true">http://himynameisandrew.com{{ post.url | replace({'src': '', 'index.md': ''}) }}</guid>
 			</item>
