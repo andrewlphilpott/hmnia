@@ -6,6 +6,13 @@
 		<link>https://himynameisandrew.com</link>
 		<atom:link href="https://himynameisandrew.com/rss/" rel="self" type="application/rss+xml" />
 					<item>
+				<title>Test Post</title>
+				<description>Testing some stuff</description>
+				<pubDate>Fri, 29 Apr 2016 12:00:00 EST</pubDate>
+				<link>http://himynameisandrew.com/blog/test/</link>
+				<guid isPermaLink="true">http://himynameisandrew.com/blog/test/</guid>
+			</item>
+					<item>
 				<title>PlayStation Vue vs. Sling</title>
 				<description>I’ve been looking for a great way to stream live TV over the internet for a while now, and I’ve tried both Sling and PlayStation Vue. Here’s my take on how the two stack up.</description>
 				<pubDate>Mon, 25 Apr 2016 12:00:00 EST</pubDate>
@@ -25,13 +32,6 @@
 				<pubDate>Fri, 05 Feb 2016 12:00:00 EST</pubDate>
 				<link>http://himynameisandrew.com/blog/a-month-or-so-with-amazon-echo/</link>
 				<guid isPermaLink="true">http://himynameisandrew.com/blog/a-month-or-so-with-amazon-echo/</guid>
-			</item>
-					<item>
-				<title>Decide For Me</title>
-				<description>It’s been a good six or seven months and I totally forgot to write about this, but I made a super simple little web app called Decide For Me. Basically, it’s a pro/con list which allows you to give each item on the list a weight.</description>
-				<pubDate>Fri, 12 Jun 2015 12:00:00 EST</pubDate>
-				<link>http://himynameisandrew.com/blog/decide-for-me/</link>
-				<guid isPermaLink="true">http://himynameisandrew.com/blog/decide-for-me/</guid>
 			</item>
 			</channel>
 </rss>
