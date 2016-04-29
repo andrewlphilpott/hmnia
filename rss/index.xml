@@ -6,11 +6,11 @@
 		<link>https://himynameisandrew.com</link>
 		<atom:link href="https://himynameisandrew.com/rss/" rel="self" type="application/rss+xml" />
 					<item>
-				<title>Test Post</title>
-				<description>Testing some stuff</description>
-				<pubDate>Fri, 29 Apr 2016 12:00:00 EST</pubDate>
+				<title>Test Post 2</title>
+				<description>Testing some stuffs</description>
+				<pubDate>Fri, 28 Apr 2016 12:00:00 EST</pubDate>
 				<link>http://himynameisandrew.com/blog/test/</link>
-				<guid isPermaLink="true">http://himynameisandrew.com/blog/test/</guid>
+				<guid isPermaLink="true">http://himynameisandrew.com/blog/test1/</guid>
 			</item>
 					<item>
 				<title>PlayStation Vue vs. Sling</title>
