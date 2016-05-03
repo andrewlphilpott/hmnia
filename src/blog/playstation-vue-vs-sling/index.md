@@ -10,6 +10,12 @@
 {% block body %}
 
 {% markdown %}
+<aside class="note">
+	<strong class="note_hdg">Note</strong>
+
+	<p>Updated on May 3, 2016 with a description of PS Vue’s DVR functionality.</p>
+</aside>
+
 I’ve been looking for a great way to stream live TV over the internet for a while now, and I’ve tried both [Sling](https://www.sling.com) and [PlayStation Vue](https://www.playstation.com/en-us/network/vue/). Here’s my take on how the two stack up.
 
 ## Pricing
@@ -62,6 +68,10 @@ Vue also allows you to automatically have your favorite shows recorded and saved
 I’ve only been using Vue for a month or so because it just became available everywhere. So far I’m really loving it. The interface and the channel selection alone are enough to set it apart as the winner in my mind. The biggest complaint that I had when I used Sling (aside from the connectivity issues) was the fact that I couldn't get FXX, which airs several shows that I watch.
 
 I will say that if I didn’t already own a PS4, I wouldn’t have even considered Vue due to its limited device support. If you happen to already own a PlayStation console and you’re looking for something more reliable than Sling and with more channels, then Vue is the way to go. Otherwise, I would say Sling is your best bet — at least until Vue becomes more widely available.
+
+## Update: May 3, 2016
+
+Twitter user [@ultramookie](https://twitter.com/ultramookie) pointed out that I neglected to mention one of PS Vue’s killer features: DVR. Vue offers DVR functionality which automatically records shows that you save to your favorites. Any show that is added to “My Shows” gets stored in your DVR for up to 28 days. I’ve used this feature a ton so far and I can’t believe I forgot to include it in my original post.
 {% endmarkdown %}
 
 {% endblock %}
