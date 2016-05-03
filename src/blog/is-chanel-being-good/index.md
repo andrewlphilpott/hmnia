@@ -3,6 +3,7 @@
 {% set title = 'Is Chanel Being Good?' %}
 {% set metaTitle = 'Is Chanel Being Good? 🎭 Andrew Philpott' %}
 {% set date = '04/27/10' %}
+{% set canonical = 'false' %}
 {% set excerpt = 'About three weeks ago, my fiancée (Emily) and I bought a puppy and named it Chanel. She’s probably the cutest dog that has ever lived, but she is also a huge pain. She poops everywhere, chews everything, and barks constantly. I decided to make an iPhone app called “Is Chanel Being Good?” so that I can let Emily see what she’s missing out on while she’s gone.' %}
 
 {# In Sublime, insert current date with fn+f5, fn+x #}

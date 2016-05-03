@@ -3,6 +3,7 @@
 {% set title = 'Should Designers Code?' %}
 {% set metaTitle = 'Should Designers Code? ⚙ Andrew Philpott' %}
 {% set date = '02/19/10' %}
+{% set canonical = 'false' %}
 {% set excerpt = 'A couple of days ago Elliot Jay Stocks posted a tweet about his feelings on web designers who can’t write code. Since then, the web design community has erupted into a debate on whether or not designers should be able to code. I can see valid points on both sides of the argument and I must admit I’m not totally sure where I stand on this subject.' %}
 
 {# In Sublime, insert current date with fn+f5, fn+x #}

@@ -3,6 +3,7 @@
 {% set title = 'Getting Symbolset to Work on Android' %}
 {% set metaTitle = 'Getting Symbolset to Work on Android 🍫 Andrew Philpott' %}
 {% set date = '01/07/14' %}
+{% set canonical = 'false' %}
 {% set excerpt = 'I have noticed on a couple of recent projects that I’ve built, that Symbolset’s keyword replacement doesn’t work as expected on Android devices (specifically, Android version 4.3, but it may affect other versions as well). I don’t think I ever came across any documented fixes for this issue, which I assume is because Symbolset’s website says that keyword replacement works on Android.' %}
 
 {# In Sublime, insert current date with fn+f5, fn+x #}

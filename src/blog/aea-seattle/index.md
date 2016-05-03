@@ -3,6 +3,7 @@
 {% set title = 'AEA Seattle' %}
 {% set metaTitle = 'AEA Seattle 💧 Andrew Philpott' %}
 {% set date = '04/15/10' %}
+{% set canonical = 'false' %}
 {% set excerpt = 'Last week I had the opportunity to attend An Event Apart Seattle. The conference itself was two days long, followed by a one day workshop on HTML5 and CSS3. I got to hear from experts like Jeffrey Zeldman, Dan Cederholm, Jeremy Keith, Andy Clarke and a lot more. I even got to meet and talk to Andy Clarke at lunch.' %}
 
 {# In Sublime, insert current date with fn+f5, fn+x #}

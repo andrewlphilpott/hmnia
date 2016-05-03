@@ -3,6 +3,7 @@
 {% set title = 'CSS Animated Tooltips' %}
 {% set metaTitle = 'CSS Animated Tooltips 💬 Andrew Philpott' %}
 {% set date = '02/16/10' %}
+{% set canonical = 'false' %}
 {% set excerpt = 'I have worked on a few sites before where I had to develop tooltips. You know what I mean, those little boxes of text that come up when you hover over a link or an image. I used jQuery plugins in the past, but for my site I wanted to try something different. I wanted a solution that used no JavaScript, but still looked good and had some cool effects. Luckily, some pretty standard CSS along with some CSS3 animations were all I needed.' %}
 
 {# In Sublime, insert current date with fn+f5, fn+x #}

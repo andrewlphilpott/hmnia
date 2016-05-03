@@ -27,7 +27,7 @@
 		<meta property="og:description" content="{{ excerpt }}" />
 		<link rel="alternate" type="application/rss+xml" title="Here’s my RSS feed" href="https://himynameisandrew.com/rss/index.xml" />
 
-		{% if canonical is defined %}
+		{% if canonical != 'false' %}
 			<link rel="canonical" href="{{ canonical }}" />
 		{% endif %}
 

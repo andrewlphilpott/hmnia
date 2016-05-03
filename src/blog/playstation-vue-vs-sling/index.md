@@ -3,6 +3,7 @@
 {% set title = 'PlayStation Vue vs. Sling' %}
 {% set metaTitle = 'PlayStation Vue vs. Sling 📺 Andrew Philpott' %}
 {% set date = '04/25/16' %}
+{% set canonical = 'false' %}
 {% set excerpt = 'I’ve been looking for a great way to stream live TV over the internet for a while now, and I’ve tried both Sling and PlayStation Vue. Here’s my take on how the two stack up.' %}
 
 {# In Sublime, insert current date with fn+f5, fn+x #}

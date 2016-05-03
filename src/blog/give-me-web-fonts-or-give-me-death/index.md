@@ -3,6 +3,7 @@
 {% set title = 'Give Me Web Fonts, Or Give Me Death' %}
 {% set metaTitle = 'Give Me Web Fonts, Or Give Me Death 🔫 Andrew Philpott' %}
 {% set date = '05/06/09' %}
+{% set canonical = 'false' %}
 {% set excerpt = 'Most web designers know that typographic options on the web are… well, lacking. The list of fonts that are available on all computers is a short one. Luckily, though, we have CSS font stacks. This allows us to specify the font that we want, and then provide a list of backup fonts in case a visitor to our website doesn’t have the one we intended. Font stacking is all well and good, but imagine how great it would be if we could ensure that every visitor to our website saw the font that we wanted them to see every time. How great would that be? No more Arial in place of Helvetica. No more Georgia instead of Hoefler Text.' %}
 
 {# In Sublime, insert current date with fn+f5, fn+x #}

@@ -3,6 +3,7 @@
 {% set title = 'Firefox Finally Adds CSS Transitions' %}
 {% set metaTitle = 'Firefox Finally Adds CSS Transitions 🐺 Andrew Philpott' %}
 {% set date = '11/08/10' %}
+{% set canonical = 'false' %}
 {% set excerpt = 'This is just a short note to say that it looks like Firefox will finally be supporting CSS transitions in their next release. I downloaded the beta release of Firefox 4 the other day and was very happy to see that my -moz-transition styles were working.' %}
 
 {# In Sublime, insert current date with fn+f5, fn+x #}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class=""> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<title>An App to Keep Our Blog on Track 📝 Andrew Philpott</title>
+		<meta name="description" content="I had a bit of downtime at work, so I used Firebase to create an app to keep track of our team blog schedule.">
+
+		<!-- Google Fonts CSS -->
+		<style type="text/css">
+			@font-face{font-family:Montserrat;font-style:normal;font-weight:700;src:local('Montserrat-Bold'),url(https://fonts.gstatic.com/s/montserrat/v6/IQHow_FEYlDC4Gzy_m8fcnbFhgvWbfSbdVg11QabG8w.woff) format('woff')}@font-face{font-family:'Droid Serif';font-style:normal;font-weight:400;src:local('Droid Serif'),local('DroidSerif'),url(https://fonts.gstatic.com/s/droidserif/v6/0AKsP294HTD-nvJgucYTaLrIa-7acMAeDBVuclsi6Gc.woff) format('woff')}@font-face{font-family:'Droid Serif';font-style:normal;font-weight:700;src:local('Droid Serif Bold'),local('DroidSerif-Bold'),url(https://fonts.gstatic.com/s/droidserif/v6/QQt14e8dY39u-eYBZmppwRbnBKKEOwRKgsHDreGcocg.woff) format('woff')}@font-face{font-family:'Droid Serif';font-style:italic;font-weight:400;src:local('Droid Serif Italic'),local('DroidSerif-Italic'),url(https://fonts.gstatic.com/s/droidserif/v6/cj2hUnSRBhwmSPr9kS5894o3ZslTYfJv0R05CazkwN8.woff) format('woff')}
+		</style>
+
+		<!-- Main Styles -->
+		<link rel="stylesheet" type="text/css" href="/assets/css/screen.css" media="screen" />
+
+		<link href="/assets/img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Metadata -->
+		<meta property="og:title" content="An App to Keep Our Blog on Track 📝 Andrew Philpott" />
+		<meta property="og:type" content="article" />
+		<meta property="og:image" content="/assets/img/icn_og.png" />
+		<meta property="og:site_name" content="Hi, my name is Andrew." />
+		<meta property="og:description" content="I had a bit of downtime at work, so I used Firebase to create an app to keep track of our team blog schedule." />
+		<link rel="alternate" type="application/rss+xml" title="Here’s my RSS feed" href="https://himynameisandrew.com/rss/index.xml" />
+
+					<link rel="canonical" href="http://blog.elevatorup.com/post/143790219652/an-app-to-keep-our-blog-on-track" />
+		
+		<!-- Touch Icon -->
+		<link rel="apple-touch-icon" href="/assets/img/icn_touch.png" />
+	</head>
+
+	<body id="blog" class="blog">
+
+		<header id="head" class="head">
+	<a class="brand" href="/">
+		<h1 class="meta">The personal website of Andrew Philpott</h1>
+		<svg width="50px" height="30px" viewBox="0 0 84 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		        <g id="logo">
+		            <path d="M77.7879989,4.5 C81.3160166,7.500015 83.0799989,12.1079689 83.0799989,18.324 C83.0799989,24.5400311 81.2680171,29.0879856 77.6439989,31.968 C74.0199808,34.8480144 68.4880361,36.288 61.0479989,36.288 L54.3519989,36.288 L54.3519989,50.328 L43.1199989,50.328 L43.1199989,0 L60.9039989,0 C68.6320376,0 74.2599813,1.499985 77.7879989,4.5 L77.7879989,4.5 Z M69.5439989,24.3 C70.8880057,22.7879924 71.5599989,20.5800145 71.5599989,17.676 C71.5599989,14.7719855 70.6840077,12.7080061 68.9319989,11.484 C67.1799902,10.2599939 64.4560174,9.648 60.7599989,9.648 L54.3519989,9.648 L54.3519989,26.568 L61.9119989,26.568 C65.6560177,26.568 68.1999922,25.8120076 69.5439989,24.3 L69.5439989,24.3 Z" id="P" fill="#00A5BF"></path>
+		            <path d="M42.408,50.328 L37.728,39.456 L16.632,39.456 L11.952,50.328 L0,50.328 L21.744,0 L32.616,0 L54.36,50.328 L42.408,50.328 Z M27.216,14.976 L20.88,29.592 L33.48,29.592 L27.216,14.976 Z" id="A" fill="#8200BF"></path>
+		        </g>
+		    </g>
+		</svg>
+	</a>
+
+	<nav id="nav" class="nav">
+		<h2 class="meta">Main Navigation</h2>
+
+		<ul class="nav_list">
+			<li><a id="nav_blog" data-text="Blog" class="nav_link" href="/">Blog</a></li>
+			<li><a id="nav_about" data-text="About" class="nav_link" href="/about">About</a></li>
+			<li><a id="nav_work" data-text="Portfolio" class="nav_link" href="/portfolio">Portfolio</a></li>
+		</ul><!-- /.nav_list -->
+	</nav><!-- /#nav -->
+</header><!-- /#head -->
+		<div class="page">
+			<div class="banner">
+	<div class="banner_bg"></div>
+	<div class="banner_content wrap">
+		<h1 class="page_title" data-text="An App to Keep Our Blog on Track"><span>An App to Keep Our Blog on Track</span></h1>
+
+		
+					<time class="page_date date">May 3, 2016</time>
+			</div><!-- /.banner_content -->
+</div><!-- /.banner -->
+			<main id="main" class="main">
+				<div class="wrap">
+					
+<aside class="note">
+    <strong class="note_hdg">Note</strong>
+
+    <p>This was originally posted on the <a href="http://blog.elevatorup.com/post/143790219652/an-app-to-keep-our-blog-on-track">Elevator Up blog</a>.</p>
+</aside>
+
+<p>At Elevator Up, we take blogging seriously. We’ve got a spreadsheet of due dates for everybody and each team member is expected to turn in their posts on time or face <a href="http://d.pr/i/TJ4H">dire consequences</a>. (Just kidding, but we seriously like it when people write their posts on schedule.)</p>
+<p>The problem with our spreadsheet is that someone has to manually update the data every time a team member writes a new blog post and then everybody has to go find the file in Dropbox to see when they’re due – until now, that is. I recently worked with Tori to figure out how we could make this better and ended up putting together a simple blog schedule app which is readily viewable for all team members and can be easily updated.</p>
+<h2 id="building-the-app">Building the App</h2>
+<p>I used this as an opportunity to test out <a href="http://firebase.com">Firebase</a>, which I had been wanting to try for quite a while. Firebase provides you with a database and a JavaScript SDK for reading from and writing to that database. It also provides ways to implement things like authentication and customizable security rules. This sounded perfect to me because I wanted to build something quickly without having to mess with any back end development.</p>
+<p>It worked out great. I was able to very quickly set up some simple data which is, in essence, just some JSON with records for each blog author and some relevant data. Here&#39;s what an author looks like in Firebase:</p>
+<pre><code>author {
+  fname: &#39;Chim&#39;,
+  lname: &#39;Richalds&#39;,
+  registered: 1432785600000,
+  last: 1459828800000,
+  days: 35,
+  remaining: 0
+}
+</code></pre><p>Broken down, what we&#39;re looking at is an author record which has a first name, a last name, a registration date (stored as a Unix timestamp), the date of their last blog post (also a Unix timestamp), the number of days in their blog cycle, and the number of days they had remaining the last time they submitted a post.</p>
+<p>On the front end, we pull in all of that data, check the <em>last</em> value and the <em>days</em> value, get the current date, and then do some math to figure out how many days they have left. We also add to their <em>days</em> if they had any remaining days the last time they submitted a post.</p>
+<p>That last part is important. We want authors to be able to submit posts whenever they are ready and build up a silo of extra time if they want. So if an author had 30 days left before their next post was due and they decided to submit a post early, they would get 30 added to their next cycle. It works the other way, too. If an author was 5 days overdue when they made a submission, they would have 5 days removed from their next cycle.</p>
+<h2 id="designing-the-app">Designing the App</h2>
+<p>It’s weird to talk about the design after the development, right? Well, I’m not a designer. With that said, I do enjoy designing things and I had a lot of fun designing this app. I took a different approach than I think most would. In the initial planning stage, I threw together a quick wireframe and showed it to Tori. After confirming that we were on the same page, I jumped into development and designed the app in-browser while developing.</p>
+<p>Like I said, I&#39;m not a designer. Even so, I’m pretty happy with the way things turned out. I think it achieves the goal of being easy to quickly look at and see who has posts coming up and who is past due.</p>
+<p><img src="/assets/img/blog/schedule.png" alt="A screenshot of the blog schedule"></p>
+<p>Updating submission dates is simple, too. As long as you’re logged in, you can just click on a team member, pick a date from the calendar, and submit it.</p>
+<p><img src="/assets/img/blog/datepicker.png" alt="A screenshot of the date picker"></p>
+<p>The nice thing about designing while developing was that it allowed me to actually see how things worked and felt in a browser as opposed to looking at static mockups and imagining how things would feel. It also gave me a chance to play around with animations like <a href="http://codepen.io/andrewlphilpott/details/pydExN/">this loading graphic</a> in real-time.</p>
+<h2 id="takeaways">Takeaways</h2>
+<p>I really enjoyed having this opportunity to try out a new technology and to tackle some design. I would definitely recommend Firebase to anybody looking for an easy-to-use back end platform. I know I’ll use it again. If you’ve got anything you have built with it, we’d love to hear about it!</p>
+
+				</div><!-- /.wrap -->
+
+				<div class="cool wrap">
+					<strong class="cool_count">0</strong>
+					<span class="cool_lbl">Cool post, man.</span>
+				</div><!-- /.cool -->
+			</main><!-- /#main -->
+		</div><!-- /.page -->
+
+		<footer id="foot" class="foot">
+	<small class="foot_note">©2016 Andrew Philpott</small>
+</footer><!-- /#foot -->
+		<script type="text/javascript" src="/assets/js/plugins.min.js"></script>
+<script type="text/javascript" src="/assets/js/main.min.js"></script>
+
+<script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+<script type="text/javascript" src="/assets/js/post.min.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-12824336-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+	</body>
+</html>

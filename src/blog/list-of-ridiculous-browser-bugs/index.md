@@ -3,6 +3,7 @@
 {% set title = 'List of Ridiculous Browser Bugs' %}
 {% set metaTitle = 'List of Ridiculous Browser Bugs 🐜 Andrew Philpott' %}
 {% set date = '07/11/14' %}
+{% set canonical = 'false' %}
 {% set excerpt = 'I am starting a list of common and ridiculous bugs that I’ve found in different browsers along with quick fixes if I know of them. It will most likely grow over time as I find and remember more idiotic bugs.' %}
 
 {# In Sublime, insert current date with fn+f5, fn+x #}

@@ -3,6 +3,7 @@
 {% set title = 'Decide For Me' %}
 {% set metaTitle = 'Decide For Me 🔮 Andrew Philpott' %}
 {% set date = '06/12/15' %}
+{% set canonical = 'false' %}
 {% set excerpt = 'It’s been a good six or seven months and I totally forgot to write about this, but I made a super simple little web app called Decide For Me. Basically, it’s a pro/con list which allows you to give each item on the list a weight.' %}
 
 {# In Sublime, insert current date with fn+f5, fn+x #}
@@ -10,7 +11,7 @@
 {% block body %}
 
 {% markdown %}
-It’s been a good six or seven months and I totally forgot to write about this, but I made a super simple little web app called [Decide For Me](http://de.cidefor.me). Basically, it’s a pro/con list which allows you to give each item on the list a weight. It will then add up the weights of your pros and your cons and tell you whether or not you should do what you’re trying to decide. I recently used the app to help decide whether or not my wife and I should purchase a new home (which we did). 
+It’s been a good six or seven months and I totally forgot to write about this, but I made a super simple little web app called [Decide For Me](http://de.cidefor.me). Basically, it’s a pro/con list which allows you to give each item on the list a weight. It will then add up the weights of your pros and your cons and tell you whether or not you should do what you’re trying to decide. I recently used the app to help decide whether or not my wife and I should purchase a new home (which we did).
 
 <img src="/assets/img/blog/decideforme.png" class="screenshot" alt="A preview of Decide For Me " />
 

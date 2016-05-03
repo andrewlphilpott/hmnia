@@ -3,6 +3,7 @@
 {% set title = 'I’m Famous! (Sort of)' %}
 {% set metaTitle = 'I’m Famous! (Sort of) 🌟 Andrew Philpott' %}
 {% set date = '02/15/10' %}
+{% set canonical = 'false' %}
 {% set excerpt = 'A few months ago I came across a site called Simple Desktops - “a collection of desktop wallpapers curated by Tom Watson designed to make your computer beautiful without distraction.”' %}
 
 {# In Sublime, insert current date with fn+f5, fn+x #}

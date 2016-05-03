@@ -3,6 +3,7 @@
 {% set title = 'Using CSS to Animate SVG Line Art' %}
 {% set metaTitle = 'Using CSS to Animate SVG Line Art 💫 Andrew Philpott' %}
 {% set date = '04/14/14' %}
+{% set canonical = 'false' %}
 {% set excerpt = 'Turns out, animating inline SVG Line Art with CSS is super easy. Chris Coyier has a great explanation of how it works over on CSS Tricks.' %}
 
 {# In Sublime, insert current date with fn+f5, fn+x #}

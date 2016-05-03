@@ -3,6 +3,7 @@
 {% set title = 'New Blog, New Goals, & New Adventures' %}
 {% set metaTitle = 'New Blog, New Goals, & New Adventures 💂 Andrew Philpott' %}
 {% set date = '02/19/13' %}
+{% set canonical = 'false' %}
 {% set excerpt = 'It has been too long since I blogged. A lot has happened in the past few months. I redesigned my blog, we had a great “2013 Goals” meeting at Mighty, and my wife and I even had the chance to go to England for a week so that I could go to New Adventures.' %}
 
 {# In Sublime, insert current date with fn+f5, fn+x #}

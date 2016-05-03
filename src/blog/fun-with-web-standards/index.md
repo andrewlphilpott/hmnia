@@ -3,6 +3,7 @@
 {% set title = 'Fun With Web Standards' %}
 {% set metaTitle = 'Fun With Web Standards 🎉 Andrew Philpott' %}
 {% set date = '11/10/10' %}
+{% set canonical = 'false' %}
 {% set excerpt = 'I recently finished a major redesign of my site. I had a lot of fun designing and building this new version and got a chance to experiment a ton with new things. A few of the changes that I made include using CSS3 instead of images, the addition of media queries, and simplifying the entire site to focus more on my blog.' %}
 
 {# In Sublime, insert current date with fn+f5, fn+x #}

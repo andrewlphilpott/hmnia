@@ -3,6 +3,7 @@
 {% set title = 'Playing In The Sand' %}
 {% set metaTitle = 'Playing In The Sand 🌴 Andrew Philpott' %}
 {% set date = '03/08/10' %}
+{% set canonical = 'false' %}
 {% set excerpt = 'This weekend I really wanted to design a quick site and try out some new CSS techniques I’ve been learning, so I made a sandbox site. What’s a sandbox? Basically it’s a place where I’ll post my experiments and little projects that I’ve been playing around with.' %}
 
 {# In Sublime, insert current date with fn+f5, fn+x #}

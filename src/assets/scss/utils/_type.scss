@@ -200,6 +200,11 @@ code {
 	display: inline-block;
 	font-family: 'Andale Mono', 'Lucida Console', monospace;
 	padding: 0 .25em;
+
+	pre & {
+		display: block;
+		padding: .5em 1em;
+	}
 }
 
 // Bold Caps

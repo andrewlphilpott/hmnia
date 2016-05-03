@@ -3,6 +3,7 @@
 {% set title = 'Helvetica, Arial, & Font Stacks' %}
 {% set metaTitle = 'Helvetica, Arial, & Font Stacks 🔠 Andrew Philpott' %}
 {% set date = '01/22/10' %}
+{% set canonical = 'false' %}
 {% set excerpt = 'About a year ago I watched Helvetica. It had a really big impact on the way that I look at the world. I became obsessed with identifying the type face in the wild. One thing that I started to notice, though, was that a lot of websites used Arial as their primary font. I started to look into it more and found that many of these sites put Arial before Helvetica in their font stacks. I was (and still am) really confused by this.' %}
 
 {# In Sublime, insert current date with fn+f5, fn+x #}

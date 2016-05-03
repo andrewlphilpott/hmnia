@@ -3,6 +3,7 @@
 {% set title = 'The Greatest Man I Ever Knew' %}
 {% set metaTitle = 'The Greatest Man I Ever Knew | Andrew Philpott' %}
 {% set date = '06/19/13' %}
+{% set canonical = 'false' %}
 {% set excerpt = 'The greatest man I ever knew wasn’t famous, although he touched more lives than I can even imagine. He wasn’t proud or boastful even though he could have been; he accomplished a great deal in his life. He was the most generous, loving man I’ve ever met. He was my father-in-law, David Koffman.' %}
 
 {# In Sublime, insert current date with fn+f5, fn+x #}

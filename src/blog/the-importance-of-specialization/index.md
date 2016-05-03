@@ -3,6 +3,7 @@
 {% set title = 'The Importance of Specialization' %}
 {% set metaTitle = 'The Importance of Specialization 👓 Andrew Philpott' %}
 {% set date = '12/12/11' %}
+{% set canonical = 'false' %}
 {% set excerpt = 'I have been learning web design for a couple of years now. Up until recently, though, I never really understood how important specialization is. For the last few months, I have been moving from one language to another, learning bits and pieces. As a result, I have a pretty basic knowledge of many different web technologies.' %}
 
 {# In Sublime, insert current date with fn+f5, fn+x #}

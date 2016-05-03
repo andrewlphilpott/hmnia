@@ -3,6 +3,7 @@
 {% set title = 'Square is Sexy' %}
 {% set metaTitle = 'Square is Sexy ⬛️ Andrew Philpott' %}
 {% set date = '03/04/10' %}
+{% set canonical = 'false' %}
 {% set excerpt = 'It seems like rounded corners are everywhere these days; they’re quickly becoming one of the main ingredients of a lot of sites. I suspect that CSS3’s new border-radius property has something to do with it, but whatever the cause, I think we’re starting to go a little overboard. It’s starting to feel like a fad on the same level as overdone gradients and drop shadows.' %}
 
 {# In Sublime, insert current date with fn+f5, fn+x #}

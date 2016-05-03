@@ -3,6 +3,7 @@
 {% set title = 'What’s A College Grad To Do?' %}
 {% set metaTitle = 'What’s A College Grad To Do? 🎓 Andrew Philpott' %}
 {% set date = '04/15/09' %}
+{% set canonical = 'false' %}
 {% set excerpt = 'As my days as a college student draw to a close, I find myself looking forward to beginning my career in the web. I can’t wait to start designing websites for a living, but finding a job is proving difficult. Here’s a rundown of my current experience.' %}
 
 {# In Sublime, insert current date with fn+f5, fn+x #}

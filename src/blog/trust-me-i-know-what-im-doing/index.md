@@ -3,6 +3,7 @@
 {% set title = 'Trust Me, I Know What I’m Doing' %}
 {% set metaTitle = 'Trust Me, I Know What I’m Doing 🔗 Andrew Philpott' %}
 {% set date = '04/03/11' %}
+{% set canonical = 'false' %}
 {% set excerpt = 'My first job was at Target. It was a seasonal position during the Christmas season of my sophomore year of high school. I was really excited to get the job, as it was much more appealing to me than something like working at Arby’s (which I ended up doing a few months later). Looking back, it wasn’t a terrible first job. There were just a couple issues though.' %}
 
 {# In Sublime, insert current date with fn+f5, fn+x #}

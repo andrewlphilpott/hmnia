@@ -3,6 +3,7 @@
 {% set title = 'Make a Real Fast Site With GitHub Pages' %}
 {% set metaTitle = 'Make a Real Fast Site With GitHub Pages 🔥 Andrew Philpott' %}
 {% set date = '04/18/16' %}
+{% set canonical = 'false' %}
 {% set excerpt = 'A couple weeks ago, I remembered how awesome GitHub pages is. I also had been playing around with gulp for a few days, and I had the idea to redesign my website and host it on GitHub pages. In order to do that, I knew I would have to make the site static.' %}
 
 {# In Sublime, insert current date with fn+f5, fn+x #}

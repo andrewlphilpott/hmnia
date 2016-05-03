@@ -3,6 +3,7 @@
 {% set title = 'AEA San Francisco 2011 Notes' %}
 {% set metaTitle = 'AEA San Francisco 2011 Notes 📓 Andrew Philpott' %}
 {% set date = '12/12/11' %}
+{% set canonical = 'false' %}
 {% set excerpt = 'I was posting my AEA notes live.' %}
 
 {# In Sublime, insert current date with fn+f5, fn+x #}

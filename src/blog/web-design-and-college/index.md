@@ -3,6 +3,7 @@
 {% set title = 'Web Design and College' %}
 {% set metaTitle = 'Web Design and College 📚 Andrew Philpott' %}
 {% set date = '01/13/09' %}
+{% set canonical = 'false' %}
 {% set excerpt = 'Universities are great places to learn a lot of things. Traditional four-year programs offer a lot of courses that are of huge benefit to students. One program, though, that seems to be out of place in most traditional universities is web design. The reason I say this is because, unfortunately, I chose to major in web design at a traditional college.' %}
 
 {# In Sublime, insert current date with fn+f5, fn+x #}

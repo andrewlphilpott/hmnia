@@ -3,6 +3,7 @@
 {% set title = 'Create A Retro Animation With CSS' %}
 {% set metaTitle = 'Create A Retro Animation With CSS 👾 Andrew Philpott' %}
 {% set date = '02/01/10' %}
+{% set canonical = 'false' %}
 {% set excerpt = 'There has been a lot of excitement about CSS animation lately, and I’ve been playing around with it. In this tutorial, I’ll show you how to use CSS Animation to make an old video game style website.' %}
 
 {# In Sublime, insert current date with fn+f5, fn+x #}
@@ -108,7 +109,7 @@ For the girl, I used:
 	-webkit-animation-name: womanWalk;
 	-webkit-animation-duration: 20s;
 	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-timing-function: linear;	
+	-webkit-animation-timing-function: linear;
 }</code></pre>
 
 And for the guy I used:
