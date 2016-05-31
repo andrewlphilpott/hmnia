@@ -6,9 +6,16 @@
 		<link>https://himynameisandrew.com</link>
 		<atom:link href="https://himynameisandrew.com/rss/index.xml" rel="self" type="application/rss+xml" />
 					<item>
+				<title>Apple CarPlay: First Impressions</title>
+				<description>A little over a week ago, I got a new car which came equipped with Apple CarPlay. If you’re not familiar with CarPlay, it’s essentially a platform that allows you to replace your car’s built-in user interface with an interface that runs off your iPhone. I’ve spent some time with it and wanted to share some of my initial thoughts.</description>
+				<pubDate>Tue, 31 May 2016 12:00:00 EST</pubDate>
+				<link>http://himynameisandrew.com/blog/apple-carplay-first-impressions/</link>
+				<guid isPermaLink="true">http://himynameisandrew.com/blog/apple-carplay-first-impressions/</guid>
+			</item>
+					<item>
 				<title>An App to Keep Our Blog on Track</title>
 				<description>I had a bit of downtime at work, so I used Firebase to create an app to keep track of our team blog schedule.</description>
-				<pubDate>Fri, 13 May 2016 12:00:00 EST</pubDate>
+				<pubDate>Tue, 03 May 2016 12:00:00 EST</pubDate>
 				<link>http://himynameisandrew.com/blog/an-app-to-keep-our-blog-on-track/</link>
 				<guid isPermaLink="true">http://himynameisandrew.com/blog/an-app-to-keep-our-blog-on-track/</guid>
 			</item>
@@ -25,13 +32,6 @@
 				<pubDate>Mon, 18 Apr 2016 12:00:00 EST</pubDate>
 				<link>http://himynameisandrew.com/blog/make-a-really-fast-site-with-github-pages/</link>
 				<guid isPermaLink="true">http://himynameisandrew.com/blog/make-a-really-fast-site-with-github-pages/</guid>
-			</item>
-					<item>
-				<title>A Month (or so) With Amazon Echo</title>
-				<description>I asked for an Amazon Echo for Christmas, mainly because I wanted a reliable way to control my Wink-connected lights with my voice. I had pretty high expectations, but I’ve found that the Echo is even better than I expected; and it keeps on getting better.</description>
-				<pubDate>Fri, 05 Feb 2016 12:00:00 EST</pubDate>
-				<link>http://himynameisandrew.com/blog/a-month-or-so-with-amazon-echo/</link>
-				<guid isPermaLink="true">http://himynameisandrew.com/blog/a-month-or-so-with-amazon-echo/</guid>
 			</item>
 			</channel>
 </rss>

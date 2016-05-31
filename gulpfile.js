@@ -154,6 +154,7 @@ var getPosts = function(dir) {
             postTimeStamp = postTimeStamp.move(2, 0).join().replace(/,/g , '');
             // postTimeStamp = postTimeStamp.reverse().join().replace(/,/g , '');
             postExcerpt = postData.match("excerpt = '(.*)'");
+            // postBody = postData.match("\{\% markdown \%\}(.*)\{\% endmarkdown \%\}");
 
             results.push({
                 url: file,
@@ -161,6 +162,7 @@ var getPosts = function(dir) {
                 date: postDate[1],
                 timestamp: Number(postTimeStamp),
                 excerpt: postExcerpt[1]
+                // body: postBody[1]
             });
         }
     });
