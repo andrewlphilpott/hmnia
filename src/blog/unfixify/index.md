@@ -17,7 +17,7 @@ Unfixify is a neat little bookmarklet that looks for elements with `position: fi
 
 I created Unfixify this morning while shopping online. I got super sick of having like 200px of my viewport taken up by navigation. Honestly, I think sticking navigation to the top of the viewport is kind of insulting. I mean, how lazy do you think I am? Like I can't just hit cmd+up to reach the navigation?
 
-If you want to use Unfixify (which you obviously do), all you have to do is drag this here link <a title="Seriously, you should do this." href="javascript:(function()%7B%09document.body.appendChild(document.createElement('script')).src='http://himynameisandrew.com/unfixify/unfixify.js';%7D)();">Unfixify</a> into your bookmarks bar or whatever. (I didn’t bother confirming that’s how it works in Chrome and stuff, so if it doesn’t work that way, I’m sure you can figure it out.) Oh and then you've got to click the thing when you want to use it.
+If you want to use Unfixify (which you obviously do), all you have to do is drag this here link <a title="Seriously, you should do this." href="javascript:(function()%7B%09document.body.appendChild(document.createElement('script')).src='https://dl.dropboxusercontent.com/u/575400/unfixify/unfixify.js';%7D)();">Unfixify</a> into your bookmarks bar or whatever. (I didn’t bother confirming that’s how it works in Chrome and stuff, so if it doesn’t work that way, I’m sure you can figure it out.) Oh and then you've got to click the thing when you want to use it.
 
 ![Looking at the Unfixify logo is like staring into the eyes of the most beautiful rainbow](/assets/img/blog/unfixify_cute_logo_QT.png)
 
