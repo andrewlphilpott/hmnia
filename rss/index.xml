@@ -6,6 +6,13 @@
 		<link>https://himynameisandrew.com</link>
 		<atom:link href="https://himynameisandrew.com/rss/index.xml" rel="self" type="application/rss+xml" />
 					<item>
+				<title>Using CSS Masks to Create “Transparent” JPGs</title>
+				<description>JPG images are great. They allow us to show photos on the web while keeping the file size relatively small (compared to a photo saved as a PNG, anyway). But what do you do when you need a photo with transparency and you don’t want to sacrifice file size? Enter CSS masks.</description>
+				<pubDate>Tue, 14 Jun 2016 12:00:00 EST</pubDate>
+				<link>http://himynameisandrew.com/blog/using-css-masks-to-create-transparent-jpgs/</link>
+				<guid isPermaLink="true">http://himynameisandrew.com/blog/using-css-masks-to-create-transparent-jpgs/</guid>
+			</item>
+					<item>
 				<title>Apple CarPlay: First Impressions</title>
 				<description>A little over a week ago, I got a new car which came equipped with Apple CarPlay. If you’re not familiar with CarPlay, it’s essentially a platform that allows you to replace your car’s built-in user interface with an interface that runs off your iPhone. I’ve spent some time with it and wanted to share some of my initial thoughts.</description>
 				<pubDate>Tue, 31 May 2016 12:00:00 EST</pubDate>
@@ -25,13 +32,6 @@
 				<pubDate>Mon, 25 Apr 2016 12:00:00 EST</pubDate>
 				<link>http://himynameisandrew.com/blog/playstation-vue-vs-sling/</link>
 				<guid isPermaLink="true">http://himynameisandrew.com/blog/playstation-vue-vs-sling/</guid>
-			</item>
-					<item>
-				<title>Make a Real Fast Site With GitHub Pages</title>
-				<description>A couple weeks ago, I remembered how awesome GitHub pages is. I also had been playing around with gulp for a few days, and I had the idea to redesign my website and host it on GitHub pages. In order to do that, I knew I would have to make the site static.</description>
-				<pubDate>Mon, 18 Apr 2016 12:00:00 EST</pubDate>
-				<link>http://himynameisandrew.com/blog/make-a-really-fast-site-with-github-pages/</link>
-				<guid isPermaLink="true">http://himynameisandrew.com/blog/make-a-really-fast-site-with-github-pages/</guid>
 			</item>
 			</channel>
 </rss>

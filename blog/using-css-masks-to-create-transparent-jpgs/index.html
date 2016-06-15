@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class=""> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<title>Using CSS Masks to Create “Transparent” JPGs 😷 Andrew Philpott</title>
+		<meta name="description" content="JPG images are great. They allow us to show photos on the web while keeping the file size relatively small (compared to a photo saved as a PNG, anyway). But what do you do when you need a photo with transparency and you don’t want to sacrifice file size? Enter CSS masks.">
+
+		<!-- Google Fonts CSS -->
+		<style type="text/css">
+			@font-face{font-family:Montserrat;font-style:normal;font-weight:700;src:local('Montserrat-Bold'),url(https://fonts.gstatic.com/s/montserrat/v6/IQHow_FEYlDC4Gzy_m8fcnbFhgvWbfSbdVg11QabG8w.woff) format('woff')}@font-face{font-family:'Droid Serif';font-style:normal;font-weight:400;src:local('Droid Serif'),local('DroidSerif'),url(https://fonts.gstatic.com/s/droidserif/v6/0AKsP294HTD-nvJgucYTaLrIa-7acMAeDBVuclsi6Gc.woff) format('woff')}@font-face{font-family:'Droid Serif';font-style:normal;font-weight:700;src:local('Droid Serif Bold'),local('DroidSerif-Bold'),url(https://fonts.gstatic.com/s/droidserif/v6/QQt14e8dY39u-eYBZmppwRbnBKKEOwRKgsHDreGcocg.woff) format('woff')}@font-face{font-family:'Droid Serif';font-style:italic;font-weight:400;src:local('Droid Serif Italic'),local('DroidSerif-Italic'),url(https://fonts.gstatic.com/s/droidserif/v6/cj2hUnSRBhwmSPr9kS5894o3ZslTYfJv0R05CazkwN8.woff) format('woff')}
+		</style>
+
+		<!-- Main Styles -->
+		<link rel="stylesheet" type="text/css" href="/assets/css/screen.css" media="screen" />
+
+		<link href="/assets/img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Metadata -->
+		<meta property="og:title" content="Using CSS Masks to Create “Transparent” JPGs 😷 Andrew Philpott" />
+		<meta property="og:type" content="article" />
+		<meta property="og:image" content="/assets/img/icn_og.png" />
+		<meta property="og:site_name" content="Hi, my name is Andrew." />
+		<meta property="og:description" content="JPG images are great. They allow us to show photos on the web while keeping the file size relatively small (compared to a photo saved as a PNG, anyway). But what do you do when you need a photo with transparency and you don’t want to sacrifice file size? Enter CSS masks." />
+		<link rel="alternate" type="application/rss+xml" title="Here’s my RSS feed" href="https://himynameisandrew.com/rss/index.xml" />
+
+					<link rel="canonical" href="http://blog.elevatorup.com/post/145906937252/using-css-masks-to-create-transparent-jpgs" />
+		
+		<!-- Touch Icon -->
+		<link rel="apple-touch-icon" href="/assets/img/icn_touch.png" />
+	</head>
+
+	<body id="blog" class="blog">
+
+		<header id="head" class="head">
+	<a class="brand" href="/">
+		<h1 class="meta">The personal website of Andrew Philpott</h1>
+		<svg width="50px" height="30px" viewBox="0 0 84 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		        <g id="logo">
+		            <path d="M77.7879989,4.5 C81.3160166,7.500015 83.0799989,12.1079689 83.0799989,18.324 C83.0799989,24.5400311 81.2680171,29.0879856 77.6439989,31.968 C74.0199808,34.8480144 68.4880361,36.288 61.0479989,36.288 L54.3519989,36.288 L54.3519989,50.328 L43.1199989,50.328 L43.1199989,0 L60.9039989,0 C68.6320376,0 74.2599813,1.499985 77.7879989,4.5 L77.7879989,4.5 Z M69.5439989,24.3 C70.8880057,22.7879924 71.5599989,20.5800145 71.5599989,17.676 C71.5599989,14.7719855 70.6840077,12.7080061 68.9319989,11.484 C67.1799902,10.2599939 64.4560174,9.648 60.7599989,9.648 L54.3519989,9.648 L54.3519989,26.568 L61.9119989,26.568 C65.6560177,26.568 68.1999922,25.8120076 69.5439989,24.3 L69.5439989,24.3 Z" id="P" fill="#00A5BF"></path>
+		            <path d="M42.408,50.328 L37.728,39.456 L16.632,39.456 L11.952,50.328 L0,50.328 L21.744,0 L32.616,0 L54.36,50.328 L42.408,50.328 Z M27.216,14.976 L20.88,29.592 L33.48,29.592 L27.216,14.976 Z" id="A" fill="#8200BF"></path>
+		        </g>
+		    </g>
+		</svg>
+	</a>
+
+	<nav id="nav" class="nav">
+		<h2 class="meta">Main Navigation</h2>
+
+		<ul class="nav_list">
+			<li><a id="nav_blog" data-text="Blog" class="nav_link" href="/">Blog</a></li>
+			<li><a id="nav_about" data-text="About" class="nav_link" href="/about">About</a></li>
+			<li><a id="nav_work" data-text="Portfolio" class="nav_link" href="/portfolio">Portfolio</a></li>
+		</ul><!-- /.nav_list -->
+	</nav><!-- /#nav -->
+</header><!-- /#head -->
+		<div class="page">
+			<div class="banner">
+	<div class="banner_bg"></div>
+	<div class="banner_content wrap">
+		<h1 class="page_title" data-text="Using CSS Masks to Create “Transparent” JPGs"><span>Using CSS Masks to Create “Transparent” JPGs</span></h1>
+
+		
+					<time class="page_date date">June 14, 2016</time>
+			</div><!-- /.banner_content -->
+</div><!-- /.banner -->
+			<main id="main" class="main">
+				<div class="wrap">
+					
+<aside class="note">
+    <strong class="note_hdg">Note</strong>
+
+    <p>This was originally posted on the <a href="http://blog.elevatorup.com/post/145906937252/using-css-masks-to-create-transparent-jpgs">Elevator Up blog</a>.</p>
+</aside>
+
+<p>JPG images are great. They allow us to show photos on the web while keeping the file size relatively small (compared to a photo saved as a PNG, anyway). But what do you do when you need a photo with transparency and you don’t want to sacrifice file size? Enter CSS masks.</p>
+<p>CSS masking allows you to define a mask shape which is then applied to the element. Anything outside of the mask shape is cut out, and the rest is displayed. It pretty much works the same as masking in Photoshop. The properties for masks should look familiar, because the majority of them are analogous with the different background properties (attachment, clip, origin, image, repeat, etc.)</p>
+<p>There are actually multiple ways to define the mask shape, but we’re just going to look at mask images. the <code>mask-image</code> property essentially allows you to load in an image like an SVG or PNG, and use that image’s shape to define the mask.</p>
+<h2 id="an-example">An Example</h2>
+<p>Let’s take a look at a use case. Say we needed to show a group of team member photos, but they need to be cropped as triangles:</p>
+<p><img src="http://elevatorup.com/tumblr-post-images/2016-05-06_css-masks/design.jpg" alt="The design"></p>
+<p>You could save each of those photos as PNGs with transparency to acheive the triangle effect, but the file size of each of those would be much larger than if they were JPGs. Saving them as JPGs, on the other hand, means they won’t have any transparency. If you were to just stack them on top of each other, you’d end up with something like this:</p>
+<p><p data-height="266" data-theme-id="light" data-slug-hash="EKraeZ" data-default-tab="result" data-user="andrewlphilpott" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/andrewlphilpott/pen/EKraeZ/">Unmasked</a> by Andrew Philpott (<a href="http://codepen.io/andrewlphilpott">@andrewlphilpott</a>) on <a href="http://codepen.io">CodePen</a>.</p></p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+<p>Next, you’ll need to apply a mask. The mask essentially just consists of a transparent image of the shape that we want the photos to show up as:</p>
+<p><img src="http://elevatorup.com/tumblr-post-images/2016-05-06_css-masks/mask.png" alt="The design"></p>
+<p>Now, you can reference that PNG file as the <code>mask-image</code> property for each of the two photos. You’ll also apply <code>mask-size: cover</code> to make sure the mask is always the same size as the photo.</p>
+<p>Once those changes have been made, you can see that the photos stack and are cropped to the proper shape.</p>
+<p><p data-height="266" data-theme-id="light" data-slug-hash="rePaZL" data-default-tab="result" data-user="andrewlphilpott" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/andrewlphilpott/pen/rePaZL/">Masked</a> by Andrew Philpott (<a href="http://codepen.io/andrewlphilpott">@andrewlphilpott</a>) on <a href="http://codepen.io">CodePen</a>.</p></p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+
+<h2 id="browser-support">Browser Support</h2>
+<p>Of course, the world isn’t perfect and neither are browsers. As such, this won’t work everywhere. Masking is only supported by Chrome, Safari, and Opera right now, so you’ll need a fallback if you have to support IE, Firefox, or other browsers. One option would be to use JavaScript to test for <code>mask</code> support and then fall back to a static version of all of the devices as a single JPG. Unsupported browsers would lose the animation, but they would still benefit from the smaller file size of the JPG as opposed to a PNG.</p>
+<h2 id="another-example-in-the-wild">Another Example in the Wild</h2>
+<p>Apple uses masks to great effect on their <a href="http://www.apple.com/ipad-pro/">iPad Pro</a> page. (It’s actually what gave me the idea for this post.) Each of the different objects in the hero image is actually a separate JPG which then has a mask applied to it to allow the stacking and animations. For browsers that don’t support masks, a static, flattened JPG is used.</p>
+
+				</div><!-- /.wrap -->
+
+				<div class="cool wrap">
+					<strong class="cool_count">0</strong>
+					<span class="cool_lbl">Cool post, man.</span>
+				</div><!-- /.cool -->
+			</main><!-- /#main -->
+		</div><!-- /.page -->
+
+		<footer id="foot" class="foot">
+	<small class="foot_note">©2016 Andrew Philpott</small>
+</footer><!-- /#foot -->
+		<script type="text/javascript" src="/assets/js/plugins.min.js"></script>
+<script type="text/javascript" src="/assets/js/main.min.js"></script>
+
+<script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+<script type="text/javascript" src="/assets/js/post.min.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-12824336-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+	</body>
+</html>
