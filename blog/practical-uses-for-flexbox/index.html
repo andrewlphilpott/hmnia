@@ -72,28 +72,28 @@
 				<div class="wrap">
 					
 <p>If you’ve been developing for the web in the past couple of years, you have most likely heard of CSS’s <a href="http://www.w3.org/TR/css-flexbox-1/">Flexbox layout module</a> (also known as flexbox). Maybe you’ve used it, or maybe you’ve shied away from it in favor of more familiar layout methods. I’ve been using flexbox fairly regularly for the past few months and I have to say, it’s pretty amazing. Here are some practical uses that I have found.</p>
-<h1 id="site-headers">Site Headers</h1>
+<h2 id="site-headers">Site Headers</h2>
 <p>I tend to use flexbox a lot for header layouts. It really lends itself to a lot of the common designs that I see in headers (i.e. a logo on the left, some navigation on the right, maybe a search form, and everything centered vertically). Not only does flexbox allow you to easily lay elements out horizontally, it also makes centering things vertically super easy.</p>
 <p><p data-height="265" data-theme-id="light" data-slug-hash="oLvmNO" data-default-tab="result" data-user="andrewlphilpott" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/andrewlphilpott/pen/oLvmNO/">Flexbox Header</a> by Andrew Philpott (<a href="http://codepen.io/andrewlphilpott">@andrewlphilpott</a>) on <a href="http://codepen.io">CodePen</a>.</p></p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-<h1 id="grid-layouts">Grid Layouts</h1>
+<h2 id="grid-layouts">Grid Layouts</h2>
 <p>Grid layouts are common in web design, so we already have several methods for laying them out. You can <code>float</code>, you can use <code>inline-block</code>, I guess you can use <code>position: absolute</code> if you’re a masochist, you can use things like <a href="http://isotope.metafizzy.co">Isotope</a>, the list goes on. But what if you don’t want to worry about clearing your floats, dealing with the whitespace added by inline-block elements, or messing with absolute positioning or JavaScript plugins? Well, then flexbox is just what you need. You can even accomplish things like making all grid items the same height without resorting to calculating heights with JavaScript.</p>
 <p><p data-height="882" data-theme-id="light" data-slug-hash="YWzzMe" data-default-tab="result" data-user="andrewlphilpott" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/andrewlphilpott/pen/YWzzMe/">Flexbox Grid</a> by Andrew Philpott (<a href="http://codepen.io/andrewlphilpott">@andrewlphilpott</a>) on <a href="http://codepen.io">CodePen</a>.</p></p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-<h1 id="complex-grids">Complex Grids</h1>
+<h2 id="complex-grids">Complex Grids</h2>
 <p>Let’s say you need to build a photo collage which has two columns and two rows with the second column spanning both rows. Also you’re not allowed to use a table, because it’s not tabular data. What do you do? Write a bunch of weird floats and some JS? Use absolute positioning? Use a ton of divs and style them somehow? Nope. Just use flexbox.</p>
 <p><p data-height="453" data-theme-id="light" data-slug-hash="WxNbbV" data-default-tab="result" data-user="andrewlphilpott" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/andrewlphilpott/pen/WxNbbV/">Flexbox Collage</a> by Andrew Philpott (<a href="http://codepen.io/andrewlphilpott">@andrewlphilpott</a>) on <a href="http://codepen.io">CodePen</a>.</p></p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-<h1 id="browser-issues">Browser Issues</h1>
+<h2 id="browser-issues">Browser Issues</h2>
 <p>Here’s the part where I tell you that flexbox isn’t fully supported in all browsers (sorry if you’re reading this article in an older browser). The nice thing is, it works pretty well in modern browsers. So far, I haven’t found much need to write fallbacks or workarounds aside from fixing a few small things in IE. Details below.</p>
-<h2 id="flex-basis">Flex Basis</h2>
+<h3 id="flex-basis">Flex Basis</h3>
 <p>I’ve found that when specifying a <code>flex-basis</code>, IE tends to ignore it. You can work around this by also adding a <code>max-width</code> that matches the <code>flex-basis</code>. It’s a little annoying, but it has worked fine in my experience.</p>
-<h2 id="display-none">Display None</h2>
+<h3 id="display-none">Display None</h3>
 <p>Another slightly annoying quirk in IE is that it won’t ignore flex children that are hidden with <code>display: none;</code>. Even though they are visually hidden, they still have an impact on the layout of your flexbox. I’ve only run into this once and I was able to work around the issue by changing the order of my markup and using absolute positioning to move the hidden element out of the box.</p>
-<h1 id="moving-forward">Moving Forward</h1>
+<h2 id="moving-forward">Moving Forward</h2>
 <p>In my opinion, flexbox is at the point where it’s supported widely enough to be a good option. I mostly use it for grids and complex layouts that would be difficult or impossible to create with traditional layout methods. The issues that I’ve come across are small enough that they’re easy to work around. If you find yourself needing to support browsers older than IE10, though, you might want to reconsider.</p>
 <p>For those of you who are ready to make the move to flexbox, I came across an excellent list of common flexbox bugs along with workarounds called <a href="https://github.com/philipwalton/flexbugs">Flexbugs</a> that you can reference if you find yourself running into any trouble. It’s set up as a Git repo and seems to be pretty actively updated.</p>
 
