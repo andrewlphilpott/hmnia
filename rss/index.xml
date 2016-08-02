@@ -6,6 +6,13 @@
 		<link>https://himynameisandrew.com</link>
 		<atom:link href="https://himynameisandrew.com/rss/index.xml" rel="self" type="application/rss+xml" />
 					<item>
+				<title>Practical Uses for Flexbox</title>
+				<description>If you’ve been developing for the web in the past couple of years, you have most likely heard of CSS’s Flexbox layout module (also known as flexbox). Maybe you’ve used it, or maybe you’ve shied away from it in favor of more familiar layout methods. I’ve been using flexbox fairly regularly for the past few months and I have to say, it’s pretty amazing. Here are some practical uses that I have found.</description>
+				<pubDate>Tue, 02 Aug 2016 12:00:00 EST</pubDate>
+				<link>http://himynameisandrew.com/blog/practical-uses-for-flexbox/</link>
+				<guid isPermaLink="true">http://himynameisandrew.com/blog/practical-uses-for-flexbox/</guid>
+			</item>
+					<item>
 				<title>Using CSS Masks to Create “Transparent” JPGs</title>
 				<description>JPG images are great. They allow us to show photos on the web while keeping the file size relatively small (compared to a photo saved as a PNG, anyway). But what do you do when you need a photo with transparency and you don’t want to sacrifice file size? Enter CSS masks.</description>
 				<pubDate>Tue, 14 Jun 2016 12:00:00 EST</pubDate>
@@ -25,13 +32,6 @@
 				<pubDate>Tue, 03 May 2016 12:00:00 EST</pubDate>
 				<link>http://himynameisandrew.com/blog/an-app-to-keep-our-blog-on-track/</link>
 				<guid isPermaLink="true">http://himynameisandrew.com/blog/an-app-to-keep-our-blog-on-track/</guid>
-			</item>
-					<item>
-				<title>PlayStation Vue vs. Sling</title>
-				<description>I’ve been looking for a great way to stream live TV over the internet for a while now, and I’ve tried both Sling and PlayStation Vue. Here’s my take on how the two stack up.</description>
-				<pubDate>Mon, 25 Apr 2016 12:00:00 EST</pubDate>
-				<link>http://himynameisandrew.com/blog/playstation-vue-vs-sling/</link>
-				<guid isPermaLink="true">http://himynameisandrew.com/blog/playstation-vue-vs-sling/</guid>
 			</item>
 			</channel>
 </rss>
