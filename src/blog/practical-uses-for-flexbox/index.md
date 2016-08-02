@@ -11,6 +11,12 @@
 {% block body %}
 
 {% markdown %}
+<aside class="note">
+	<strong class="note_hdg">Note</strong>
+
+	<p>This was originally posted on the [Elevator Up blog](http://blog.elevatorup.com/post/148346993297/practical-uses-for-flexbox).</p>
+</aside>
+
 If you’ve been developing for the web in the past couple of years, you have most likely heard of CSS’s [Flexbox layout module](http://www.w3.org/TR/css-flexbox-1/) (also known as flexbox). Maybe you’ve used it, or maybe you’ve shied away from it in favor of more familiar layout methods. I’ve been using flexbox fairly regularly for the past few months and I have to say, it’s pretty amazing. Here are some practical uses that I have found.
 
 ## Site Headers
