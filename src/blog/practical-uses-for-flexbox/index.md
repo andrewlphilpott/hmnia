@@ -4,7 +4,7 @@
 {% set metaTitle = 'Practical Uses for Flexbox 📦 Andrew Philpott' %}
 {% set date = '08/02/16' %}
 {% set canonical = 'http://blog.elevatorup.com/post/148346993297/practical-uses-for-flexbox' %}
-{% set excerpt = 'If you’ve been developing for the web in the past couple of years, you have most likely heard of CSS’s Flexbox layout module (also known as flexbox). Maybe you’ve used it, or maybe you’ve shied away from it in favor of more familiar layout methods. I’ve been using flexbox fairly regularly for the past few months and I have to say, it’s pretty amazing. Here are some practical uses that I have found.' %}
+{% set excerpt = 'If you’ve been developing for the web in the past couple of years, you have most likely heard of CSS’s Flexible box layout module (also known as flexbox). Maybe you’ve used it, or maybe you’ve shied away from it in favor of more familiar layout methods. I’ve been using flexbox fairly regularly for the past few months and I have to say, it’s pretty amazing. Here are some practical uses that I have found.' %}
 
 {# In Sublime, insert current date with fn+f5, fn+x #}
 
