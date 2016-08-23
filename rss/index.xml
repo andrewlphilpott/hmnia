@@ -6,6 +6,13 @@
 		<link>https://himynameisandrew.com</link>
 		<atom:link href="https://himynameisandrew.com/rss/index.xml" rel="self" type="application/rss+xml" />
 					<item>
+				<title>In Defense of Classes</title>
+				<description>A few months ago, Tim Baxter wrote a post for A List Apart titled _Meaningful CSS: Style Like You Mean It_. In it, he lays out an argument for avoiding the use of classes in markup and instead favoring things like attributes which make your markup more meaningful and elements as CSS selectors. There are parts of his idea that I like, but overall I don’t think it’s all that practical for many projects other than very small websites or apps.</description>
+				<pubDate>Tue, 23 Aug 2016 12:00:00 EST</pubDate>
+				<link>http://himynameisandrew.com/blog/in-defense-of-classes/</link>
+				<guid isPermaLink="true">http://himynameisandrew.com/blog/in-defense-of-classes/</guid>
+			</item>
+					<item>
 				<title>Practical Uses for Flexbox</title>
 				<description>If you’ve been developing for the web in the past couple of years, you have most likely heard of CSS’s Flexible box layout module (also known as flexbox). Maybe you’ve used it, or maybe you’ve shied away from it in favor of more familiar layout methods. I’ve been using flexbox fairly regularly for the past few months and I have to say, it’s pretty amazing. Here are some practical uses that I have found.</description>
 				<pubDate>Tue, 02 Aug 2016 12:00:00 EST</pubDate>
@@ -25,13 +32,6 @@
 				<pubDate>Tue, 31 May 2016 12:00:00 EST</pubDate>
 				<link>http://himynameisandrew.com/blog/apple-carplay-first-impressions/</link>
 				<guid isPermaLink="true">http://himynameisandrew.com/blog/apple-carplay-first-impressions/</guid>
-			</item>
-					<item>
-				<title>An App to Keep Our Blog on Track</title>
-				<description>I had a bit of downtime at work, so I used Firebase to create an app to keep track of our team blog schedule.</description>
-				<pubDate>Tue, 03 May 2016 12:00:00 EST</pubDate>
-				<link>http://himynameisandrew.com/blog/an-app-to-keep-our-blog-on-track/</link>
-				<guid isPermaLink="true">http://himynameisandrew.com/blog/an-app-to-keep-our-blog-on-track/</guid>
 			</item>
 			</channel>
 </rss>

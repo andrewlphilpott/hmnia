@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class=""> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<title>In Defense of Classes 📣 Andrew Philpott</title>
+		<meta name="description" content="A few months ago, Tim Baxter wrote a post for A List Apart titled _Meaningful CSS: Style Like You Mean It_. In it, he lays out an argument for avoiding the use of classes in markup and instead favoring things like attributes which make your markup more meaningful and elements as CSS selectors. There are parts of his idea that I like, but overall I don’t think it’s all that practical for many projects other than very small websites or apps.">
+
+		<!-- Google Fonts CSS -->
+		<style type="text/css">
+			@font-face{font-family:Montserrat;font-style:normal;font-weight:700;src:local('Montserrat-Bold'),url(https://fonts.gstatic.com/s/montserrat/v6/IQHow_FEYlDC4Gzy_m8fcnbFhgvWbfSbdVg11QabG8w.woff) format('woff')}@font-face{font-family:'Droid Serif';font-style:normal;font-weight:400;src:local('Droid Serif'),local('DroidSerif'),url(https://fonts.gstatic.com/s/droidserif/v6/0AKsP294HTD-nvJgucYTaLrIa-7acMAeDBVuclsi6Gc.woff) format('woff')}@font-face{font-family:'Droid Serif';font-style:normal;font-weight:700;src:local('Droid Serif Bold'),local('DroidSerif-Bold'),url(https://fonts.gstatic.com/s/droidserif/v6/QQt14e8dY39u-eYBZmppwRbnBKKEOwRKgsHDreGcocg.woff) format('woff')}@font-face{font-family:'Droid Serif';font-style:italic;font-weight:400;src:local('Droid Serif Italic'),local('DroidSerif-Italic'),url(https://fonts.gstatic.com/s/droidserif/v6/cj2hUnSRBhwmSPr9kS5894o3ZslTYfJv0R05CazkwN8.woff) format('woff')}
+		</style>
+
+		<!-- Main Styles -->
+		<link rel="stylesheet" type="text/css" href="/assets/css/screen.css" media="screen" />
+
+		<link href="/assets/img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Metadata -->
+		<meta property="og:title" content="In Defense of Classes 📣 Andrew Philpott" />
+		<meta property="og:type" content="article" />
+		<meta property="og:image" content="/assets/img/icn_og.png" />
+		<meta property="og:site_name" content="Hi, my name is Andrew." />
+		<meta property="og:description" content="A few months ago, Tim Baxter wrote a post for A List Apart titled _Meaningful CSS: Style Like You Mean It_. In it, he lays out an argument for avoiding the use of classes in markup and instead favoring things like attributes which make your markup more meaningful and elements as CSS selectors. There are parts of his idea that I like, but overall I don’t think it’s all that practical for many projects other than very small websites or apps." />
+		<link rel="alternate" type="application/rss+xml" title="Here’s my RSS feed" href="https://himynameisandrew.com/rss/index.xml" />
+
+					<link rel="canonical" href="http://blog.elevatorup.com/post/149368866622/in-defense-of-classes" />
+		
+		<!-- Touch Icon -->
+		<link rel="apple-touch-icon" href="/assets/img/icn_touch.png" />
+	</head>
+
+	<body id="blog" class="blog">
+
+		<header id="head" class="head">
+	<a class="brand" href="/">
+		<h1 class="meta">The personal website of Andrew Philpott</h1>
+		<svg width="50px" height="30px" viewBox="0 0 84 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		        <g id="logo">
+		            <path d="M77.7879989,4.5 C81.3160166,7.500015 83.0799989,12.1079689 83.0799989,18.324 C83.0799989,24.5400311 81.2680171,29.0879856 77.6439989,31.968 C74.0199808,34.8480144 68.4880361,36.288 61.0479989,36.288 L54.3519989,36.288 L54.3519989,50.328 L43.1199989,50.328 L43.1199989,0 L60.9039989,0 C68.6320376,0 74.2599813,1.499985 77.7879989,4.5 L77.7879989,4.5 Z M69.5439989,24.3 C70.8880057,22.7879924 71.5599989,20.5800145 71.5599989,17.676 C71.5599989,14.7719855 70.6840077,12.7080061 68.9319989,11.484 C67.1799902,10.2599939 64.4560174,9.648 60.7599989,9.648 L54.3519989,9.648 L54.3519989,26.568 L61.9119989,26.568 C65.6560177,26.568 68.1999922,25.8120076 69.5439989,24.3 L69.5439989,24.3 Z" id="P" fill="#00A5BF"></path>
+		            <path d="M42.408,50.328 L37.728,39.456 L16.632,39.456 L11.952,50.328 L0,50.328 L21.744,0 L32.616,0 L54.36,50.328 L42.408,50.328 Z M27.216,14.976 L20.88,29.592 L33.48,29.592 L27.216,14.976 Z" id="A" fill="#8200BF"></path>
+		        </g>
+		    </g>
+		</svg>
+	</a>
+
+	<nav id="nav" class="nav">
+		<h2 class="meta">Main Navigation</h2>
+
+		<ul class="nav_list">
+			<li><a id="nav_blog" data-text="Blog" class="nav_link" href="/">Blog</a></li>
+			<li><a id="nav_about" data-text="About" class="nav_link" href="/about">About</a></li>
+			<li><a id="nav_work" data-text="Portfolio" class="nav_link" href="/portfolio">Portfolio</a></li>
+		</ul><!-- /.nav_list -->
+	</nav><!-- /#nav -->
+</header><!-- /#head -->
+		<div class="page">
+			<div class="banner">
+	<div class="banner_bg"></div>
+	<div class="banner_content wrap">
+		<h1 class="page_title" data-text="In Defense of Classes"><span>In Defense of Classes</span></h1>
+
+		
+					<time class="page_date date">August 23, 2016</time>
+			</div><!-- /.banner_content -->
+</div><!-- /.banner -->
+			<main id="main" class="main">
+				<div class="wrap">
+					
+<aside class="note">
+    <strong class="note_hdg">Note</strong>
+
+    <p>This was originally posted on the <a href="http://blog.elevatorup.com/post/149368866622/in-defense-of-classes">Elevator Up blog</a>.</p>
+</aside>
+
+<p>A few months ago, Tim Baxter wrote a post for A List Apart titled <a href="http://alistapart.com/article/meaningful-css-style-like-you-mean-it"><em>Meaningful CSS: Style Like You Mean It</em></a>. In it, he lays out an argument for avoiding the use of classes in markup and instead favoring things like attributes which make your markup more meaningful and elements as CSS selectors. There are parts of his idea that I like, but overall I don’t think it’s all that practical for many projects other than very small websites or apps.</p>
+<h2 id="same-element-different-use">Same Element, Different Use</h2>
+<p>One of the use cases that Tim mentions in his article is tabs. Rather than using classes like <code>.tab</code> to style a tab and <code>.selected</code> to mark a tab as selected, he recommends using <code>[role=tab]</code> and <code>[role=tab][aria-selected=true]</code> as your selectors. I do think it&#39;s a good idea to use ARIA attributes where they make sense. If you’re building an app that has multiple styles and uses for tabs, though, you’re probably also going to need to add classes to your tabs anyway (or use a bunch of descendant selectors but then you might take a small performance hit since CSS selectors are evaluated from right to left).</p>
+<p>Another suggestion made in the article is applying styles directly to elements (e.g. styling forms with a <code>form</code> selector rather than something like <code>.form</code>). Off the top of my head, I can’t think of a single project I have worked on that hasn’t had multiple, wildly different looking forms – whether that be a site with a simple contact form, a search form, and a newsletter sign up or something more advanced. Styling elements directly can definitely work well for some things, but I would be careful when doing this. Otherwise, you’ll probably find yourself having to override a lot of styles.</p>
+<h2 id="potentially-heavier-code">Potentially Heavier Code</h2>
+<p>Looking back at the tab example, it’s pretty obvious that <code>[role=tab][aria-selected=true]</code> is a longer selector than <code>.tab.selected</code>. As a result, that’s going to lead to a larger file size for your CSS file. In that example alone, the longer selector is 17 bytes larger than the shorter one (30B vs 13B). That may not seem like a huge difference, but if you’re using longer selectors frequently in your CSS, it could have a dramatic impact on the size of your file. Add to that the need to either use descendant selectors or additional classes to account for different variations of elements and you could really be looking at some bloat.</p>
+<h2 id="maintainability">Maintainability</h2>
+<p>Another issue that could easily come up while using this approach is finding a project more difficult to maintain – especially if it’s a project that’s being worked on by multiple developers. As a developer who has always worked with a team, I know that when making changes or additions to a pre-existing site, it can be difficult to make sure you’re not interfering with other styles. It’s much easier to ensure that you don’t screw something up if you’re using classes because you can very easily check that your classes are unique. Obviously, you should also make sure your classes make sense or use existing classes if you can.</p>
+<h2 id="takeaways">Takeaways</h2>
+<p>Tim does touch on some really good points and I think a lot of what he was trying to encourage is writing better code all around – including markup and styles. One of the major lessons I took away from his article was that there is a lot more we can do than just slap a class on every element. Things like ARIA exist for a reason and if you can use those to also provide styling hooks, that’s great. You just need to be smart about when and where you do it so you don’t end up bloating your CSS files or making something that will be a nightmare to maintain.</p>
+
+				</div><!-- /.wrap -->
+
+				<div class="cool wrap">
+					<strong class="cool_count">0</strong>
+					<span class="cool_lbl">Cool post, man.</span>
+				</div><!-- /.cool -->
+			</main><!-- /#main -->
+		</div><!-- /.page -->
+
+		<footer id="foot" class="foot">
+	<small class="foot_note">©2016 Andrew Philpott</small>
+</footer><!-- /#foot -->
+		<script type="text/javascript" src="/assets/js/plugins.min.js"></script>
+<script type="text/javascript" src="/assets/js/main.min.js"></script>
+
+<script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+<script type="text/javascript" src="/assets/js/post.min.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-12824336-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+	</body>
+</html>
