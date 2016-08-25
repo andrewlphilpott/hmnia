@@ -6,6 +6,13 @@
 		<link>https://himynameisandrew.com</link>
 		<atom:link href="https://himynameisandrew.com/rss/index.xml" rel="self" type="application/rss+xml" />
 					<item>
+				<title>No Man’s Sky Log</title>
+				<description>I was geeking out about No Man’s Sky so much before it came out that I decided to make a digital log to keep track of what I encounter in the game. It’s got this real neat glitchy text effect on it.</description>
+				<pubDate>Thu, 25 Aug 2016 12:00:00 EST</pubDate>
+				<link>http://himynameisandrew.com/blog/nms-log/</link>
+				<guid isPermaLink="true">http://himynameisandrew.com/blog/nms-log/</guid>
+			</item>
+					<item>
 				<title>In Defense of Classes</title>
 				<description>A few months ago, Tim Baxter wrote a post for A List Apart titled _Meaningful CSS: Style Like You Mean It_. In it, he lays out an argument for avoiding the use of classes in markup and instead favoring things like attributes which make your markup more meaningful and elements as CSS selectors. There are parts of his idea that I like, but overall I don’t think it’s all that practical for many projects other than very small websites or apps.</description>
 				<pubDate>Tue, 23 Aug 2016 12:00:00 EST</pubDate>
@@ -25,13 +32,6 @@
 				<pubDate>Tue, 14 Jun 2016 12:00:00 EST</pubDate>
 				<link>http://himynameisandrew.com/blog/using-css-masks-to-create-transparent-jpgs/</link>
 				<guid isPermaLink="true">http://himynameisandrew.com/blog/using-css-masks-to-create-transparent-jpgs/</guid>
-			</item>
-					<item>
-				<title>Apple CarPlay: First Impressions</title>
-				<description>A little over a week ago, I got a new car which came equipped with Apple CarPlay. If you’re not familiar with CarPlay, it’s essentially a platform that allows you to replace your car’s built-in user interface with an interface that runs off your iPhone. I’ve spent some time with it and wanted to share some of my initial thoughts.</description>
-				<pubDate>Tue, 31 May 2016 12:00:00 EST</pubDate>
-				<link>http://himynameisandrew.com/blog/apple-carplay-first-impressions/</link>
-				<guid isPermaLink="true">http://himynameisandrew.com/blog/apple-carplay-first-impressions/</guid>
 			</item>
 			</channel>
 </rss>
