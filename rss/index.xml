@@ -6,6 +6,13 @@
 		<link>https://himynameisandrew.com</link>
 		<atom:link href="https://himynameisandrew.com/rss/index.xml" rel="self" type="application/rss+xml" />
 					<item>
+				<title>How to Get a Smart House Now</title>
+				<description>My favorite Disney Channel movie when I was a kid was Smart House. I loved watching Smart House and seeing all the crazy things that the Cooper’s house could do. Ever since first seeing the movie, I have been really into the idea of automation.</description>
+				<pubDate>Tue, 29 Nov 2016 12:00:00 EST</pubDate>
+				<link>http://himynameisandrew.com/blog/how-to-get-a-smart-house-now/</link>
+				<guid isPermaLink="true">http://himynameisandrew.com/blog/how-to-get-a-smart-house-now/</guid>
+			</item>
+					<item>
 				<title>No Man’s Sky Log</title>
 				<description>I was geeking out about No Man’s Sky so much before it came out that I decided to make a digital log to keep track of what I encounter in the game. It’s got this real neat glitchy text effect on it.</description>
 				<pubDate>Thu, 25 Aug 2016 12:00:00 EST</pubDate>
@@ -25,13 +32,6 @@
 				<pubDate>Tue, 02 Aug 2016 12:00:00 EST</pubDate>
 				<link>http://himynameisandrew.com/blog/practical-uses-for-flexbox/</link>
 				<guid isPermaLink="true">http://himynameisandrew.com/blog/practical-uses-for-flexbox/</guid>
-			</item>
-					<item>
-				<title>Using CSS Masks to Create “Transparent” JPGs</title>
-				<description>JPG images are great. They allow us to show photos on the web while keeping the file size relatively small (compared to a photo saved as a PNG, anyway). But what do you do when you need a photo with transparency and you don’t want to sacrifice file size? Enter CSS masks.</description>
-				<pubDate>Tue, 14 Jun 2016 12:00:00 EST</pubDate>
-				<link>http://himynameisandrew.com/blog/using-css-masks-to-create-transparent-jpgs/</link>
-				<guid isPermaLink="true">http://himynameisandrew.com/blog/using-css-masks-to-create-transparent-jpgs/</guid>
 			</item>
 			</channel>
 </rss>
