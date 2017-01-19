@@ -3,7 +3,7 @@
 {% set title = 'How to Get a Smart House Now' %}
 {% set metaTitle = 'How to Get a Smart House Now 🏠 Andrew Philpott' %}
 {% set date = '11/29/16' %}
-{% set canonical = 'false' %}
+{% set canonical = 'http://blog.elevatorup.com/post/155437522242/my-transition-from-ios-to-android' %}
 {% set excerpt = 'My favorite Disney Channel movie when I was a kid was Smart House. I loved watching Smart House and seeing all the crazy things that the Cooper’s house could do. Ever since first seeing the movie, I have been really into the idea of automation.' %}
 
 {# In Sublime, insert current date with fn+f5, fn+x #}
@@ -11,6 +11,12 @@
 {% block body %}
 
 {% markdown %}
+<aside class="note">
+	<strong class="note_hdg">Note</strong>
+
+	<p>This was originally posted on the [Elevator Up blog](http://blog.elevatorup.com/post/155437522242/my-transition-from-ios-to-android).</p>
+</aside>
+
 My favorite Disney Channel movie when I was a kid was [Smart House](http://www.imdb.com/title/tt0192618/). For those who haven’t seen it, Smart House is about a boy named Ben Cooper who wins a fully automated house in a sweepstakes. I loved watching Smart House and seeing all the crazy things that the Cooper’s house could do. Ever since first seeing the movie, I have been really into the idea of automation. We’re starting to enter a time when home automation is no longer a dream, and it can be fairly budget-friendly to add some simple automation to your home today (if you add things slowly). Here are some of the simple things that you can do to make your house a little smarter today.
 
 ## Smart Thermostat

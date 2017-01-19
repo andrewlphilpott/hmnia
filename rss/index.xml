@@ -6,6 +6,13 @@
 		<link>https://himynameisandrew.com</link>
 		<atom:link href="https://himynameisandrew.com/rss/index.xml" rel="self" type="application/rss+xml" />
 					<item>
+				<title>My Transition from iOS to Android</title>
+				<description>I’ve been an iOS fan for a long time. I was a poor college student when the original iPhone came out, and that was still the case with the 3G and 3GS, but after that I had an iPhone 4, 5, and 6. Despite all of this, I recently started feeling like I wanted to try something different.</description>
+				<pubDate>Thu, 05 Jan 2017 12:00:00 EST</pubDate>
+				<link>http://himynameisandrew.com/blog/my-transition-from-ios-to-android/</link>
+				<guid isPermaLink="true">http://himynameisandrew.com/blog/my-transition-from-ios-to-android/</guid>
+			</item>
+					<item>
 				<title>How to Get a Smart House Now</title>
 				<description>My favorite Disney Channel movie when I was a kid was Smart House. I loved watching Smart House and seeing all the crazy things that the Cooper’s house could do. Ever since first seeing the movie, I have been really into the idea of automation.</description>
 				<pubDate>Tue, 29 Nov 2016 12:00:00 EST</pubDate>
@@ -25,13 +32,6 @@
 				<pubDate>Tue, 23 Aug 2016 12:00:00 EST</pubDate>
 				<link>http://himynameisandrew.com/blog/in-defense-of-classes/</link>
 				<guid isPermaLink="true">http://himynameisandrew.com/blog/in-defense-of-classes/</guid>
-			</item>
-					<item>
-				<title>Practical Uses for Flexbox</title>
-				<description>If you’ve been developing for the web in the past couple of years, you have most likely heard of CSS’s Flexible box layout module (also known as flexbox). Maybe you’ve used it, or maybe you’ve shied away from it in favor of more familiar layout methods. I’ve been using flexbox fairly regularly for the past few months and I have to say, it’s pretty amazing. Here are some practical uses that I have found.</description>
-				<pubDate>Tue, 02 Aug 2016 12:00:00 EST</pubDate>
-				<link>http://himynameisandrew.com/blog/practical-uses-for-flexbox/</link>
-				<guid isPermaLink="true">http://himynameisandrew.com/blog/practical-uses-for-flexbox/</guid>
 			</item>
 			</channel>
 </rss>
