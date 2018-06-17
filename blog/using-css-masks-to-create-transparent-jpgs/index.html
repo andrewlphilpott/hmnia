@@ -72,9 +72,9 @@
 				<div class="wrap">
 					
 <aside class="note">
-    <strong class="note_hdg">Note</strong>
+<strong class="note_hdg">Note</strong>
 
-    <p>This was originally posted on the <a href="http://blog.elevatorup.com/post/145906937252/using-css-masks-to-create-transparent-jpgs">Elevator Up blog</a>.</p>
+<p>This was originally posted on the <a href="http://blog.elevatorup.com/post/145906937252/using-css-masks-to-create-transparent-jpgs">Elevator Up blog</a>.</p>
 </aside>
 
 <p>JPG images are great. They allow us to show photos on the web while keeping the file size relatively small (compared to a photo saved as a PNG, anyway). But what do you do when you need a photo with transparency and you don’t want to sacrifice file size? Enter CSS masks.</p>
@@ -84,14 +84,14 @@
 <p>Let’s take a look at a use case. Say we needed to show a group of team member photos, but they need to be cropped as triangles:</p>
 <p><img src="http://elevatorup.com/tumblr-post-images/2016-05-06_css-masks/design.jpg" alt="The design"></p>
 <p>You could save each of those photos as PNGs with transparency to acheive the triangle effect, but the file size of each of those would be much larger than if they were JPGs. Saving them as JPGs, on the other hand, means they won’t have any transparency. If you were to just stack them on top of each other, you’d end up with something like this:</p>
-<p><p data-height="266" data-theme-id="light" data-slug-hash="EKraeZ" data-default-tab="result" data-user="andrewlphilpott" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/andrewlphilpott/pen/EKraeZ/">Unmasked</a> by Andrew Philpott (<a href="http://codepen.io/andrewlphilpott">@andrewlphilpott</a>) on <a href="http://codepen.io">CodePen</a>.</p></p>
+<p data-height="266" data-theme-id="light" data-slug-hash="EKraeZ" data-default-tab="result" data-user="andrewlphilpott" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/andrewlphilpott/pen/EKraeZ/">Unmasked</a> by Andrew Philpott (<a href="http://codepen.io/andrewlphilpott">@andrewlphilpott</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 <p>Next, you’ll need to apply a mask. The mask essentially just consists of a transparent image of the shape that we want the photos to show up as:</p>
 <p><img src="http://elevatorup.com/tumblr-post-images/2016-05-06_css-masks/mask.png" alt="The design"></p>
 <p>Now, you can reference that PNG file as the <code>mask-image</code> property for each of the two photos. You’ll also apply <code>mask-size: cover</code> to make sure the mask is always the same size as the photo.</p>
 <p>Once those changes have been made, you can see that the photos stack and are cropped to the proper shape.</p>
-<p><p data-height="266" data-theme-id="light" data-slug-hash="rePaZL" data-default-tab="result" data-user="andrewlphilpott" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/andrewlphilpott/pen/rePaZL/">Masked</a> by Andrew Philpott (<a href="http://codepen.io/andrewlphilpott">@andrewlphilpott</a>) on <a href="http://codepen.io">CodePen</a>.</p></p>
+<p data-height="266" data-theme-id="light" data-slug-hash="rePaZL" data-default-tab="result" data-user="andrewlphilpott" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/andrewlphilpott/pen/rePaZL/">Masked</a> by Andrew Philpott (<a href="http://codepen.io/andrewlphilpott">@andrewlphilpott</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 <h2 id="browser-support">Browser Support</h2>

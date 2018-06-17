@@ -12,9 +12,9 @@
 
 {% markdown %}
 <aside class="note">
-	<strong class="note_hdg">Note</strong>
+<strong class="note_hdg">Note</strong>
 
-	<p>This was originally posted on the [Elevator Up blog](http://blog.elevatorup.com/post/155437522242/my-transition-from-ios-to-android).</p>
+This was originally posted on the [Elevator Up blog](http://blog.elevatorup.com/post/155437522242/my-transition-from-ios-to-android).
 </aside>
 
 My favorite Disney Channel movie when I was a kid was [Smart House](http://www.imdb.com/title/tt0192618/). For those who haven’t seen it, Smart House is about a boy named Ben Cooper who wins a fully automated house in a sweepstakes. I loved watching Smart House and seeing all the crazy things that the Cooper’s house could do. Ever since first seeing the movie, I have been really into the idea of automation. We’re starting to enter a time when home automation is no longer a dream, and it can be fairly budget-friendly to add some simple automation to your home today (if you add things slowly). Here are some of the simple things that you can do to make your house a little smarter today.

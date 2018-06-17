@@ -72,9 +72,9 @@
 				<div class="wrap">
 					
 <aside class="note">
-    <strong class="note_hdg">Note</strong>
+<strong class="note_hdg">Note</strong>
 
-    <p>This was originally posted on the <a href="http://blog.elevatorup.com/post/143790219652/an-app-to-keep-our-blog-on-track">Elevator Up blog</a>.</p>
+<p>This was originally posted on the <a href="http://blog.elevatorup.com/post/143790219652/an-app-to-keep-our-blog-on-track">Elevator Up blog</a>.</p>
 </aside>
 
 <p>At Elevator Up, we take blogging seriously. We’ve got a spreadsheet of due dates for everybody and each team member is expected to turn in their posts on time or face <a href="http://d.pr/i/TJ4H">dire consequences</a>. (Just kidding, but we seriously like it when people write their posts on schedule.)</p>
@@ -89,8 +89,7 @@
   last: 1459828800000,
   days: 35,
   remaining: 0
-}
-</code></pre><p>Broken down, what we&#39;re looking at is an author record which has a first name, a last name, a registration date (stored as a Unix timestamp), the date of their last blog post (also a Unix timestamp), the number of days in their blog cycle, and the number of days they had remaining the last time they submitted a post.</p>
+}</code></pre><p>Broken down, what we&#39;re looking at is an author record which has a first name, a last name, a registration date (stored as a Unix timestamp), the date of their last blog post (also a Unix timestamp), the number of days in their blog cycle, and the number of days they had remaining the last time they submitted a post.</p>
 <p>On the front end, we pull in all of that data, check the <em>last</em> value and the <em>days</em> value, get the current date, and then do some math to figure out how many days they have left. We also add to their <em>days</em> if they had any remaining days the last time they submitted a post.</p>
 <p>That last part is important. We want authors to be able to submit posts whenever they are ready and build up a silo of extra time if they want. So if an author had 30 days left before their next post was due and they decided to submit a post early, they would get 30 added to their next cycle. It works the other way, too. If an author was 5 days overdue when they made a submission, they would have 5 days removed from their next cycle.</p>
 <h2 id="designing-the-app">Designing the App</h2>

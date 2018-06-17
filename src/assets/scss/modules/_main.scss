@@ -19,6 +19,9 @@
 		margin: 0 auto;
 		max-width: 100%;
 	}
+	.screenshot {
+		margin-bottom: 1.625em;
+	}
 
 	@include min-up($tablet) {
 		padding: em(60) 0;
@@ -26,7 +29,7 @@
 }
 
 // Images
-// .screenshot {
-// 	border: 1px solid $gray-lt;
-// 	padding: 10px;
-// }
+.screenshot {
+	border: 1px solid $gray-lt;
+	padding: 10px;
+}

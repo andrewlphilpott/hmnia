@@ -12,9 +12,9 @@
 
 {% markdown %}
 <aside class="note">
-	<strong class="note_hdg">Note</strong>
+<strong class="note_hdg">Note</strong>
 
-	<p>This was originally posted on the [Elevator Up blog](http://blog.elevatorup.com/post/149368866622/in-defense-of-classes).</p>
+This was originally posted on the [Elevator Up blog](http://blog.elevatorup.com/post/149368866622/in-defense-of-classes).
 </aside>
 
 A few months ago, Tim Baxter wrote a post for A List Apart titled [_Meaningful CSS: Style Like You Mean It_](http://alistapart.com/article/meaningful-css-style-like-you-mean-it). In it, he lays out an argument for avoiding the use of classes in markup and instead favoring things like attributes which make your markup more meaningful and elements as CSS selectors. There are parts of his idea that I like, but overall I don’t think it’s all that practical for many projects other than very small websites or apps.

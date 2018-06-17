@@ -12,9 +12,9 @@
 
 {% markdown %}
 <aside class="note">
-	<strong class="note_hdg">Note</strong>
+<strong class="note_hdg">Note</strong>
 
-	<p>This was originally posted on the [Elevator Up blog](http://blog.elevatorup.com/post/143790219652/an-app-to-keep-our-blog-on-track).</p>
+This was originally posted on the [Elevator Up blog](http://blog.elevatorup.com/post/143790219652/an-app-to-keep-our-blog-on-track).
 </aside>
 
 At Elevator Up, we take blogging seriously. We’ve got a spreadsheet of due dates for everybody and each team member is expected to turn in their posts on time or face [dire consequences](http://d.pr/i/TJ4H). (Just kidding, but we seriously like it when people write their posts on schedule.)

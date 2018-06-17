@@ -12,9 +12,9 @@
 
 {% markdown %}
 <aside class="note">
-	<strong class="note_hdg">Note</strong>
+<strong class="note_hdg">Note</strong>
 
-	<p>This was originally posted on the [Elevator Up blog](http://blog.elevatorup.com/post/155437522242/my-transition-from-ios-to-android).</p>
+This was originally posted on the [Elevator Up blog](http://blog.elevatorup.com/post/155437522242/my-transition-from-ios-to-android).
 </aside>
 
 I’ve been an iOS fan for a long time. I was a poor college student when the original iPhone came out, and that was still the case with the 3G and 3GS, but after that I had an iPhone 4, 5, and 6. I have also owned an iPad Mini, an Apple Watch, and several MacBook Pros. I’ve always really liked the tight integration of Apple devices. All of my messages were routed to all of my devices, notifications from my iPhone could be sent to my Watch, and I could even use my Watch to unlock my Mac.

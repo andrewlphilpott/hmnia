@@ -12,9 +12,9 @@
 
 {% markdown %}
 <aside class="note">
-	<strong class="note_hdg">Note</strong>
+<strong class="note_hdg">Note</strong>
 
-	<p>This was originally posted on the [Elevator Up blog](http://blog.elevatorup.com/post/145906937252/using-css-masks-to-create-transparent-jpgs).</p>
+This was originally posted on the [Elevator Up blog](http://blog.elevatorup.com/post/145906937252/using-css-masks-to-create-transparent-jpgs).
 </aside>
 
 JPG images are great. They allow us to show photos on the web while keeping the file size relatively small (compared to a photo saved as a PNG, anyway). But what do you do when you need a photo with transparency and you don’t want to sacrifice file size? Enter CSS masks.
