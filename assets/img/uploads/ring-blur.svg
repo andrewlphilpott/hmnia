@@ -1,17 +1,17 @@
-<svg width="194" height="194" viewBox="0 0 194 194" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="194" height="151" viewBox="0 0 194 151" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_f)">
-<circle cx="97" cy="97" r="84.5" stroke="black" stroke-width="5"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M168.202 137.701C175.072 125.708 179 111.813 179 97C179 51.7127 142.287 15 97 15C51.7127 15 15 51.7127 15 97C15 111.63 18.8312 125.365 25.545 137.256L21.2473 139.816C14.0874 127.175 10 112.565 10 97C10 48.9512 48.9512 10 97 10C145.049 10 184 48.9512 184 97C184 112.748 179.816 127.518 172.499 140.26L168.202 137.701Z" fill="black"/>
 </g>
 <g filter="url(#filter1_f)">
-<circle cx="97" cy="97" r="84.5" stroke="black" stroke-width="5"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M168.202 137.701C175.072 125.708 179 111.813 179 97C179 51.7127 142.287 15 97 15C51.7127 15 15 51.7127 15 97C15 111.63 18.8312 125.365 25.545 137.256L21.2473 139.816C14.0874 127.175 10 112.565 10 97C10 48.9512 48.9512 10 97 10C145.049 10 184 48.9512 184 97C184 112.748 179.816 127.518 172.499 140.26L168.202 137.701Z" fill="black"/>
 </g>
 <defs>
-<filter id="filter0_f" x="0" y="0" width="194" height="194" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_f" x="0" y="0" width="194" height="150.26" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
 <feGaussianBlur stdDeviation="5" result="effect1_foregroundBlur"/>
 </filter>
-<filter id="filter1_f" x="0" y="0" width="194" height="194" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter1_f" x="0" y="0" width="194" height="150.26" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
 <feGaussianBlur stdDeviation="5" result="effect1_foregroundBlur"/>
