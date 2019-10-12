@@ -4,6 +4,7 @@
 html {
 	height: 100%;
 }
+
 body {
 	background: $white;
 	color: $text;
@@ -12,6 +13,12 @@ body {
 	padding-bottom: rem(50); // Footer is ~ 50px tall
 	position: relative;
 	text-rendering: optimizeLegibility;
+
+	// Dark mode
+	@media (prefers-color-scheme: dark) {
+		background: $text;
+		color: $white;
+  }
 }
 
 // Wrapper

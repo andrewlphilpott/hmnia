@@ -161,6 +161,7 @@ p, ol, ul, pre, table {
 // Notes
 .note {
 	background: $yellow;
+	color: $text;
 	margin-bottom: em(40);
 	padding: 20px;
 
@@ -205,6 +206,11 @@ code {
 		display: block;
 		padding: .5em 1em;
 	}
+
+	// Dark mode
+	@media (prefers-color-scheme: dark) {
+    background: transparentize($black, .5);
+  }
 }
 
 // Bold Caps

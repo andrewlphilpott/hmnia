@@ -36,6 +36,11 @@
 	@extend %no-underline; // text-decoration: underline
 	transition: all .25s linear;
 
+	// Dark mode
+	@media (prefers-color-scheme: dark) {
+    color: $white;
+  }
+
 	&:after {
 		border-bottom: 2px solid $accent1;
 		color: $accent2;
