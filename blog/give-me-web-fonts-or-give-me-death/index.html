@@ -51,12 +51,12 @@
 		<h2 class="meta">Main Navigation</h2>
 
 		<ul class="nav_list">
-			<li><a id="nav_blog" data-text="Blog" class="nav_link" href="/">Blog</a></li>
-			<li><a id="nav_about" data-text="About" class="nav_link" href="/about">About</a></li>
+			<li><a id="nav_about" data-text="About" class="nav_link" href="/">About</a></li>
 			<li><a id="nav_work" data-text="Portfolio" class="nav_link" href="/portfolio">Portfolio</a></li>
 		</ul><!-- /.nav_list -->
 	</nav><!-- /#nav -->
 </header><!-- /#head -->
+
 		<div class="page">
 			<div class="banner">
 	<div class="banner_bg"></div>
@@ -75,7 +75,7 @@
 <p>Well, there are currently ways to accomplish this.  The two most common methods have got to be sIFR—which uses a combination of Flash and JavaScript to make uncommon fonts available to visitors—and CSS image replacement—which uses CSS to hide text and instead show an image of the text.  These two methods work great for the most part.</p>
 <p>sIFR is a breeze to use and makes it possible to use any font even on text that will be changed frequently.  The main problem I have with sIFR, though, is that it doesn’t work for people who have JavaScript disabled.  Additionally, not everybody has a copy of Flash sitting around to create the files needed to use sIFR.</p>
 <p>Image replacement, on the other hand, requires the designer (or content manager or some other unlucky person) to create a new image each and every time the piece of text is updated.</p>
-<h2 id="-font-face">@font-face</h2>
+<h2 id="font-face">@font-face</h2>
 <p>Sure, these techniques have gotten us by, but what if we don’t want to have to rely on JavaScript to provide our fonts?  What if we don’t have the time to make a new image every time we change some text?  That’s where @font-face comes in.</p>
 <p>@font-face is an easy to implement CSS property that enables the designer to target a specific font file located on their server.  This makes it possible to use any font without having to resort to things like sIFR, image replacement, or font stacks.  Simply put, the right font will be displayed every time (I’m sure IE will find a way to screw it up, though).</p>
 <h2 id="problems-with-web-fonts">Problems With Web Fonts</h2>

@@ -51,12 +51,12 @@
 		<h2 class="meta">Main Navigation</h2>
 
 		<ul class="nav_list">
-			<li><a id="nav_blog" data-text="Blog" class="nav_link" href="/">Blog</a></li>
-			<li><a id="nav_about" data-text="About" class="nav_link" href="/about">About</a></li>
+			<li><a id="nav_about" data-text="About" class="nav_link" href="/">About</a></li>
 			<li><a id="nav_work" data-text="Portfolio" class="nav_link" href="/portfolio">Portfolio</a></li>
 		</ul><!-- /.nav_list -->
 	</nav><!-- /#nav -->
 </header><!-- /#head -->
+
 		<div class="page">
 			<div class="banner">
 	<div class="banner_bg"></div>
@@ -71,11 +71,11 @@
 				<div class="wrap">
 					
 <p>A couple weeks ago, I remembered how awesome GitHub pages is. I also had been playing around with gulp for a few days, and I had the idea to redesign my website and host it on GitHub pages. In order to do that, I knew I would have to make the site static (i.e. no back end technologies like PHP running things).</p>
-<h2 id="gulp-twig-markdown-ftw">gulp, Twig, &amp; Markdown FTW</h2>
+<h2 id="gulp-twig--markdown-ftw">gulp, Twig, &amp; Markdown FTW</h2>
 <p>Setting up some static pages is easy enough, but I wanted to be able to easily add blog posts without needing to manually copy and paste excerpts onto the homepage of my site. I know there are things like Jekyll out there, but I really wanted to just roll my own solution so that I could use what I like: gulp, Twig, and Markdown.</p>
 <p>I found a <a href="https://www.npmjs.com/package/twig-markdown">nice plugin that allows you to use Markdown inside of Twig</a> templates, so I added that to my gulp setup. That was step one.</p>
 <p>Next, I needed to figure out how to pull information from each blog post (specifically the excerpt, the post date, and the URL) and display that on the index page of my site. I almost gave up on this before I even started, but it turned out to be pretty simple. I wrote a function in <a href="https://github.com/andrewlphilpott/hmnia/blob/gh-pages/gulpfile.js">my gulpfile</a> which looks through all available blog posts, creates an array of objects with the data I need from each of the posts, and then sorts the array and returns it as a variable that can be used in my Twig templates (i.e. on the homepage template). From there, I can loop through the posts as you would any other array variable in Twig. With all that out of the way, I was ready to build my site.</p>
-<h2 id="static-fast-but-not-fast-enough-">Static = fast (but not fast enough)</h2>
+<h2 id="static--fast-but-not-fast-enough">Static = fast (but not fast enough)</h2>
 <p>I figured that making a static site would mean making a fast site, but I was pretty surprised by how fast it actually turned out. Even, so, there were things that I could do to make it faster. Using <a href="https://developers.google.com/speed/pagespeed/insights/">Google’s PageSpeed Insights tool</a>, I found that I could really improve things by using a CDN and caching my resources. Lucky for me, <a href="https://www.cloudflare.com">CloudFlare</a> offers both free of charge.</p>
 <p>I was able to quickly add my domain to CloudFlare which automatically provides a CDN. Caching also comes straight out of the box, but I found that in order to appease Google, you need to really turn up the cache time (I set it to 24 days).</p>
 <p>There are a couple of things keeping me from getting a perfect score from PageSpeed Insights, but I’m not sure if I want to mess with addressing them:</p>

@@ -1,0 +1,36 @@
+{% extends './layouts/_default.twig' %}
+
+{% set title = 'Hi, my name is Andrew.' %}
+{% set description = 'The personal website of Andrew Philpott' %}
+{% set id = 'home' %}
+
+{% block body %}
+	{% include './partials/_banner.twig' with {'headline': 'Hi, my name is Andrew.', 'subheadline': 'I make websites and stuff.'} %}
+
+	<main id="main" class="main">
+		<div class="wrap">
+			<h2 class="section-title">Here’s some stuff I wrote.</h2>
+
+			<ol class="posts">
+				{% for post in posts %}
+					<li>
+						<article class="preview">
+							<header class="preview_head">
+								<h3 class="preview_title"><a class="link-inline" href="{{ post.url | replace({'src': '', 'index.md': ''}) }}">{{ post.title }}</a></h3>
+								<time class="preview_date date" datetime="{{ post.date | date('Y-m-d') }}">{{ post.date | date('F j, Y') }}</time>
+							</header>
+
+{% markdown %}
+{{ post.excerpt }}
+{% endmarkdown %}
+
+							<footer class="preview_foot">
+								<a class="preview_more" href="{{ post.url | replace({'src': '', 'index.md': ''}) }}">Read More</a>
+							</footer>
+						</article>
+					</li>
+				{% endfor %}
+			</ol>
+		</div><!-- /.wrap -->
+	</main><!-- /#main -->
+{% endblock %}
